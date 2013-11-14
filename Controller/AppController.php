@@ -32,4 +32,10 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+	/* *Bootstrap Helpers* */
+	public $helpers = array(
+	'Html' => array('AppController' => 'BootstrapHtml'),
+	'Form' => array('AppController' => 'BootstrapForm'),
+	'Paginator' => array('AppController' => 'BootstrapPaginator'),
+	);
 }
