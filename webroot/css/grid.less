@@ -3,7 +3,7 @@
 // --------------------------------------------------
 
 // Set the container width, and override it for fixed navbars in media queries
-.container {
+.container, #container {
   .container-fixed();
 }
 
@@ -40,7 +40,7 @@
 // it's full-width.
 
 @media (min-width: @screen-sm-min) {
-  .container {
+  .container, #container {
     width: @container-sm;
   }
 
@@ -60,7 +60,7 @@
 // it's full-width.
 
 @media (min-width: @screen-md-min) {
-  .container {
+  .container, #container {
     width: @container-md;
   }
 
@@ -80,7 +80,7 @@
 // it's full-width.
 
 @media (min-width: @screen-lg-min) {
-  .container {
+  .container, #container {
     width: @container-lg;
   }
 
