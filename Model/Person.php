@@ -43,7 +43,7 @@ class Person extends AppModel {
 		),
 		'uf' => array(
 			'maxLength' => array(
-				'rule' => array('maxLength'),
+				'rule' => array('maxLength', 2)
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
 				//'required' => false,

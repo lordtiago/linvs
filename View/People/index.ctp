@@ -5,22 +5,13 @@
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('name'); ?></th>
 			<th><?php echo $this->Paginator->sort('birth'); ?></th>
-			<th><?php echo $this->Paginator->sort('cpf'); ?></th>
-			<th><?php echo $this->Paginator->sort('rg'); ?></th>
 			<th><?php echo $this->Paginator->sort('street'); ?></th>
 			<th><?php echo $this->Paginator->sort('number'); ?></th>
 			<th><?php echo $this->Paginator->sort('district'); ?></th>
 			<th><?php echo $this->Paginator->sort('cep'); ?></th>
-			<th><?php echo $this->Paginator->sort('city'); ?></th>
-			<th><?php echo $this->Paginator->sort('uf'); ?></th>
-			<th><?php echo $this->Paginator->sort('country'); ?></th>
-			<th><?php echo $this->Paginator->sort('father_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('spouse_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('tel'); ?></th>
 			<th><?php echo $this->Paginator->sort('cel'); ?></th>
-			<th><?php echo $this->Paginator->sort('cel2'); ?></th>
 			<th><?php echo $this->Paginator->sort('email'); ?></th>
-			<th><?php echo $this->Paginator->sort('parish_id'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php foreach ($people as $person): ?>
@@ -28,24 +19,16 @@
 		<td><?php echo h($person['Person']['id']); ?>&nbsp;</td>
 		<td><?php echo h($person['Person']['name']); ?>&nbsp;</td>
 		<td><?php echo h($person['Person']['birth']); ?>&nbsp;</td>
-		<td><?php echo h($person['Person']['cpf']); ?>&nbsp;</td>
-		<td><?php echo h($person['Person']['rg']); ?>&nbsp;</td>
 		<td><?php echo h($person['Person']['street']); ?>&nbsp;</td>
 		<td><?php echo h($person['Person']['number']); ?>&nbsp;</td>
 		<td><?php echo h($person['Person']['district']); ?>&nbsp;</td>
 		<td><?php echo h($person['Person']['cep']); ?>&nbsp;</td>
-		<td><?php echo h($person['Person']['city']); ?>&nbsp;</td>
-		<td><?php echo h($person['Person']['uf']); ?>&nbsp;</td>
-		<td><?php echo h($person['Person']['country']); ?>&nbsp;</td>
-		<td><?php echo h($person['Person']['father_id']); ?>&nbsp;</td>
-		<td><?php echo h($person['Person']['spouse_id']); ?>&nbsp;</td>
 		<td><?php echo h($person['Person']['tel']); ?>&nbsp;</td>
 		<td><?php echo h($person['Person']['cel']); ?>&nbsp;</td>
-		<td><?php echo h($person['Person']['cel2']); ?>&nbsp;</td>
 		<td><?php echo h($person['Person']['email']); ?>&nbsp;</td>
-		<td>
-			<?php echo $this->Html->link($person['Parish']['name'], array('controller' => 'parishes', 'action' => 'view', $person['Parish']['id'])); ?>
-		</td>
+		<!--><td>
+			<?php //echo $this->Html->link($person['Parish']['name'], array('controller' => 'parishes', 'action' => 'view', $person['Parish']['id'])); ?>
+		</td>-->
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $person['Person']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $person['Person']['id'])); ?>

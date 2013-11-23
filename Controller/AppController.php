@@ -37,5 +37,7 @@ class AppController extends Controller {
 	'Html' => array('AppController' => 'BootstrapHtml'),
 	'Form' => array('AppController' => 'BootstrapForm'),
 	'Paginator' => array('AppController' => 'BootstrapPaginator'),
+	'Js',
+	'Session'
 	);
 }

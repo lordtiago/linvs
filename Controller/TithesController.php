@@ -56,6 +56,8 @@ class TithesController extends AppController {
 			}
 		}
 		$people = $this->Tithe->Person->find('list');
+		$this->request->data["Tithe"]["month"] = date("m");
+		$this->request->data["Tithe"]["year"] = date("Y");
 		$this->set(compact('people'));
 	}
 

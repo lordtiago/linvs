@@ -1,3 +1,9 @@
+<?php
+//Configs
+echo $this->Html->script('jquery.maskedinput-1.3.1');
+echo $this->Html->script('jquery.cep-1.0.min');
+echo $this->Html->script('people-configs');
+?>
 <div class="people form">
 <?php echo $this->Form->create('Person'); ?>
 	<fieldset>
@@ -7,10 +13,10 @@
 		echo $this->Form->input('birth');
 		echo $this->Form->input('cpf');
 		echo $this->Form->input('rg');
+		echo $this->Form->input('cep');
 		echo $this->Form->input('street');
 		echo $this->Form->input('number');
 		echo $this->Form->input('district');
-		echo $this->Form->input('cep');
 		echo $this->Form->input('city');
 		echo $this->Form->input('uf');
 		echo $this->Form->input('country');
@@ -20,10 +26,9 @@
 		echo $this->Form->input('cel');
 		echo $this->Form->input('cel2');
 		echo $this->Form->input('email');
-		echo $this->Form->input('parish_id');
+		//echo $this->Form->input('parish_id');
 	?>
 	</fieldset>
-<?php // echo $this->Form->end(__('Submit')); ?>
 
 <?php // adicionando marcação requerida pelo bootstrap ?>
 <?php echo $this->Form->end(array(
