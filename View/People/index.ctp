@@ -1,3 +1,6 @@
+<?php
+     $this->Html->addCrumb(__("People"), __("/people"));        
+?>
 <div class="people index">
 	<h2><?php echo __('People'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
@@ -26,9 +29,9 @@
 		<td><?php echo h($person['Person']['tel']); ?>&nbsp;</td>
 		<td><?php echo h($person['Person']['cel']); ?>&nbsp;</td>
 		<td><?php echo h($person['Person']['email']); ?>&nbsp;</td>
-		<!--><td>
+		<!-- <td>
 			<?php //echo $this->Html->link($person['Parish']['name'], array('controller' => 'parishes', 'action' => 'view', $person['Parish']['id'])); ?>
-		</td>-->
+		</td> -->
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $person['Person']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $person['Person']['id'])); ?>

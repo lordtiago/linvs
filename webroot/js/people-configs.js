@@ -9,6 +9,11 @@ $(function($){
 		  nonoDigito(event);
 	  });
 	  
+  	$("#PersonFatherId").select2({allowClear: true});
+  	$("#PersonFather2Id").select2({allowClear: true});	  
+	$("#PersonSpouseId").select2({allowClear: true}); 
+	 
+	  //Consulta CEP Webservice
       $("#PersonCep").focusout(function () {
       $("#PersonCep").cep({
           load: function () {

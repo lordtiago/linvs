@@ -1,3 +1,7 @@
+<?php
+	$this->Html->addCrumb(__("People"), __("/people"));
+	$this->Html->addCrumb(__("View"), __("/people/view"));  
+?>
 <div class="people view">
 <h2><?php echo __('Person'); ?></h2>
 	<dl>
@@ -61,16 +65,21 @@
 			<?php echo h($person['Person']['country']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Father Id'); ?></dt>
+<!--		<dt><?php //echo __('Father Id'); ?></dt>
 		<dd>
-			<?php echo h($person['Person']['father_id']); ?>
+			<?php //echo h($person['Person']['father_id']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Spouse Id'); ?></dt>
+		<dt><?php //echo __('Father2 Id'); ?></dt>
 		<dd>
-			<?php echo h($person['Person']['spouse_id']); ?>
+			<?php //echo h($person['Person']['father2_id']); ?>
 			&nbsp;
-		</dd>
+		</dd>		
+		<dt><?php //echo __('Spouse Id'); ?></dt>
+		<dd>
+			<?php //echo h($person['Person']['spouse_id']); ?>
+			&nbsp;
+		</dd>-->
 		<dt><?php echo __('Tel'); ?></dt>
 		<dd>
 			<?php echo h($person['Person']['tel']); ?>

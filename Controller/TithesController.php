@@ -55,7 +55,7 @@ class TithesController extends AppController {
 				$this->Session->setFlash(__('The tithe could not be saved. Please, try again.'));
 			}
 		}
-		$people = $this->Tithe->Person->find('list');
+		$people = $this->Tithe->Person->find('list',array('order' => array('Person.name ASC')));
 		$this->request->data["Tithe"]["month"] = date("m");
 		$this->request->data["Tithe"]["year"] = date("Y");
 		$this->set(compact('people'));

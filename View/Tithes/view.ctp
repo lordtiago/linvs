@@ -1,3 +1,7 @@
+<?php
+	$this->Html->addCrumb(__("Tithes"), __("/tithes"));
+	$this->Html->addCrumb(__("View"), __("/tithes/view"));  
+?>
 <div class="tithes view">
 <h2><?php echo __('Tithe'); ?></h2>
 	<dl>

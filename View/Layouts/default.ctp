@@ -32,6 +32,7 @@ $cakeDescription = __d('cake_dev', 'LINVS - Sistema de Gerenciamento Paroquial')
 
 		// echo $this->Html->css('cake.generic');
 		echo $this->Html->css('bootstrap');
+		echo $this->Html->css('select2');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -48,7 +49,9 @@ $cakeDescription = __d('cake_dev', 'LINVS - Sistema de Gerenciamento Paroquial')
 		<div id="content">
 
 			<?php echo $this->Session->flash(); ?>
-
+			<div class="breadcrumb">
+				<?php echo $this->Html->getCrumbs(' > ', __('Home')); ?>
+			</div>
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer">

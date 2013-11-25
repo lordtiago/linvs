@@ -24,7 +24,7 @@ class Person extends AppModel {
 		'name' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
+				'message' => "This field doesn't should be empty",
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -54,8 +54,8 @@ class Person extends AppModel {
 		'email' => array(
 			'email' => array(
 				'rule' => array('email'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
+				'message' => "Type a valid email",
+				'allowEmpty' => true,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations

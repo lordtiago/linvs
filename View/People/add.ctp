@@ -2,7 +2,11 @@
 //Configs
 echo $this->Html->script('jquery.maskedinput-1.3.1');
 echo $this->Html->script('jquery.cep-1.0.min');
+echo $this->Html->script('select2.min');
 echo $this->Html->script('people-configs');
+
+$this->Html->addCrumb(__("People"), __("/people"));
+$this->Html->addCrumb(__("Add"), __("/people/add"));                
 ?>
 <div class="people form">
 <?php echo $this->Form->create('Person'); ?>
@@ -10,7 +14,7 @@ echo $this->Html->script('people-configs');
 		<legend><?php echo __('Add Person'); ?></legend>
 	<?php
 		echo $this->Form->input('name');
-		echo $this->Form->input('birth');
+		echo $this->Form->input('birth',array('minYear' => 1900,'dateFormat' => 'DMY'));
 		echo $this->Form->input('cpf');
 		echo $this->Form->input('rg');
 		echo $this->Form->input('cep');
@@ -20,8 +24,9 @@ echo $this->Html->script('people-configs');
 		echo $this->Form->input('city');
 		echo $this->Form->input('uf');
 		echo $this->Form->input('country');
-		echo $this->Form->input('father_id');
-		echo $this->Form->input('spouse_id');
+		echo $this->Form->input('father_id', array("empty"=>__('(choose one)')));
+		echo $this->Form->input('father2_id', array('options' => $fathers, "empty"=>__('(choose one)')));
+		echo $this->Form->input('spouse_id', array("empty"=>__('(choose one)')));
 		echo $this->Form->input('tel');
 		echo $this->Form->input('cel');
 		echo $this->Form->input('cel2');

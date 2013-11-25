@@ -1,3 +1,6 @@
+<?php
+	$this->Html->addCrumb(__("Tithes"), __("/tithes"));
+?>
 <div class="tithes index">
 	<h2><?php echo __('Tithes'); ?></h2>
 	<table cellpadding="0" cellspacing="0">

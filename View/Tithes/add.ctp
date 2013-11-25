@@ -1,10 +1,21 @@
+<?php
+
+	echo $this->Html->script('select2.min');
+	echo $this->Html->script('jquery.price_format.1.0');
+	echo $this->Html->script('jquery.formata_moeda.1.0');
+	echo $this->Html->script('tithe-configs');
+	
+	$this->Html->addCrumb(__("Tithes"), __("/tithes"));
+	$this->Html->addCrumb(__("Add"), __("/tithes/add"));  
+?>
+
 <div class="tithes form">
 <?php echo $this->Form->create('Tithe'); ?>
 	<fieldset>
 		<legend><?php echo __('Add Tithe'); ?></legend>
 	<div id="block-value">
 	<?php
-		echo $this->Form->input('value');
+		echo $this->Form->input('value', array('type' => 'text'));
 	?>
 	</div>
 	<?php
@@ -13,8 +24,6 @@
 		echo $this->Form->input('person_id');
 	?>
 	</fieldset>
-
-<?php // echo $this->Form->end(__('Submit')); ?>
 
 <?php // adicionando marcação requerida pelo bootstrap ?>
 <?php echo $this->Form->end(array(

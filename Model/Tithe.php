@@ -23,7 +23,7 @@ class Tithe extends AppModel {
 		'value' => array(
 			'decimal' => array(
 				'rule' => array('decimal'),
-				//'message' => 'Your custom message here',
+				'message' => 'Entry with a value',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule

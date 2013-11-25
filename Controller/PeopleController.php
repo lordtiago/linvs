@@ -48,6 +48,8 @@ class PeopleController extends AppController {
 	public function add() {
 		if ($this->request->is('post')) {
 			$this->Person->create();
+			//In the future to check, what is the parish that user work
+			$this->request->data["Person"]["parish_id"] = 1;
 			if ($this->Person->save($this->request->data)) {
 				$this->Session->setFlash(__('The person has been saved.'));
 				return $this->redirect(array('action' => 'index'));
@@ -56,6 +58,9 @@ class PeopleController extends AppController {
 			}
 		}
 		$parishes = $this->Person->Parish->find('list');
+		$fathers = $spouses = $this->Person->find("list",array('order' => array('Person.name ASC')));
+		$this->set(compact('fathers'));
+		$this->set(compact('spouses'));
 		$this->set(compact('parishes'));
 	}
 
@@ -71,6 +76,9 @@ class PeopleController extends AppController {
 			throw new NotFoundException(__('Invalid person'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
+			//In the future to check, what is the parish that user work
+			$this->request->data["Person"]["parish_id"] = 1;
+			
 			if ($this->Person->save($this->request->data)) {
 				$this->Session->setFlash(__('The person has been saved.'));
 				return $this->redirect(array('action' => 'index'));
@@ -82,6 +90,9 @@ class PeopleController extends AppController {
 			$this->request->data = $this->Person->find('first', $options);
 		}
 		$parishes = $this->Person->Parish->find('list');
+		$fathers = $spouses = $this->Person->find("list",array('order' => array('Person.name ASC')));
+		$this->set(compact('fathers'));
+		$this->set(compact('spouses'));
 		$this->set(compact('parishes'));
 	}
 

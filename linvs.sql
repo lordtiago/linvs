@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 08, 2013 at 06:36 PM
+-- Generation Time: Nov 25, 2013 at 07:05 PM
 -- Server version: 5.5.33
 -- PHP Version: 5.5.3
 
@@ -30,7 +30,14 @@ CREATE TABLE `parishes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `parishes`
+--
+
+INSERT INTO `parishes` (`id`, `name`) VALUES
+(1, 'Senhor Bom Jesus');
 
 -- --------------------------------------------------------
 
@@ -52,15 +59,25 @@ CREATE TABLE `people` (
   `uf` varchar(2) DEFAULT NULL,
   `country` varchar(30) DEFAULT NULL,
   `father_id` int(11) DEFAULT NULL,
+  `father2_id` int(11) DEFAULT NULL,
   `spouse_id` int(11) DEFAULT NULL,
   `tel` varchar(20) DEFAULT NULL,
   `cel` varchar(20) DEFAULT NULL,
   `cel2` varchar(20) DEFAULT NULL,
-  `email` varchar(40) NOT NULL,
+  `email` varchar(40) DEFAULT NULL,
   `parish_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `parish` (`parish_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  KEY `parish` (`parish_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `people`
+--
+
+INSERT INTO `people` (`id`, `name`, `birth`, `cpf`, `rg`, `street`, `number`, `district`, `cep`, `city`, `uf`, `country`, `father_id`, `father2_id`, `spouse_id`, `tel`, `cel`, `cel2`, `email`, `parish_id`) VALUES
+(1, 'SERGIO BENEDITO ALVES RAFAEL', '1953-10-06', '', '', 'Rua Alcina Monteiro da Silva', ' Nº 70', 'Itagaçaba', '12.730-400', 'Cruzeiro', 'SP', 'Brasil', NULL, NULL, 2, '(0xx12)3143-3011', '', '', '', 1),
+(2, 'ADENILCE DA ROCHA ALVES RAFAEL', '1957-11-29', '', '', 'Rua Alcina Monteiro da Silva', ' Nº 70', 'Itagaçaba', '12.730-400', 'Cruzeiro', 'SP', 'Brasil', NULL, NULL, 1, '(0xx12)3143-3011', '(0xx12)9149-8432', '', '', 1),
+(3, 'TIAGO ALVES RAFAEL', '1987-11-28', '363.696.138-19', '42.788.574-7', 'Rua Alcina Monteiro da Silva', ' Nº 70', 'Itagaçaba', '12.730-400', 'Cruzeiro', 'SP', 'Brasil', 1, 2, NULL, '(0xx12)3143-3011', '(0xx12)98230-8736', '', 'pro.tiagorafaell@gmail.com', 1);
 
 -- --------------------------------------------------------
 
@@ -73,11 +90,11 @@ CREATE TABLE `tithes` (
   `value` decimal(7,2) NOT NULL,
   `month` tinyint(4) NOT NULL,
   `year` smallint(6) NOT NULL,
-  `created` date NOT NULL,
-  `modified` date NOT NULL,
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
   `person_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `person` (`person_id`)
+  KEY `person` (`person_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 --
