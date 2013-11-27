@@ -1,9 +1,30 @@
 <?php
+	echo $this->Html->script('tab');
+	echo $this->Html->script('people-tabs-config');
+
 	$this->Html->addCrumb(__("People"), __("/people"));
-	$this->Html->addCrumb(__("View"), __("/people/view"));  
+	$this->Html->addCrumb(__("View"), __("/people/view"));	  
 ?>
-<div class="people view">
 <h2><?php echo __('Person'); ?></h2>
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" id="people-tabs">
+  	<li><a href="#person-content" data-toggle="tab"><?php echo __('Person'); ?></a></li>
+	
+  	<?php if($father || $father2):?>
+  	  <li><a href="#parents-content" data-toggle="tab"><?php echo __('Parents'); ?></a></li>
+	<?php endif;?>
+
+  	<?php if($spouse):?>
+  	  <li><a href="#spouse-content" data-toggle="tab"><?php echo __('Spouse'); ?></a></li>
+	<?php endif;?>	
+	
+  	<?php if($childs):?>
+  	  <li><a href="#child-content" data-toggle="tab"><?php echo __('Childs'); ?></a></li>
+	<?php endif;?>	
+</ul>
+<!-- Tab panes -->
+<div class="people view tab-content">
+  <div class="person-content tab-pane active" id="person-content">
 	<dl>
 		<dt><?php echo __('Id'); ?></dt>
 		<dd>
@@ -65,21 +86,6 @@
 			<?php echo h($person['Person']['country']); ?>
 			&nbsp;
 		</dd>
-<!--		<dt><?php //echo __('Father Id'); ?></dt>
-		<dd>
-			<?php //echo h($person['Person']['father_id']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php //echo __('Father2 Id'); ?></dt>
-		<dd>
-			<?php //echo h($person['Person']['father2_id']); ?>
-			&nbsp;
-		</dd>		
-		<dt><?php //echo __('Spouse Id'); ?></dt>
-		<dd>
-			<?php //echo h($person['Person']['spouse_id']); ?>
-			&nbsp;
-		</dd>-->
 		<dt><?php echo __('Tel'); ?></dt>
 		<dd>
 			<?php echo h($person['Person']['tel']); ?>
@@ -102,10 +108,63 @@
 		</dd>
 		<dt><?php echo __('Parish'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($person['Parish']['name'], array('controller' => 'parishes', 'action' => 'view', $person['Parish']['id'])); ?>
+			<?php //echo $this->Html->link($person['Parish']['name'], array('controller' => 'parishes', 'action' => 'view', $person['Parish']['id'])); ?>
+			<?php echo $person['Parish']['name']; ?>
 			&nbsp;
-		</dd>
-	</dl>
+		</dd>		
+		</dl>
+	</div> 
+	<?php if($father || $father2):?>
+		<div class="parents-content tab-pane" id="parents-content">
+			<dl>
+				<dt><?php echo __('Father'); ?></dt>
+				<?php if($father):?>
+					<dd>
+						<span><?php echo __("Name: ");?> </span><?php echo $this->Html->link(($father['Person']['name']),array('controller' => 'people', 'action' => 'view', $father['Person']['id'])); ?>
+						<span><?php echo __("Birth: ");?></span><?php echo $this->Time->format('d/m/Y',$father['Person']['birth']); ?>
+						<span><?php echo __("Tel: ");?></span><?php echo h($father['Person']['tel']); ?>
+						&nbsp;
+					</dd>
+				<?php endif;?>
+				<?php if($father2):?>				
+					<dd>
+						<span><?php echo __("Name: ");?> </span><?php echo $this->Html->link(($father2['Person']['name']),array('controller' => 'people', 'action' => 'view', $father2['Person']['id'])); ?>
+						<span><?php echo __("Birth: ");?></span><?php echo $this->Time->format('d/m/Y',$father2['Person']['birth']); ?>
+						<span><?php echo __("Tel: ");?></span><?php echo h($father2['Person']['tel']); ?>
+						&nbsp;
+					</dd>
+				<?php endif;?>		
+				</dl>   
+			</div>
+	<?php endif;?>
+	<?php if($spouse):?>
+		<div class="spouse-content tab-pane" id="spouse-content">
+			<dl>
+				<dt><?php echo __('Spouse'); ?></dt>
+					<dd>
+						<span><?php echo __("Name: ");?> </span><?php echo $this->Html->link(($spouse['Person']['name']),array('controller' => 'people', 'action' => 'view', $spouse['Person']['id'])); ?>						
+						<span><?php echo __("Birth: ");?></span><?php echo $this->Time->format('d/m/Y',$spouse['Person']['birth']); ?>
+						<span><?php echo __("Tel: ");?></span><?php echo h($spouse['Person']['tel']); ?>
+						&nbsp;
+					</dd>
+				</dl>   
+			</div>
+	<?php endif;?>	
+	<?php if($childs):?>
+		<div class="child-content tab-pane" id="child-content">
+			<dl>
+				<dt><?php echo __('Childs'); ?></dt>
+				<?php foreach($childs as $child):?>
+					<dd>
+						<span><?php echo __("Name: ");?> </span><?php echo $this->Html->link(($child['Person']['name']),array('controller' => 'people', 'action' => 'view', $child['Person']['id'])); ?>						
+						<span><?php echo __("Birth: ");?></span><?php echo $this->Time->format('d/m/Y',$child['Person']['birth']); ?>
+						<span><?php echo __("Tel: ");?></span><?php echo h($child['Person']['tel']); ?>
+						&nbsp;
+					</dd>
+				<?php endforeach;?>
+				</dl>   
+			</div>
+	<?php endif;?>		
 </div>
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>

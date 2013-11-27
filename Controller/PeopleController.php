@@ -14,6 +14,7 @@ class PeopleController extends AppController {
  * @var array
  */
 	public $components = array('Paginator');
+	
 
 /**
  * index method
@@ -37,7 +38,16 @@ class PeopleController extends AppController {
 			throw new NotFoundException(__('Invalid person'));
 		}
 		$options = array('conditions' => array('Person.' . $this->Person->primaryKey => $id));
-		$this->set('person', $this->Person->find('first', $options));
+		$person = $this->Person->find('first', $options);
+		$options2 = array('conditions' => array('Person.' . $this->Person->primaryKey => $person['Person']['father_id']));
+		$options3 = array('conditions' => array('Person.' . $this->Person->primaryKey => $person['Person']['father2_id']));
+		$options4 = array('conditions' => array('Person.' . $this->Person->primaryKey => $person['Person']['spouse_id']));
+		$options_child = array('conditions' => array('Person.father_id' => $person['Person']['id']));
+		$this->set(compact('person'));
+		$this->set('father', $this->Person->find('first', $options2));
+		$this->set('father2', $this->Person->find('first', $options3));
+		$this->set('spouse', $this->Person->find('first', $options4));
+		$this->set('childs', $this->Person->find('all', $options_child));
 	}
 
 /**
