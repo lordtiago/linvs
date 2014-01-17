@@ -88,8 +88,23 @@ class PeopleController extends AppController {
 		if ($this->request->is(array('post', 'put'))) {
 			//In the future to check, what is the parish that user work
 			$this->request->data["Person"]["parish_id"] = 1;
+			$spouse = $this->request->data["Person"]["spouse_id"];
 			
 			if ($this->Person->save($this->request->data)) {
+				if($spouse != 0){
+					//set in spouse, the same value
+					$options = array('conditions' => array('Person.id' => $spouse));
+					$spouse = $this->Person->find('first', $options);
+					//var_dump($spouse);exit;
+					$spouse["Person"]["spouse_id"] = $this->request->data["Person"]["id"];
+					$this->Person->save($spouse);					
+				}else{
+					$options = array('conditions' => array('Person.spouse_id' => $this->request->data["Person"]["id"]));
+					$spouse = $this->Person->find('first', $options);
+					$spouse["Person"]["spouse_id"] = 0;
+					$this->Person->save($spouse);										
+				}
+				
 				$this->Session->setFlash(__('The person has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {

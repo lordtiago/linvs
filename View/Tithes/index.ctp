@@ -1,8 +1,63 @@
+<?php $meses = array(__('Januery'),__('February'),__('March'),__('April'),__('May'),__('June'),__('July'),__('August'),__('September'),
+					__('October'),__('November'),__('December'),); 
+		if(!empty($this->params['pass'])){
+			$current_month = $this->params['pass'][0]-1;
+		}else{
+			$current_month = (int)date('m')-1;
+		}
+	   
+	   //set a previous month and year
+	   if($current_month == 0){
+		   $prev_month = 12;
+		   
+	   		if(isset($this->params['pass'])){
+	   			$prev_year = $this->params['pass'][1]-1;
+	   		}else{
+	   			$prev_year = date('Y')-1;
+	   		}
+			
+	   }else{
+		   $prev_month = $current_month;
+		   
+	   		if(isset($this->params['pass'])){
+	   			$prev_year = $this->params['pass'][1];
+	   		}else{
+	   			$prev_year = date('Y');
+	   		}
+			
+	   }
+	   
+	   //set a next month and year
+	   if($current_month == 11){
+		   $next_month = 1;
+		   
+	   		if(isset($this->params['pass'])){
+	   			$next_year = $this->params['pass'][1]+1;
+	   		}else{
+	   			$next_year = date('Y')+1;
+	   		}
+			
+	   }else{
+		   $next_month = $current_month + 2;
+		   
+	   		if(isset($this->params['pass'])){
+	   			$next_year = $this->params['pass'][1];
+	   		}else{
+	   			$next_year = date('Y');
+	   		}
+			
+	   }	   
+?>
 <?php
 	$this->Html->addCrumb(__("Tithes"), __("/tithes"));
 ?>
 <div class="tithes index">
 	<h2><?php echo __('Tithes'); ?></h2>
+	<div>
+		<?php echo $this->Html->link(__('<'), array('controller' => 'tithes', $prev_month, $prev_year)); ?>
+		<span><?php echo $meses[$current_month]; ?></span>
+		<?php echo $this->Html->link(__('>'), array('controller' => 'tithes', $next_month, $next_year)); ?>
+	</div>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>

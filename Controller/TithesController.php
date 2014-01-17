@@ -20,9 +20,20 @@ class TithesController extends AppController {
  *
  * @return void
  */
-	public function index() {
+	public function index($month = null, $year = null) {
 		$this->Tithe->recursive = 0;
-		$this->set('tithes', $this->Paginator->paginate());
+		
+		if(!isset($month)) $month = date("m");
+		if(!isset($year)) $year = date("Y");
+		
+		$this->set('tithes', $this->Paginator->paginate(
+				'Tithe',
+		    	array(
+					'Tithe.month =' => $month,
+					'Tithe.year =' => $year
+				)
+			)
+		);
 	}
 
 /**
