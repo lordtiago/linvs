@@ -1,5 +1,7 @@
-<?php $meses = array(__('Januery'),__('February'),__('March'),__('April'),__('May'),__('June'),__('July'),__('August'),__('September'),
-					__('October'),__('November'),__('December'),); 
+<?php $meses = array(__('January'),__('February'),__('March'),__('April'),__('May'),__('June'),__('July'),__('August'),__('September'),
+					__('October'),__('November'),__('December')); 
+
+		//debug($this->params);			
 		if(!empty($this->params['pass'])){
 			$current_month = $this->params['pass'][0]-1;
 		}else{
@@ -10,7 +12,7 @@
 	   if($current_month == 0){
 		   $prev_month = 12;
 		   
-	   		if(isset($this->params['pass'])){
+	   		if(!empty($this->params['pass'])){
 	   			$prev_year = $this->params['pass'][1]-1;
 	   		}else{
 	   			$prev_year = date('Y')-1;
@@ -19,7 +21,7 @@
 	   }else{
 		   $prev_month = $current_month;
 		   
-	   		if(isset($this->params['pass'])){
+	   		if(!empty($this->params['pass'])){
 	   			$prev_year = $this->params['pass'][1];
 	   		}else{
 	   			$prev_year = date('Y');
@@ -31,7 +33,7 @@
 	   if($current_month == 11){
 		   $next_month = 1;
 		   
-	   		if(isset($this->params['pass'])){
+	   		if(!empty($this->params['pass'])){
 	   			$next_year = $this->params['pass'][1]+1;
 	   		}else{
 	   			$next_year = date('Y')+1;
@@ -40,7 +42,7 @@
 	   }else{
 		   $next_month = $current_month + 2;
 		   
-	   		if(isset($this->params['pass'])){
+	   		if(!empty($this->params['pass'])){
 	   			$next_year = $this->params['pass'][1];
 	   		}else{
 	   			$next_year = date('Y');
