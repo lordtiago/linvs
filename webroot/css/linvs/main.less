@@ -1,0 +1,51 @@
+.tt {
+	font-size: @font-size-large;
+	line-height: @line-height-base*2;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+h2 {.tt;}
+
+#url-rewriting-warning {display:none;}
+
+#header,
+#content,
+.form,
+.actions,
+#footer {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+// Actions
+// .actions{
+// 	margin-top: @padding-large-vertical*4;
+// 	text-transform: uppercase;
+// 	letter-spacing: 1px;
+// 	h3, ul {
+// 		.make-md-column-push(2);
+// 		.make-md-column(8);
+// 	}
+// 	h3 {display: none;
+// 	}
+// 	ul {
+// 		list-style: none;
+// 		border: 1px solid darken(@gray-lighter,10%);
+// 		li {
+// 			border-bottom: 1px solid @gray-lighter;
+// 			font-size: @font-size-small;
+// 			line-height: @line-height-base*2;
+// 			a {
+// 				&:hover {text-decoration: none;}
+// 			}
+// 		}
+// 	}
+// }
+
+// People
+#PersonBirthDay {
+	.make-md-column(1);
+}
+

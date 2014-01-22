@@ -1,0 +1,69 @@
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"]
+{.form-control;}
+
+
+.input {
+	margin-top: @padding-large-vertical;
+	.make-md-column(12);
+	position: relative;
+
+	select,
+	textarea,
+	input {
+		.make-md-column(8);
+	}
+
+	label {
+		.make-md-column(2); 
+		text-align: right;
+	}
+}
+
+.date {
+	select {
+		.make-md-column(2);
+		margin-right:@padding-large-horizontal;
+	}
+}
+
+.control-group {
+	margin-top: @padding-large-vertical*2;
+	.make-md-column(10);
+	text-align: right;
+}
+
+fieldset {
+	legend {
+		.tt;
+	}
+}
+
+
+// Tithe
+
+form#TitheAddForm {
+	#block-value {
+		.make-row;
+		margin:0;
+	}
+	.number {
+		.make-md-column(5);
+		input {.make-md-column(7);}
+		label {.make-md-column(5);}
+	}
+}
