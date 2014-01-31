@@ -1,51 +1,137 @@
-.tt {
-	font-size: @font-size-large;
-	line-height: @line-height-base*2;
-	text-transform: uppercase;
-	letter-spacing: 1px;
+.transition-default {
+	.transition(all 0.15s easy-in-out);
 }
 
-h2 {.tt;}
+.the-log {
+	text-align: center;
+	color: @gray-light;
+	padding-bottom: @padding-large-vertical;
+	font-size: @font-size-small;
+}
+
+.tt {
+	margin-top:0;
+	font-size: @font-size-h2;
+	line-height: @line-height-base * 2;
+	letter-spacing: 1px;
+	color: desaturate(@brand-primary, 30%);
+	display: inline-block;
+}
+
+.tt-g {
+	.make-sm-column(12);
+	border-bottom: 1px solid @gray-lighter;
+}
+
+#nav-date-tithes {
+	float: right;
+	margin-top: 30px;
+	span.the-date {
+		width: 140px;
+	}
+}
 
 #url-rewriting-warning {display:none;}
 
-#header,
-#content,
-.form,
-.actions,
-#footer {
-	position: relative;
-	float: left;
-	width: 100%;
+#content { 
+	border: 1px solid @gray-lighter;
+	margin-top: 70px;
+	border-radius: 4px;
 }
 
-// Actions
-// .actions{
-// 	margin-top: @padding-large-vertical*4;
-// 	text-transform: uppercase;
-// 	letter-spacing: 1px;
-// 	h3, ul {
-// 		.make-md-column-push(2);
-// 		.make-md-column(8);
-// 	}
-// 	h3 {display: none;
-// 	}
-// 	ul {
-// 		list-style: none;
-// 		border: 1px solid darken(@gray-lighter,10%);
-// 		li {
-// 			border-bottom: 1px solid @gray-lighter;
-// 			font-size: @font-size-small;
-// 			line-height: @line-height-base*2;
-// 			a {
-// 				&:hover {text-decoration: none;}
-// 			}
-// 		}
-// 	}
+// #header,
+// #content,
+// .form,
+// .actions,
+// #footer {
+// 	position: relative;
+// 	float: left;
+// 	width: 100%;
 // }
+
+// Actions
+div.actions{
+	width: 240px;
+	margin: 0 auto;
+
+
+	h3 {display: none;}
+
+	h3 {
+		display: block;
+		margin: 40px auto 0;
+		padding: 8px;
+		.square(40px);
+		overflow: hidden;
+		text-indent: -9999px;
+		text-align: center;
+		line-height: 40px;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+		background: @gray-lighter;
+		.menu-icon {
+			content:"";
+			display: block;
+			margin-bottom:4px;
+			border-radius: 2px;
+			.size(24px, 5px);
+			position: relative;
+			background-color: @gray-light;
+
+		}
+	}
+	
+	ul {
+		// display: none;
+		height: 0;
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+		list-style: none;
+		background: @gray-darker;
+		text-transform: uppercase;
+		.transition(all 0.15s ease-in-out 0.3s);
+
+		li {
+			border-bottom: 1px solid @gray-dark;
+			font-size: @font-size-small;
+			line-height: @line-height-base*2;
+			text-align: center;
+			a {
+				color: @gray-light;
+				&:hover {
+					color: white;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	&:hover ul { 
+		// display: block;
+		height: 175px;
+	}
+}
 
 // People
 #PersonBirthDay {
 	.make-md-column(1);
 }
 
+.person-content {
+	dl {
+		dt, dd {
+			padding-top: @padding-small-horizontal;
+			padding-bottom: @padding-small-horizontal;
+		}
+		dt { .make-sm-column(3); }
+		dd { .make-sm-column(9); border-bottom: 1px solid @gray-lighter; }
+	}
+}
+
+
+// Paginação
+.paging {
+	text-align: center;
+	.next:before { left: auto; right: 0;}
+}

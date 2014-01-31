@@ -213,6 +213,12 @@
 <?php endif; ?>
 
 	<div class="actions">
+		<h3>
+			<span class="hide"><?php echo __('Actions'); ?></span>
+			<span class="menu-icon"></span>
+			<span class="menu-icon"></span>
+			<span class="menu-icon"></span>
+		</h3>
 		<ul>
 			<li><?php echo $this->Html->link(__('New Tithe'), array('controller' => 'tithes', 'action' => 'add')); ?> </li>
 		</ul>

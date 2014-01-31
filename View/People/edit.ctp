@@ -47,7 +47,12 @@
 	));?>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3>
+		<span class="hide"><?php echo __('Actions'); ?></span>
+		<span class="menu-icon"></span>
+		<span class="menu-icon"></span>
+		<span class="menu-icon"></span>
+	</h3>
 	<ul>
 
 		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Person.id')), null, __('Are you sure you want to delete # %s?', $this->Form->value('Person.id'))); ?></li>

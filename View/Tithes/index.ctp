@@ -54,58 +54,81 @@
 	$this->Html->addCrumb(__("Tithes"), __("/tithes"));
 ?>
 <div class="tithes index">
-	<h2><?php echo __('Tithes'); ?></h2>
-	<div>
-		<?php echo $this->Html->link(__('<'), array('controller' => 'tithes', $prev_month, $prev_year)); ?>
-		<span><?php echo $meses[$current_month]; ?></span>
-		<?php echo $this->Html->link(__('>'), array('controller' => 'tithes', $next_month, $next_year)); ?>
-	</div>
-	<table cellpadding="0" cellspacing="0">
-	<tr>
-			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('value'); ?></th>
-			<th><?php echo $this->Paginator->sort('month'); ?></th>
-			<th><?php echo $this->Paginator->sort('year'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th><?php echo $this->Paginator->sort('modified'); ?></th>
-			<th><?php echo $this->Paginator->sort('person_id'); ?></th>
-			<th class="actions"><?php echo __('Actions'); ?></th>
-	</tr>
-	<?php foreach ($tithes as $tithe): ?>
-	<tr>
-		<td><?php echo h($tithe['Tithe']['id']); ?>&nbsp;</td>
-		<td><?php echo h($tithe['Tithe']['value']); ?>&nbsp;</td>
-		<td><?php echo h($tithe['Tithe']['month']); ?>&nbsp;</td>
-		<td><?php echo h($tithe['Tithe']['year']); ?>&nbsp;</td>
-		<td><?php echo h($tithe['Tithe']['created']); ?>&nbsp;</td>
-		<td><?php echo h($tithe['Tithe']['modified']); ?>&nbsp;</td>
-		<td>
-			<?php echo $this->Html->link($tithe['Person']['name'], array('controller' => 'people', 'action' => 'view', $tithe['Person']['id'])); ?>
-		</td>
-		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $tithe['Tithe']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $tithe['Tithe']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $tithe['Tithe']['id']), null, __('Are you sure you want to delete # %s?', $tithe['Tithe']['id'])); ?>
-		</td>
-	</tr>
+	<hgroup class="tt-g">
+		<h2 class="tt"><?php echo __('Tithes'); ?></h2>
+		<div id="nav-date-tithes" class="btn-group">
+			<?php echo $this->Html->link(
+				$this->Html->tag('span', '', array('class' => 'glyphicon glyphicon-chevron-left')), 
+				array('controller' => 'tithes', $prev_month, $prev_year), 
+				array('class' => 'btn btn-default', 'escape' => false)
+			); ?>
+			<span class="btn btn-default the-date"><?php echo $meses[$current_month]; ?></span>
+			<?php echo $this->Html->link(
+				$this->Html->tag('span', '', array('class' => 'glyphicon glyphicon-chevron-right')), 
+				array('controller' => 'tithes', $next_month, $next_year), 
+				array('class' => 'btn btn-default', 'escape' => false)
+			); ?>
+		</div>
+	</hgroup>
+	<div class="table-responsive">
+		<table cellpadding="0" cellspacing="0 id="table-tithes" class="table table-hover"">
+		<tr>
+				<th><?php echo $this->Paginator->sort('id'); ?></th>
+				<th><?php echo $this->Paginator->sort('value'); ?></th>
+				<th><?php echo $this->Paginator->sort('month'); ?></th>
+				<th><?php echo $this->Paginator->sort('year'); ?></th>
+				<th><?php echo $this->Paginator->sort('created'); ?></th>
+				<th><?php echo $this->Paginator->sort('modified'); ?></th>
+				<th><?php echo $this->Paginator->sort('person_id'); ?></th>
+				<th class="actions"><?php echo __('Actions'); ?></th>
+		</tr>
+		<?php foreach ($tithes as $tithe): ?>
+		<tr>
+			<td><?php echo h($tithe['Tithe']['id']); ?>&nbsp;</td>
+			<td><?php echo h($tithe['Tithe']['value']); ?>&nbsp;</td>
+			<td><?php echo h($tithe['Tithe']['month']); ?>&nbsp;</td>
+			<td><?php echo h($tithe['Tithe']['year']); ?>&nbsp;</td>
+			<td><?php echo h($tithe['Tithe']['created']); ?>&nbsp;</td>
+			<td><?php echo h($tithe['Tithe']['modified']); ?>&nbsp;</td>
+			<td>
+				<?php echo $this->Html->link($tithe['Person']['name'], array('controller' => 'people', 'action' => 'view', $tithe['Person']['id'])); ?>
+			</td>
+			<td class="actions">
+				<?php echo $this->Html->link(__('View'), array('action' => 'view', $tithe['Tithe']['id'])); ?>
+				<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $tithe['Tithe']['id'])); ?>
+				<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $tithe['Tithe']['id']), null, __('Are you sure you want to delete # %s?', $tithe['Tithe']['id'])); ?>
+			</td>
+		</tr>
 <?php endforeach; ?>
-	</table>
-	<p>
+		</table>
+	</div>
+	<p class="the-log">
 	<?php
 	echo $this->Paginator->counter(array(
 	'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')
 	));
 	?>	</p>
 	<div class="paging">
-	<?php
-		echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));
-		echo $this->Paginator->numbers(array('separator' => ''));
-		echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
-	?>
+		<span class=" glyphicon glyphicon-chevron-left"></span>
+		<?php
+			echo $this->Paginator->prev(__('previous'), array(), null, array('class' => 'prev disabled'));
+		?>
+		<?php
+			echo $this->Paginator->numbers(array('separator' => ''));
+		?>
+		<?php
+			echo $this->Paginator->next(__('next'), array(), null, array('class' => 'next disabled'));
+		?>
+		<span class=" glyphicon glyphicon-chevron-right"></span>
 	</div>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3>
+		<span class="hide"><?php echo __('Actions'); ?></span>
+		<span class="menu-icon"></span>
+		<span class="menu-icon"></span>
+		<span class="menu-icon"></span>
+	</h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('New Tithe'), array('action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('List People'), array('controller' => 'people', 'action' => 'index')); ?> </li>
