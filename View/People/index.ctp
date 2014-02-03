@@ -9,15 +9,14 @@
 		<table cellpadding="0" cellspacing="0" id="table-people" class="table table-hover">
 			<thead>
 				<tr>
-					<th><?php echo $this->Paginator->sort('id'); ?></th>
 					<th><?php echo $this->Paginator->sort('name'); ?></th>
+					<th><?php echo $this->Paginator->sort('tel'); ?></th>
+					<th><?php echo $this->Paginator->sort('cel'); ?></th>
 					<th><?php echo $this->Paginator->sort('birth'); ?></th>
 					<th><?php echo $this->Paginator->sort('street'); ?></th>
 					<th><?php echo $this->Paginator->sort('number'); ?></th>
 					<th><?php echo $this->Paginator->sort('district'); ?></th>
 					<th><?php echo $this->Paginator->sort('cep'); ?></th>
-					<th><?php echo $this->Paginator->sort('tel'); ?></th>
-					<th><?php echo $this->Paginator->sort('cel'); ?></th>
 					<th><?php echo $this->Paginator->sort('email'); ?></th>
 					<th class="actions"><?php echo __('Actions'); ?></th>
 				</tr>
@@ -25,16 +24,15 @@
 			<?php foreach ($people as $person): ?>
 			<tbody>
 				<tr>
-					<td><?php echo h($person['Person']['id']); ?>&nbsp;</td>
-					<td><?php echo h($person['Person']['name']); ?>&nbsp;</td>
-					<td><?php echo h($person['Person']['birth']); ?>&nbsp;</td>
-					<td><?php echo h($person['Person']['street']); ?>&nbsp;</td>
-					<td><?php echo h($person['Person']['number']); ?>&nbsp;</td>
-					<td><?php echo h($person['Person']['district']); ?>&nbsp;</td>
-					<td><?php echo h($person['Person']['cep']); ?>&nbsp;</td>
-					<td><?php echo h($person['Person']['tel']); ?>&nbsp;</td>
-					<td><?php echo h($person['Person']['cel']); ?>&nbsp;</td>
-					<td><?php echo h($person['Person']['email']); ?>&nbsp;</td>
+					<td><?php echo h($person['Person']['name']); ?></td>
+					<td><?php echo h($person['Person']['tel']); ?></td>
+					<td><?php echo h($person['Person']['cel']); ?></td>
+					<td><?php echo h($person['Person']['birth']); ?></td>
+					<td><?php echo h($person['Person']['street']); ?></td>
+					<td><?php echo h($person['Person']['number']); ?></td>
+					<td><?php echo h($person['Person']['district']); ?></td>
+					<td><?php echo h($person['Person']['cep']); ?></td>
+					<td><?php echo h($person['Person']['email']); ?></td>
 					<!-- <td>
 						<?php //echo $this->Html->link($person['Parish']['name'], array('controller' => 'parishes', 'action' => 'view', $person['Parish']['id'])); ?>
 					</td> -->

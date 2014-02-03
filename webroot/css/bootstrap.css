@@ -6580,12 +6580,10 @@ a.act-edit:before:empty,
 a.act-remove:before:empty {
   width: 1em;
 }
-#table-people thead tr th:nth-child(n+4),
-#table-people tbody tr td:nth-child(n+4) {
+#table-people thead tr th:nth-child(n+5),
+#table-people tbody tr td:nth-child(n+5) {
   display: none;
 }
-#table-people thead tr th:nth-child(6),
-#table-people tbody tr td:nth-child(6),
 #table-people thead tr th:last-child,
 #table-people tbody tr td:last-child {
   display: table-cell;
