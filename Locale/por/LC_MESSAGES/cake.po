@@ -275,51 +275,51 @@ msgstr ""
 
 #: View/Helper/FormHelper.php:2763
 msgid "January"
-msgstr ""
+msgstr "Janeiro"
 
 #: View/Helper/FormHelper.php:2764
 msgid "February"
-msgstr ""
+msgstr "Fevereiro"
 
 #: View/Helper/FormHelper.php:2765
 msgid "March"
-msgstr ""
+msgstr "Março"
 
 #: View/Helper/FormHelper.php:2766
 msgid "April"
-msgstr ""
+msgstr "Abril"
 
 #: View/Helper/FormHelper.php:2767
 msgid "May"
-msgstr ""
+msgstr "Maio"
 
 #: View/Helper/FormHelper.php:2768
 msgid "June"
-msgstr ""
+msgstr "Junho"
 
 #: View/Helper/FormHelper.php:2769
 msgid "July"
-msgstr ""
+msgstr "Julho"
 
 #: View/Helper/FormHelper.php:2770
 msgid "August"
-msgstr ""
+msgstr "Agosto"
 
 #: View/Helper/FormHelper.php:2771
 msgid "September"
-msgstr ""
+msgstr "Setembro"
 
 #: View/Helper/FormHelper.php:2772
 msgid "October"
-msgstr ""
+msgstr "Outubro"
 
 #: View/Helper/FormHelper.php:2773
 msgid "November"
-msgstr ""
+msgstr "Novembro"
 
 #: View/Helper/FormHelper.php:2774
 msgid "December"
-msgstr ""
+msgstr "Dezembro"
 
 #: View/Helper/HtmlHelper.php:767
 msgid "Home"

@@ -23,6 +23,12 @@ class PeopleController extends AppController {
  */
 	public function index() {
 		$this->Person->recursive = 0;
+		$this->Paginator->settings = array(
+		        'limit' => 10,
+		        'order' => array(
+							'Person.name' => 'asc'
+						)
+		);
 		$this->set('people', $this->Paginator->paginate());
 	}
 

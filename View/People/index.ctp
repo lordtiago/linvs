@@ -27,7 +27,7 @@
 					<td><?php echo h($person['Person']['name']); ?></td>
 					<td><?php echo h($person['Person']['tel']); ?></td>
 					<td><?php echo h($person['Person']['cel']); ?></td>
-					<td><?php echo h($person['Person']['birth']); ?></td>
+					<td><?php echo h($this->Time->format('d/m/Y',$person['Person']['birth'])); ?></td>
 					<td><?php echo h($person['Person']['street']); ?></td>
 					<td><?php echo h($person['Person']['number']); ?></td>
 					<td><?php echo h($person['Person']['district']); ?></td>
@@ -66,18 +66,22 @@
 		<span class=" glyphicon glyphicon-chevron-right"></span>
 	</div>
 </div>
-<div class="actions">
-	<h3>
-		<span class="hide"><?php echo __('Actions'); ?></span>
-		<span class="menu-icon"></span>
-		<span class="menu-icon"></span>
-		<span class="menu-icon"></span>
-	</h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('New Person'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Parishes'), array('controller' => 'parishes', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Parish'), array('controller' => 'parishes', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Tithes'), array('controller' => 'tithes', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Tithe'), array('controller' => 'tithes', 'action' => 'add')); ?> </li>
-	</ul>
-</div>
+<ul id="smart-menu">
+	<li><?php echo $this->Html->link(__('New Person'), array('action' => 'add')); ?></li>
+	<li><?php echo $this->Html->link(__('List Tithes'), array('controller' => 'tithes', 'action' => 'index')); ?> </li>
+	<li><?php echo $this->Html->link(__('New Tithe'), array('controller' => 'tithes', 'action' => 'add')); ?> </li>
+</ul>
+<!-- 
+<style>
+#smart-menu {
+    display: none;
+    position: absolute;
+    padding: 10px;
+	list-style: none;
+    background-color: #000;
+    border: 1px solid #000;
+	border-radius: 5px;
+}
+#smart-menu li {padding: 5px;}
+</style>
+-->

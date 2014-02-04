@@ -12,7 +12,7 @@
 		</dd>
 		<dt><?php echo __('Value'); ?></dt>
 		<dd>
-			<?php echo h($tithe['Tithe']['value']); ?>
+			<?php echo "R$ ".h($tithe['Tithe']['value']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Month'); ?></dt>
@@ -42,14 +42,7 @@
 		</dd>
 	</dl>
 </div>
-<div class="actions">
-	<h3>
-		<span class="hide"><?php echo __('Actions'); ?></span>
-		<span class="menu-icon"></span>
-		<span class="menu-icon"></span>
-		<span class="menu-icon"></span>
-	</h3>
-	<ul>
+	<ul id="smart-menu">
 		<li><?php echo $this->Html->link(__('Edit Tithe'), array('action' => 'edit', $tithe['Tithe']['id'])); ?> </li>
 		<li><?php echo $this->Form->postLink(__('Delete Tithe'), array('action' => 'delete', $tithe['Tithe']['id']), null, __('Are you sure you want to delete # %s?', $tithe['Tithe']['id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('List Tithes'), array('action' => 'index')); ?> </li>
@@ -57,4 +50,3 @@
 		<li><?php echo $this->Html->link(__('List People'), array('controller' => 'people', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Person'), array('controller' => 'people', 'action' => 'add')); ?> </li>
 	</ul>
-</div>

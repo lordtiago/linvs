@@ -6588,3 +6588,13 @@ a.act-remove:before:empty {
 #table-people tbody tr td:last-child {
   display: table-cell;
 }
+#smart-menu {
+    display: none;
+    position: absolute;
+    padding: 10px;
+	list-style: none;
+    background-color: #000;
+    border: 1px solid #000;
+	border-radius: 5px;
+}
+#smart-menu li {padding: 5px;}

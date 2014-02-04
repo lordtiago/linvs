@@ -14,7 +14,7 @@ $this->Html->addCrumb(__("Add"), __("/people/add"));
 		<legend><?php echo __('Add Person'); ?></legend>
 	<?php
 		echo $this->Form->input('name');
-		echo $this->Form->input('birth',array('minYear' => 1900,'dateFormat' => 'DMY'));
+		echo $this->Form->input('birth',array('minYear' => 1900,'dateFormat' => 'DMY','separator' => '<span>/</span>'));
 		echo $this->Form->input('cpf');
 		echo $this->Form->input('rg');
 		echo $this->Form->input('cep');
@@ -47,19 +47,8 @@ $this->Html->addCrumb(__("Add"), __("/people/add"));
 ));?>
 
 </div>
-<div class="actions">
-	<h3>
-		<span class="hide"><?php echo __('Actions'); ?></span>
-		<span class="menu-icon"></span>
-		<span class="menu-icon"></span>
-		<span class="menu-icon"></span>
-	</h3>
-	<ul>
-
+	<ul id="smart-menu">
 		<li><?php echo $this->Html->link(__('List People'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Parishes'), array('controller' => 'parishes', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Parish'), array('controller' => 'parishes', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Tithes'), array('controller' => 'tithes', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Tithe'), array('controller' => 'tithes', 'action' => 'add')); ?> </li>
 	</ul>
-</div>

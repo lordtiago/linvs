@@ -32,18 +32,10 @@
 	    'after' => '</div>'
 	));?>
 </div>
-<div class="actions">
-	<h3>
-		<span class="hide"><?php echo __('Actions'); ?></span>
-		<span class="menu-icon"></span>
-		<span class="menu-icon"></span>
-		<span class="menu-icon"></span>
-	</h3>
-	<ul>
+	<ul id="smart-menu">
 
 		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Tithe.id')), null, __('Are you sure you want to delete # %s?', $this->Form->value('Tithe.id'))); ?></li>
 		<li><?php echo $this->Html->link(__('List Tithes'), array('action' => 'index')); ?></li>
 		<li><?php echo $this->Html->link(__('List People'), array('controller' => 'people', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Person'), array('controller' => 'people', 'action' => 'add')); ?> </li>
 	</ul>
-</div>

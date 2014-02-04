@@ -36,17 +36,9 @@
     'after' => '</div>'
 ));?>
 </div>
-<div class="actions">
-	<h3>
-		<span class="hide"><?php echo __('Actions'); ?></span>
-		<span class="menu-icon"></span>
-		<span class="menu-icon"></span>
-		<span class="menu-icon"></span>
-	</h3>
-	<ul>
+	<ul id="smart-menu">
 
 		<li><?php echo $this->Html->link(__('List Tithes'), array('action' => 'index')); ?></li>
 		<li><?php echo $this->Html->link(__('List People'), array('controller' => 'people', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Person'), array('controller' => 'people', 'action' => 'add')); ?> </li>
 	</ul>
-</div>

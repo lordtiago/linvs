@@ -39,6 +39,7 @@ $cakeDescription = __d('cake_dev', 'LINVS - Sistema de Gerenciamento Paroquial')
 		echo $this->fetch('script');
 		
 		echo $this->Html->script('jquery-1.10.2.min');
+		echo $this->Html->script('smart-menu');
 	?>
 </head>
 <body>
@@ -53,14 +54,15 @@ $cakeDescription = __d('cake_dev', 'LINVS - Sistema de Gerenciamento Paroquial')
 			      <span class="icon-bar"></span>
 			      <span class="icon-bar"></span>
 			    </button>
-			    <a class="navbar-brand" href="http://localhost/linvs">LINVS</a>
+			    <a class="navbar-brand" href="<?php echo Router::url('/', true); ?>">LINVS</a>
 			  </div>
 
 			  <!-- Collect the nav links, forms, and other content for toggling -->
 			  <div class="collapse navbar-collapse" id="linvs-nav">
 			    <ul class="nav navbar-nav">
-			    	<li><a href="http://localhost/linvs/dizimo">Dízimo</a></li>
-			    	<li><a href="http://localhost/linvs/people">Pessoas</a></li>
+					<li><?php echo$this->Html->link(__("People"), array('action' => 'index', "controller"=>"people")); ?></li>
+			    	<li><?php echo$this->Html->link(__("Tithe"), array('action' => 'index', "controller"=>"tithes")); ?></li>
+			    	
 			    </ul>
 			  </div><!-- /.navbar-collapse -->
 			</nav>

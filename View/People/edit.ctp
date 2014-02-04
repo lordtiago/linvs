@@ -14,7 +14,7 @@
 	<?php
 		echo $this->Form->input('id');
 		echo $this->Form->input('name');
-		echo $this->Form->input('birth',array('minYear' => date('Y') - 100,'dateFormat' => 'DMY'));
+		echo $this->Form->input('birth',array('minYear' => 1900,'dateFormat' => 'DMY','monthNames' => true,'separator' => '<span>/</span>'));
 		echo $this->Form->input('cpf');
 		echo $this->Form->input('rg');
 		echo $this->Form->input('street');
@@ -46,15 +46,7 @@
 	    'after' => '</div>'
 	));?>
 </div>
-<div class="actions">
-	<h3>
-		<span class="hide"><?php echo __('Actions'); ?></span>
-		<span class="menu-icon"></span>
-		<span class="menu-icon"></span>
-		<span class="menu-icon"></span>
-	</h3>
-	<ul>
-
+	<ul id="smart-menu">
 		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Person.id')), null, __('Are you sure you want to delete # %s?', $this->Form->value('Person.id'))); ?></li>
 		<li><?php echo $this->Html->link(__('List People'), array('action' => 'index')); ?></li>
 		<li><?php echo $this->Html->link(__('List Parishes'), array('controller' => 'parishes', 'action' => 'index')); ?> </li>
@@ -62,4 +54,3 @@
 		<li><?php echo $this->Html->link(__('List Tithes'), array('controller' => 'tithes', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Tithe'), array('controller' => 'tithes', 'action' => 'add')); ?> </li>
 	</ul>
-</div>

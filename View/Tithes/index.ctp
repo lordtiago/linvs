@@ -77,19 +77,15 @@
 				<th><?php echo $this->Paginator->sort('value'); ?></th>
 				<th><?php echo $this->Paginator->sort('month'); ?></th>
 				<th><?php echo $this->Paginator->sort('year'); ?></th>
-				<th><?php echo $this->Paginator->sort('created'); ?></th>
-				<th><?php echo $this->Paginator->sort('modified'); ?></th>
 				<th><?php echo $this->Paginator->sort('person_id'); ?></th>
 				<th class="actions"><?php echo __('Actions'); ?></th>
 		</tr>
 		<?php foreach ($tithes as $tithe): ?>
 		<tr>
-			<td><?php echo h($tithe['Tithe']['id']); ?>&nbsp;</td>
-			<td><?php echo h($tithe['Tithe']['value']); ?>&nbsp;</td>
-			<td><?php echo h($tithe['Tithe']['month']); ?>&nbsp;</td>
-			<td><?php echo h($tithe['Tithe']['year']); ?>&nbsp;</td>
-			<td><?php echo h($tithe['Tithe']['created']); ?>&nbsp;</td>
-			<td><?php echo h($tithe['Tithe']['modified']); ?>&nbsp;</td>
+			<td><?php echo h($tithe['Tithe']['id']); ?></td>
+			<td><?php echo "R$ ".h($tithe['Tithe']['value']); ?></td>
+			<td><?php echo h($tithe['Tithe']['month']); ?></td>
+			<td><?php echo h($tithe['Tithe']['year']); ?></td>
 			<td>
 				<?php echo $this->Html->link($tithe['Person']['name'], array('controller' => 'people', 'action' => 'view', $tithe['Person']['id'])); ?>
 			</td>
@@ -122,16 +118,8 @@
 		<span class=" glyphicon glyphicon-chevron-right"></span>
 	</div>
 </div>
-<div class="actions">
-	<h3>
-		<span class="hide"><?php echo __('Actions'); ?></span>
-		<span class="menu-icon"></span>
-		<span class="menu-icon"></span>
-		<span class="menu-icon"></span>
-	</h3>
-	<ul>
+	<ul id="smart-menu">
 		<li><?php echo $this->Html->link(__('New Tithe'), array('action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('List People'), array('controller' => 'people', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Person'), array('controller' => 'people', 'action' => 'add')); ?> </li>
 	</ul>
-</div>
