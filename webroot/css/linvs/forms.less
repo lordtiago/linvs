@@ -19,19 +19,22 @@ input[type="color"]
 
 .input {
 	margin-top: @padding-large-vertical;
-	.make-md-column(12);
+	.make-md-column-pull(1);
+	.make-md-column-push(1);
+	.make-md-column(10);
 	position: relative;
+	float: left;
 
 	select,
 	textarea,
-	input {
-		.make-md-column(8);
+	input,
+	label {
+		position: relative;
+		float: left;
+		width: 100%;
 	}
 
-	label {
-		.make-md-column(2); 
-		text-align: right;
-	}
+	label {text-indent: 3px;}
 }
 
 .date {
@@ -39,12 +42,17 @@ input[type="color"]
 		.make-md-column(2);
 		margin-right:@padding-large-horizontal;
 	}
+	span {
+		float: left;
+		padding: 8px 16px 0 0;
+	}
 }
 
 .control-group {
 	margin-top: @padding-large-vertical*2;
 	.make-md-column(10);
 	text-align: right;
+	float: none !important;
 }
 
 fieldset {
@@ -53,6 +61,21 @@ fieldset {
 	}
 }
 
+.number,
+.uf { .make-md-column(1); }
+
+.district,
+.country { .make-md-column(3); }
+
+.rg,
+.cpf,
+.tel,
+.cel,
+.cel2,
+.email { .make-md-column(5); }
+
+.street,
+.city { .make-md-column(6); }
 
 // Tithe
 

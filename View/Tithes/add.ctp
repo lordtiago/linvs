@@ -12,7 +12,9 @@
 <div class="tithes form">
 <?php echo $this->Form->create('Tithe'); ?>
 	<fieldset>
-		<legend><?php echo __('Add Tithe'); ?></legend>
+		<hgroup class="tt-g">
+			<legend class="tt"><?php echo __('Add Tithe'); ?></legend>
+		</hgroup>
 	<div id="block-value">
 	<?php
 		echo $this->Form->input('value', array('type' => 'text'));

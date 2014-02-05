@@ -6030,7 +6030,6 @@ td.visible-print {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  border-bottom: 1px solid #eeeeee;
 }
 @media (min-width: 768px) {
   .tt-g {
@@ -6051,6 +6050,7 @@ td.visible-print {
 #content {
   border: 1px solid #eeeeee;
   margin-top: 70px;
+  padding-bottom: 40px;
   border-radius: 4px;
 }
 div.actions {
@@ -6159,6 +6159,31 @@ div.actions:hover ul {
 .paging .next:before {
   left: auto;
   right: 0;
+}
+#smart-menu {
+  display: none;
+  position: absolute;
+  padding: 10px;
+  list-style: none;
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+#smart-menu li {
+  padding: 5px;
+}
+.message,
+.breadcrumb {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.message {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: #5cb85c;
+  color: #060f06;
 }
 select,
 textarea,
@@ -6361,41 +6386,34 @@ textareainput[type="color"] {
   padding-left: 15px;
   padding-right: 15px;
   position: relative;
+  float: left;
+}
+@media (min-width: 992px) {
+  .input {
+    right: 8.333333333333332%;
+  }
+}
+@media (min-width: 992px) {
+  .input {
+    left: 8.333333333333332%;
+  }
 }
 @media (min-width: 992px) {
   .input {
     float: left;
-    width: 100%;
+    width: 83.33333333333334%;
   }
 }
 .input select,
 .input textarea,
-.input input {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 992px) {
-  .input select,
-  .input textarea,
-  .input input {
-    float: left;
-    width: 66.66666666666666%;
-  }
-}
+.input input,
 .input label {
   position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  text-align: right;
+  float: left;
+  width: 100%;
 }
-@media (min-width: 992px) {
-  .input label {
-    float: left;
-    width: 16.666666666666664%;
-  }
+.input label {
+  text-indent: 3px;
 }
 .date select {
   position: relative;
@@ -6410,6 +6428,10 @@ textareainput[type="color"] {
     width: 16.666666666666664%;
   }
 }
+.date span {
+  float: left;
+  padding: 8px 16px 0 0;
+}
 .control-group {
   margin-top: 20px;
   position: relative;
@@ -6417,6 +6439,7 @@ textareainput[type="color"] {
   padding-left: 15px;
   padding-right: 15px;
   text-align: right;
+  float: none !important;
 }
 @media (min-width: 992px) {
   .control-group {
@@ -6431,6 +6454,70 @@ fieldset legend {
   letter-spacing: 1px;
   color: #6688a6;
   display: inline-block;
+}
+.number,
+.uf {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .number,
+  .uf {
+    float: left;
+    width: 8.333333333333332%;
+  }
+}
+.district,
+.country {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .district,
+  .country {
+    float: left;
+    width: 25%;
+  }
+}
+.rg,
+.cpf,
+.tel,
+.cel,
+.cel2,
+.email {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .rg,
+  .cpf,
+  .tel,
+  .cel,
+  .cel2,
+  .email {
+    float: left;
+    width: 41.66666666666667%;
+  }
+}
+.street,
+.city {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .street,
+  .city {
+    float: left;
+    width: 50%;
+  }
 }
 form#TitheAddForm #block-value {
   margin-left: -15px;
@@ -6588,13 +6675,3 @@ a.act-remove:before:empty {
 #table-people tbody tr td:last-child {
   display: table-cell;
 }
-#smart-menu {
-    display: none;
-    position: absolute;
-    padding: 10px;
-	list-style: none;
-    background-color: #000;
-    border: 1px solid #000;
-	border-radius: 5px;
-}
-#smart-menu li {padding: 5px;}

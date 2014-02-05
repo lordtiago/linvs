@@ -20,7 +20,7 @@
 
 .tt-g {
 	.make-sm-column(12);
-	border-bottom: 1px solid @gray-lighter;
+	// border-bottom: 1px solid @gray-lighter;
 }
 
 #nav-date-tithes {
@@ -36,18 +36,10 @@
 #content { 
 	border: 1px solid @gray-lighter;
 	margin-top: 70px;
+	padding-bottom: 40px;
 	border-radius: 4px;
 }
 
-// #header,
-// #content,
-// .form,
-// .actions,
-// #footer {
-// 	position: relative;
-// 	float: left;
-// 	width: 100%;
-// }
 
 // Actions
 div.actions{
@@ -134,4 +126,30 @@ div.actions{
 .paging {
 	text-align: center;
 	.next:before { left: auto; right: 0;}
+}
+
+#smart-menu {
+	display: none;
+	position: absolute;
+	padding: 10px;
+	list-style: none;
+	background-color: #000;
+	border: 1px solid #000;
+	border-radius: 5px;
+}
+#smart-menu li {padding: 5px;}
+
+.message,
+.breadcrumb {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+.message {
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: @brand-success;
+	color: darken(@brand-success, 50%);
 }

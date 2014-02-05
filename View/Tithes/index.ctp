@@ -90,9 +90,9 @@
 				<?php echo $this->Html->link($tithe['Person']['name'], array('controller' => 'people', 'action' => 'view', $tithe['Person']['id'])); ?>
 			</td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('action' => 'view', $tithe['Tithe']['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $tithe['Tithe']['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $tithe['Tithe']['id']), null, __('Are you sure you want to delete # %s?', $tithe['Tithe']['id'])); ?>
+				<?php echo $this->Html->link(__('View'), array('action' => 'view', $tithe['Tithe']['id']), array('class' => 'act-view', 'title' => __('View'))); ?>
+				<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $tithe['Tithe']['id']), array('class' => 'act-edit', 'title' => __('Edit'))); ?>
+				<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $tithe['Tithe']['id']), array('class' => 'act-remove', 'title' => __('Delete')), null, __('Are you sure you want to delete # %s?', $tithe['Tithe']['id'])); ?>
 			</td>
 		</tr>
 <?php endforeach; ?>
