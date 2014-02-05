@@ -69,7 +69,7 @@ msgstr "Paroquianos"
 #: View/People/add.ctp:8
 #: View/People/edit.ctp:7
 #: View/People/index.ctp:2
-#: View/People/view.ctp:5
+#: View/People/view.ctp:5f
 msgid "/people"
 msgstr "/pessoa"
 
@@ -327,6 +327,9 @@ msgstr "Paróquia"
 
 #: View/People/view.ctp:120
 msgid "Father"
+msgstr "Filiação"
+#: View/People/view.ctp:223
+msgid "Father2"
 msgstr "Filiação"
 
 #: View/People/view.ctp:123;131;145;159

@@ -42,14 +42,14 @@ class Person extends AppModel {
 			),
 		),
 		'uf' => array(
-			'maxLength' => array(
-				'rule' => array('maxLength', 2)
+			/*'maxLength' => array(
+				'rule' => array('maxLength', 2),
 				//'message' => 'Your custom message here',
 				//'allowEmpty' => false,
-				//'required' => false,
+				'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
+			),*/
 		),
 		'email' => array(
 			'email' => array(

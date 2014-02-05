@@ -3,7 +3,7 @@
 ?>
 <div class="people index">
 	<hgroup class="tt-g">
-		<h2 class="tt"><?php echo __('People'); ?></h2>
+		<h2 class="tt"><?php echo __('People'); ?></h2><?php echo $this->Html->link(__('+'), array('action' => 'add')); ?>
 	</hgroup>
 	<div class="table-responsive">
 		<table cellpadding="0" cellspacing="0" id="table-people" class="table table-hover">
@@ -37,7 +37,7 @@
 						<?php //echo $this->Html->link($person['Parish']['name'], array('controller' => 'parishes', 'action' => 'view', $person['Parish']['id'])); ?>
 					</td> -->
 					<td class="actions">
-						<?php echo $this->Html->link(__('View'), array('action' => 'view', $person['Person']['id']), array('class' => 'act-view', 'title' => __('View'))); ?>
+	<?php echo $this->Html->link(__('View'), array('action' => 'view', $person['Person']['id']), array('class' => 'act-view', 'title' => __('View'))); ?>
 						<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $person['Person']['id']), array('class' => 'act-edit', 'title' => __('Edit'))); ?>
 						<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $person['Person']['id']), array('class' => 'act-remove', 'title' => __('Delete')), null, __('Are you sure you want to delete # %s?', $person['Person']['id'])); ?>
 					</td>

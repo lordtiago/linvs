@@ -49,6 +49,8 @@ class PeopleController extends AppController {
 		$options3 = array('conditions' => array('Person.' . $this->Person->primaryKey => $person['Person']['father2_id']));
 		$options4 = array('conditions' => array('Person.' . $this->Person->primaryKey => $person['Person']['spouse_id']));
 		$options_child = array('conditions' => array('Person.father_id' => $person['Person']['id']));
+		$options_child2 = array('conditions' => array('Person.father2_id' => $person['Person']['id']));
+		$options_child = array_merge($options_child, $options_child2);
 		$this->set(compact('person'));
 		$this->set('father', $this->Person->find('first', $options2));
 		$this->set('father2', $this->Person->find('first', $options3));
