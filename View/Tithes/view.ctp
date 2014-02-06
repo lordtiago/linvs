@@ -3,7 +3,9 @@
 	$this->Html->addCrumb(__("View"), __("/tithes/view"));  
 ?>
 <div class="tithes view">
-<h2><?php echo __('Tithe'); ?></h2>
+	<hgroup class="tt-g">
+		<h2 class="tt"><?php echo __('Tithe'); ?></h2>
+	</hgroup>
 	<dl>
 		<dt><?php echo __('Id'); ?></dt>
 		<dd>

@@ -15,12 +15,8 @@
 		<hgroup class="tt-g">
 			<legend class="tt"><?php echo __('Add Tithe'); ?></legend>
 		</hgroup>
-	<div id="block-value">
 	<?php
 		echo $this->Form->input('value', array('type' => 'text'));
-	?>
-	</div>
-	<?php
 		echo $this->Form->input('month');
 		echo $this->Form->input('year');
 		echo $this->Form->input('person_id');

@@ -6048,6 +6048,8 @@ td.visible-print {
   display: none;
 }
 #content {
+  display: table;
+  width: 100%;
   border: 1px solid #eeeeee;
   margin-top: 70px;
   padding-bottom: 40px;
@@ -6123,36 +6125,6 @@ div.actions:hover ul {
     width: 8.333333333333332%;
   }
 }
-.person-content dl dt,
-.person-content dl dd {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.person-content dl dt {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  .person-content dl dt {
-    float: left;
-    width: 25%;
-  }
-}
-.person-content dl dd {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-bottom: 1px solid #eeeeee;
-}
-@media (min-width: 768px) {
-  .person-content dl dd {
-    float: left;
-    width: 75%;
-  }
-}
 .paging {
   text-align: center;
 }
@@ -6184,6 +6156,57 @@ div.actions:hover ul {
   padding-bottom: 5px;
   background: #5cb85c;
   color: #060f06;
+}
+.view dl {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .view dl {
+    float: left;
+    width: 83.33333333333334%;
+  }
+}
+@media (min-width: 768px) {
+  .view dl {
+    right: 8.333333333333332%;
+  }
+}
+@media (min-width: 768px) {
+  .view dl {
+    left: 8.333333333333332%;
+  }
+}
+.view dl dt {
+  padding-top: 10px;
+  border-top: 1px solid #eeeeee;
+  text-indent: 30px;
+}
+.view dl dd {
+  padding-bottom: 10px;
+  text-indent: 30px;
+}
+#footer {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  #footer {
+    float: left;
+    width: 100%;
+  }
+}
+.related {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.add {
+  margin: -10px 0 0 10px;
 }
 select,
 textarea,
@@ -6519,30 +6542,17 @@ fieldset legend {
     width: 50%;
   }
 }
-form#TitheAddForm #block-value {
-  margin-left: -15px;
-  margin-right: -15px;
-  margin: 0;
+form#TitheAddForm .text {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-form#TitheAddForm #block-value:before,
-form#TitheAddForm #block-value:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-form#TitheAddForm #block-value:after {
-  clear: both;
-}
-form#TitheAddForm #block-value:before,
-form#TitheAddForm #block-value:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-form#TitheAddForm #block-value:after {
-  clear: both;
+@media (min-width: 992px) {
+  form#TitheAddForm .text {
+    float: left;
+    width: 33.33333333333333%;
+  }
 }
 form#TitheAddForm .number {
   position: relative;
@@ -6553,31 +6563,7 @@ form#TitheAddForm .number {
 @media (min-width: 992px) {
   form#TitheAddForm .number {
     float: left;
-    width: 41.66666666666667%;
-  }
-}
-form#TitheAddForm .number input {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 992px) {
-  form#TitheAddForm .number input {
-    float: left;
-    width: 58.333333333333336%;
-  }
-}
-form#TitheAddForm .number label {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 992px) {
-  form#TitheAddForm .number label {
-    float: left;
-    width: 41.66666666666667%;
+    width: 25%;
   }
 }
 a.asc:before {

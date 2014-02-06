@@ -55,7 +55,7 @@
 ?>
 <div class="tithes index">
 	<hgroup class="tt-g">
-		<h2 class="tt"><?php echo __('Tithes'); ?></h2><?php echo $this->Html->link(__('+'), array('action' => 'add')); ?>
+		<h2 class="tt"><?php echo __('Tithes'); ?></h2><?php echo $this->Html->link(__('+'), array('action' => 'add'), array('class' => 'add glyphicon btn btn-primary')); ?>
 		<div id="nav-date-tithes" class="btn-group">
 			<?php echo $this->Html->link(
 				$this->Html->tag('span', '', array('class' => 'glyphicon glyphicon-chevron-left')), 

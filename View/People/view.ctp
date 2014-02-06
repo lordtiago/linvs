@@ -178,17 +178,19 @@
 <div class="related">
 	<h3><?php echo __('Related Tithes'); ?></h3>
 	<?php if (!empty($person['Tithe'])): ?>
-	<table cellpadding = "0" cellspacing = "0">
-	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Value'); ?></th>
-		<th><?php echo __('Month'); ?></th>
-		<th><?php echo __('Year'); ?></th>
-		<th><?php echo __('Created'); ?></th>
-		<th><?php echo __('Modified'); ?></th>
-		<th><?php echo __('Person Id'); ?></th>
-		<th class="actions"><?php echo __('Actions'); ?></th>
-	</tr>
+	<table cellpadding = "0" cellspacing = "0" class="table table-hover">
+		<thead>
+			<tr>
+				<th><?php echo __('Id'); ?></th>
+				<th><?php echo __('Value'); ?></th>
+				<th><?php echo __('Month'); ?></th>
+				<th><?php echo __('Year'); ?></th>
+				<th><?php echo __('Created'); ?></th>
+				<th><?php echo __('Modified'); ?></th>
+				<th><?php echo __('Person Id'); ?></th>
+				<th class="actions"><?php echo __('Actions'); ?></th>
+			</tr>
+		</thead>
 	<?php foreach ($person['Tithe'] as $tithe): ?>
 		<tr>
 			<td><?php echo $tithe['id']; ?></td>
@@ -199,9 +201,9 @@
 			<td><?php echo $tithe['modified']; ?></td>
 			<td><?php echo $tithe['person_id']; ?></td>
 			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'tithes', 'action' => 'view', $tithe['id'])); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'tithes', 'action' => 'edit', $tithe['id'])); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'tithes', 'action' => 'delete', $tithe['id']), null, __('Are you sure you want to delete # %s?', $tithe['id'])); ?>
+				<?php echo $this->Html->link(__('View'), array('controller' => 'tithes', 'action' => 'view', $tithe['id']), array('class' => 'act-view', 'title' => __('View'))); ?>
+				<?php echo $this->Html->link(__('Edit'), array('controller' => 'tithes', 'action' => 'edit', $tithe['id']), array('class' => 'act-edit', 'title' => __('Edit'))); ?>
+				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'tithes', 'action' => 'delete', $tithe['id']), array('class' => 'act-remove', 'title' => __('Delete')), null, __('Are you sure you want to delete # %s?', $tithe['id'])); ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>

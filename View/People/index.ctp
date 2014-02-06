@@ -3,7 +3,7 @@
 ?>
 <div class="people index">
 	<hgroup class="tt-g">
-		<h2 class="tt"><?php echo __('People'); ?></h2><?php echo $this->Html->link(__('+'), array('action' => 'add')); ?>
+		<h2 class="tt"><?php echo __('People'); ?></h2><?php echo $this->Html->link(__('+'), array('action' => 'add'), array('class' => 'add glyphicon btn btn-primary')); ?>
 	</hgroup>
 	<div class="table-responsive">
 		<table cellpadding="0" cellspacing="0" id="table-people" class="table table-hover">

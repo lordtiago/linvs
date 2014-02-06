@@ -34,6 +34,8 @@
 #url-rewriting-warning {display:none;}
 
 #content { 
+	display: table;
+	width: 100%;
 	border: 1px solid @gray-lighter;
 	margin-top: 70px;
 	padding-bottom: 40px;
@@ -74,7 +76,6 @@ div.actions{
 	}
 	
 	ul {
-		// display: none;
 		height: 0;
 		margin: 0;
 		overflow: hidden;
@@ -100,7 +101,6 @@ div.actions{
 	}
 
 	&:hover ul { 
-		// display: block;
 		height: 175px;
 	}
 }
@@ -110,16 +110,7 @@ div.actions{
 	.make-md-column(1);
 }
 
-.person-content {
-	dl {
-		dt, dd {
-			padding-top: @padding-small-horizontal;
-			padding-bottom: @padding-small-horizontal;
-		}
-		dt { .make-sm-column(3); }
-		dd { .make-sm-column(9); border-bottom: 1px solid @gray-lighter; }
-	}
-}
+
 
 
 // Paginação
@@ -152,4 +143,39 @@ div.actions{
 	padding-bottom: 5px;
 	background: @brand-success;
 	color: darken(@brand-success, 50%);
+}
+
+.view {
+	dl {
+		position: relative;
+		.make-sm-column(10);
+		.make-sm-column-pull(1);
+		.make-sm-column-push(1);
+
+
+		dt {
+			padding-top: @padding-small-horizontal;
+			border-top: 1px solid @gray-lighter;
+			text-indent: 30px;
+		}
+		dd {
+			padding-bottom: @padding-small-horizontal;
+			text-indent: 30px;
+		}
+	}
+}
+
+#footer {
+	position: relative;
+	.make-sm-column(12);
+}
+
+.related {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+.add {
+	margin: -10px 0 0 10px;
 }
