@@ -1,5 +1,53 @@
+@navbar-inverse-link-color: #90B4D3;
+@navbar-inverse-bg: #051B2E;
+@navbar-inverse-border: darken(@navbar-inverse-bg, 2%);
 .transition-default {
 	.transition(all 0.15s easy-in-out);
+}
+
+.navbar-inverse .navbar-brand {
+	font-family: @font-family-serif;
+	font-size: 36px;
+	height: 91px;
+	line-height: 61px;
+	padding-right: 30px;
+	color: lighten(@navbar-inverse-bg, 20%);
+}
+
+.navbar-nav {
+	li {
+		text-align: center;
+		.transition-default;
+		i {
+			color: lighten(@navbar-inverse-bg, 20%);
+			font-size: 36px;
+			padding-top: 15px;
+			.transition-default;
+		}
+		a { padding: 0 30px 15px; }
+		&:hover {
+			background: darken(@navbar-inverse-bg, 2%);
+			i { color: @brand-primary; }
+		}
+	}
+}
+
+#footer {
+	text-align: right;
+	margin-top: 20px;
+	font-size: 13px;
+	color: darken(@gray-light, 10%);
+	p {margin:0;}
+	.marca {
+		font-family:@font-family-serif;
+	}
+	.developers {
+		color: @gray-light;
+		a {
+			color: darken(@gray-light, 10%);
+			&:hover {color: @gray; text-decoration: none;}
+		}
+	}
 }
 
 .the-log {
@@ -37,7 +85,7 @@
 	display: table;
 	width: 100%;
 	border: 1px solid @gray-lighter;
-	margin-top: 70px;
+	margin-top: 100px;
 	padding-bottom: 40px;
 	border-radius: 4px;
 }
@@ -124,8 +172,8 @@ div.actions{
 	position: absolute;
 	padding: 10px;
 	list-style: none;
-	background-color: #000;
-	border: 1px solid #000;
+	background-color: @navbar-inverse-bg;
+	border: 1px solid @navbar-inverse-bg;
 	border-radius: 5px;
 }
 #smart-menu li {padding: 5px;}

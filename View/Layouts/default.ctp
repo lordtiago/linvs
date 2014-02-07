@@ -60,8 +60,8 @@ $cakeDescription = __d('cake_dev', 'LINVS - Sistema de Gerenciamento Paroquial')
 			  <!-- Collect the nav links, forms, and other content for toggling -->
 			  <div class="collapse navbar-collapse" id="linvs-nav">
 			    <ul class="nav navbar-nav">
-					<li><?php echo$this->Html->link(__("People"), array('action' => 'index', "controller"=>"people")); ?></li>
-			    	<li><?php echo$this->Html->link(__("Tithe"), array('action' => 'index', "controller"=>"tithes")); ?></li>
+					<li><i class="glyphicon glyphicon-user"></i><?php echo$this->Html->link(__("People"), array('action' => 'index', "controller"=>"people")); ?></li>
+			    	<li><i class="glyphicon glyphicon-heart"></i><?php echo$this->Html->link(__("Tithe"), array('action' => 'index', "controller"=>"tithes")); ?></li>
 			    	
 			    </ul>
 			  </div><!-- /.navbar-collapse -->
@@ -76,12 +76,13 @@ $cakeDescription = __d('cake_dev', 'LINVS - Sistema de Gerenciamento Paroquial')
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
-			?>
+			<p class="marca">© 2014 - LINVS - Sistema de Gerenciamento Paroquial</p>
+			<p class="developers">
+				Desenvolvido por:
+				<a href="mailto:daviddisans@gmail.com?Subject=Contato%20LINVS" target="_top">David Sans</a>,
+				<a href="mailto:pro.tiagorafaell@gmail.com?Subject=Contato%20LINVS" target="_top">Tiago Rafael</a>
+			</p>
+
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
