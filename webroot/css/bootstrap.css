@@ -6617,6 +6617,30 @@ form#TitheAddForm .number {
     width: 25%;
   }
 }
+form#TitheEditForm .text {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  form#TitheEditForm .text {
+    float: left;
+    width: 33.33333333333333%;
+  }
+}
+form#TitheEditForm .number {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  form#TitheEditForm .number {
+    float: left;
+    width: 25%;
+  }
+}
 a.asc:before {
   content: "\e134";
 }

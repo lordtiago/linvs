@@ -28,7 +28,11 @@ $cakeDescription = __d('cake_dev', 'LINVS - Sistema de Gerenciamento Paroquial')
 		<?php echo $title_for_layout; ?>
 	</title>
 	<?php
-		echo $this->Html->meta('icon');
+		echo $this->Html->meta(
+			'favicon.ico',
+			'http://localhost/linvs/favicon.ico',
+			array('type' => 'icon')
+		);
 
 		// echo $this->Html->css('cake.generic');
 		echo $this->Html->css('bootstrap');

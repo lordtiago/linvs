@@ -10,8 +10,11 @@
 ?>
 <div class="tithes form">
 <?php echo $this->Form->create('Tithe'); ?>
+
 	<fieldset>
-		<legend><?php echo __('Edit Tithe'); ?></legend>
+		<hgroup class="tt-g">		
+			<legend class="tt"><?php echo __('Edit Tithe'); ?></legend>
+		</hgroup>
 	<?php
 		echo $this->Form->input('id');
 		echo $this->Form->input('value', array('type' => 'text'));

@@ -176,7 +176,9 @@
 		<li><?php echo $this->Html->link(__('New Tithe'), array('controller' => 'tithes', 'action' => 'add')); ?> </li>
 	</ul>
 <div class="related">
-	<h3><?php echo __('Related Tithes'); ?></h3>
+	<h3 class="tt"><?php echo __('Related Tithes'); ?></h3>
+<?php echo $this->Html->link(__('+'), array('controller' => 'tithes', 'action' => 'add'), array('class' => 'add glyphicon btn btn-primary')); ?>
+	</div>
 	<?php if (!empty($person['Tithe'])): ?>
 	<table cellpadding = "0" cellspacing = "0" class="table table-hover">
 		<thead>
@@ -209,17 +211,5 @@
 	<?php endforeach; ?>
 	</table>
 <?php endif; ?>
-
-	<div class="actions">
-		<h3>
-			<span class="hide"><?php echo __('Actions'); ?></span>
-			<span class="menu-icon"></span>
-			<span class="menu-icon"></span>
-			<span class="menu-icon"></span>
-		</h3>
-		<ul>
-			<li><?php echo $this->Html->link(__('New Tithe'), array('controller' => 'tithes', 'action' => 'add')); ?> </li>
-		</ul>
-	</div>
 </div>
 <!-- <?php echo __('Father2'); ?>-->

@@ -10,26 +10,28 @@
 <div class="people form">
 <?php echo $this->Form->create('Person'); ?>
 	<fieldset>
-		<legend><?php echo __('Edit Person'); ?></legend>
+		<hgroup class="tt-g">
+			<legend class="tt"><?php echo __('Edit Person'); ?></legend>
+		</hgroup>
 	<?php
 		echo $this->Form->input('id');
 		echo $this->Form->input('name');
 		echo $this->Form->input('birth',array('minYear' => 1900,'dateFormat' => 'DMY','monthNames' => true,'separator' => '<span>/</span>'));
-		echo $this->Form->input('cpf');
-		echo $this->Form->input('rg');
-		echo $this->Form->input('street');
-		echo $this->Form->input('number');
-		echo $this->Form->input('district');
-		echo $this->Form->input('cep');
-		echo $this->Form->input('city');
-		echo $this->Form->input('uf');
-		echo $this->Form->input('country');
+		echo $this->Form->input('cpf', array('div' =>  array('class' => 'cpf input text')));
+		echo $this->Form->input('rg', array('div' =>  array('class' => 'rg input text')));
+		echo $this->Form->input('cep', array('div' =>  array('class' => 'cep input text')));
+		echo $this->Form->input('street', array('div' =>  array('class' => 'street input text')));
+		echo $this->Form->input('number', array('div' =>  array('class' => 'number input text')));
+		echo $this->Form->input('district', array('div' =>  array('class' => 'district input text')));
+		echo $this->Form->input('city', array('div' =>  array('class' => 'city input text')));
+		echo $this->Form->input('uf', array('div' =>  array('class' => 'uf input text')));
+		echo $this->Form->input('country', array('div' =>  array('class' => 'country input text')));
 		echo $this->Form->input('father_id', array("empty"=>__('(choose one)')));
 		echo $this->Form->input('father2_id', array('options' => $fathers, "empty"=>__('(choose one)')));
 		echo $this->Form->input('spouse_id', array("empty"=>__('(choose one)')));
-		echo $this->Form->input('tel');
-		echo $this->Form->input('cel');
-		echo $this->Form->input('cel2');
+		echo $this->Form->input('tel', array('div' =>  array('class' => 'tel input text')));
+		echo $this->Form->input('cel', array('div' =>  array('class' => 'cel input text')));
+		echo $this->Form->input('cel2', array('div' =>  array('class' => 'cel2 input text')));
 		echo $this->Form->input('email');
 		//echo $this->Form->input('parish_id');
 	?>
