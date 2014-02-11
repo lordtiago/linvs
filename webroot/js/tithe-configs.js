@@ -14,5 +14,8 @@ $(function($){
     $("#TitheEditForm").formataMoeda({
     	args: new Array($("#TitheValue"))
     });
+	
+	$("#TitheAddForm input:text, #TitheAddForm textarea").first().focus();
+	$("#TitheEditForm input:text, #TitheEditForm textarea").first().focus();
 		
 });

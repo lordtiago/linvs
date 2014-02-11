@@ -7,7 +7,7 @@ $(document).ready(function() {
         $('#smart-menu').hide();
     });
 	
-	$("#container").bind("contextmenu", function(e) {
+	$("#content").bind("contextmenu", function(e) {
 
 	    $('#smart-menu').css({
 	        top: e.pageY+'px',

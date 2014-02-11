@@ -64,9 +64,10 @@ $cakeDescription = __d('cake_dev', 'LINVS - Sistema de Gerenciamento Paroquial')
 			  <!-- Collect the nav links, forms, and other content for toggling -->
 			  <div class="collapse navbar-collapse" id="linvs-nav">
 			    <ul class="nav navbar-nav">
-					<li><i class="glyphicon glyphicon-user"></i><?php echo$this->Html->link(__("People"), array('action' => 'index', "controller"=>"people")); ?></li>
-			    	<li><i class="glyphicon glyphicon-heart"></i><?php echo$this->Html->link(__("Tithe"), array('action' => 'index', "controller"=>"tithes")); ?></li>
-			    	
+					<?php $span = $this->Html->tag('i', '', array('class' => 'glyphicon glyphicon-user')).$this->Html->tag('span',__("People"));?>
+					<li><?php echo$this->Html->link($span, array('action' => 'index', "controller"=>"people"),array('escape'=>false)); ?></li>
+					<?php $span = $this->Html->tag('i', '', array('class' => 'glyphicon glyphicon-heart')).$this->Html->tag('span',__("Tithe"));?>
+			    	<li><?php echo$this->Html->link($span, array('action' => 'index', "controller"=>"tithes"),array('escape'=>false)); ?></li>	    	
 			    </ul>
 			  </div><!-- /.navbar-collapse -->
 			</nav>

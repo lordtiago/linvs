@@ -73,7 +73,6 @@
 	<div class="table-responsive">
 		<table cellpadding="0" cellspacing="0 id="table-tithes" class="table table-hover"">
 		<tr>
-				<th><?php echo $this->Paginator->sort('id'); ?></th>
 				<th><?php echo $this->Paginator->sort('value'); ?></th>
 				<th><?php echo $this->Paginator->sort('month'); ?></th>
 				<th><?php echo $this->Paginator->sort('year'); ?></th>
@@ -82,7 +81,6 @@
 		</tr>
 		<?php foreach ($tithes as $tithe): ?>
 		<tr>
-			<td><?php echo h($tithe['Tithe']['id']); ?></td>
 			<td><?php echo "R$ ".h($tithe['Tithe']['value']); ?></td>
 			<td><?php echo h($tithe['Tithe']['month']); ?></td>
 			<td><?php echo h($tithe['Tithe']['year']); ?></td>
@@ -92,7 +90,7 @@
 			<td class="actions">
 				<?php echo $this->Html->link(__('View'), array('action' => 'view', $tithe['Tithe']['id']), array('class' => 'act-view', 'title' => __('View'))); ?>
 				<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $tithe['Tithe']['id']), array('class' => 'act-edit', 'title' => __('Edit'))); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $tithe['Tithe']['id']), array('class' => 'act-remove', 'title' => __('Delete')), null, __('Are you sure you want to delete # %s?', $tithe['Tithe']['id'])); ?>
+				<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $tithe['Tithe']['id']), array('class' => 'act-remove', 'title' => __('Delete')),  __('Are you sure you want to delete # %s?', $tithe['Tithe']['id'])); ?>
 			</td>
 		</tr>
 <?php endforeach; ?>
@@ -118,6 +116,7 @@
 		<span class=" glyphicon glyphicon-chevron-right"></span>
 	</div>
 </div>
+	<h3>Total do dízimo: <b style="color: #d9534f">R$ <?php echo $sum[0]['total'];?></b></h3>
 	<ul id="smart-menu">
 		<li><?php echo $this->Html->link(__('New Tithe'), array('action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('List People'), array('controller' => 'people', 'action' => 'index')); ?> </li>

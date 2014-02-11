@@ -51,4 +51,7 @@ $(function($){
             element.mask("(0xx99)9999-9999?9");
         }	
 	}
+	
+	$("#PersonAddForm input:text, #PersonAddForm textarea").first().focus();
+	$("#PersonEditForm input:text, #PersonEditForm textarea").first().focus();
 });

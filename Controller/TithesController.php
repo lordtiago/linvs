@@ -25,15 +25,33 @@ class TithesController extends AppController {
 		
 		if(!isset($month)) $month = date("m");
 		if(!isset($year)) $year = date("Y");
+		$sum = $this->Tithe->find('first',array(
+			'conditions' => array(					
+				'Tithe.month =' => $month,
+				'Tithe.year =' => $year), //array of conditions
+			'recursive' => 0, //int
+			//array of field names
+			'fields' => array('SUM(Tithe.value) as total'),			
+			)
+		);
 		
 		$this->set('tithes', $this->Paginator->paginate(
 				'Tithe',
 		    	array(
 					'Tithe.month =' => $month,
 					'Tithe.year =' => $year
+				),
+				array(
+					'Tithe.value',
+					'Tithe.month',
+					'Tithe.year',
+					'Tithe.person_id',
+
 				)
 			)
 		);
+		
+		$this->set('sum',$sum);
 	}
 
 /**
