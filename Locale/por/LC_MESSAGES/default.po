@@ -362,6 +362,14 @@ msgstr "Valor"
 msgid "Month"
 msgstr "Mês"
 
+#: View/Tithes/view.ctp:25
+msgid "Month Reference"
+msgstr "Mês de Referência"
+
+#: View/Tithes/add.ctp:21
+msgid "Month Ref"
+msgstr "Mês de Referência"
+
 #: View/People/view.ctp:190
 #: View/Tithes/view.ctp:23
 msgid "Year"

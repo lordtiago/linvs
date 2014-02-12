@@ -88,6 +88,9 @@ Cache::config('default', array('engine' => 'File'));
  *
  * ));
  */
+
+date_default_timezone_set('America/Sao_Paulo');
+
 Configure::write('Dispatcher.filters', array(
 	'AssetDispatcher',
 	'CacheDispatcher'

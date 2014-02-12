@@ -86,6 +86,7 @@ class TithesController extends AppController {
 		}
 		$people = $this->Tithe->Person->find('list',array('order' => array('Person.name ASC')));
 		$this->request->data["Tithe"]["month"] = date("m");
+		$this->request->data["Tithe"]["month_ref"] = date("m");
 		$this->request->data["Tithe"]["year"] = date("Y");
 		$this->set(compact('people'));
 	}
@@ -135,4 +136,60 @@ class TithesController extends AppController {
 			$this->Session->setFlash(__('The tithe could not be deleted. Please, try again.'));
 		}
 		return $this->redirect(array('action' => 'index'));
-	}}
+	}
+
+
+        public function report_simplify(){
+
+			$query = "SELECT SUM( value ) , DATE(created)
+							FROM  `tithes` 
+							WHERE month = 2 AND year = 2014
+							GROUP BY DAY( created ) 
+							LIMIT 0 , 30";
+  /*          $totais = '';
+            $option['material'] = 11;
+            $select = "SELECT  Material.name, Material.balance, UnitType.name, Shelf.name";
+            $from = " FROM  materials AS Material
+                        INNER JOIN  material_groups AS  MaterialGroup ON (  Material.material_group_id =  MaterialGroup.id )
+                        INNER JOIN  shelves AS  Shelf ON (  Material.shelf_id =  Shelf.id)
+                        INNER JOIN unit_types AS  UnitType ON (  Material.unit_type_id =  UnitType.id ) ";
+            $order = ' ORDER BY';
+            if($this->request->data['grupo']=='grupo'){
+                $select .= ", MaterialGroup.name";
+                $order .= " MaterialGroup.name";
+                $option['grupo'] = 'grupo';
+                $query2 = 'SELECT MaterialGroup.name AS grupo, SUM( Material.balance ) as total
+                            FROM materials AS Material
+                            INNER JOIN material_groups AS MaterialGroup ON ( Material.material_group_id = MaterialGroup.id )
+                            GROUP BY MaterialGroup.name';
+                $totais = $this->Material->query($query2);
+                if($this->request->data['asc']=='asc'){
+                    $order .= ", Material.name ASC";
+                }
+            }else if($this->request->data['asc']=='asc'){
+                $order .= " Material.name ASC";
+            }
+            if($this->request->data['codebar']=='codebar'){
+                $select .= ", Material.codebar";
+                $option['codebar'] = 3;
+                $option['material'] = 8;
+                if($this->request->data['man']=='man'){
+                    $select .= ", Material.manufacturer";
+                    $option['man'] = 3;
+                    $option['material'] = 5;
+                }
+            }else if($this->request->data['man']=='man'){
+                $select .= ", Material.manufacturer";
+                $option['man'] = 3;
+                $option['material'] = 8;
+            }
+            $query = $select.$from;
+            if($order != ' ORDER BY') $query .= $order;*/
+            $this->layout = 'report';
+            $tithes = $this->Tithe->query($query);
+            $this->set('tithes',$tithes);
+            //$this->set('options',$option);
+            //$this->set('totais',$totais);
+            $this->render();
+        }
+}

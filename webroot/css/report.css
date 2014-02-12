@@ -1,0 +1,21 @@
+/* 
+    Document   : report
+    Created on : 26/12/2011, 17:43:23
+    Author     : tiagor
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+body			 {font-family: Courier New;}
+.report_header           {border-bottom: 2px solid #000; border-top: 3px solid #000; line-height: 1.5; margin-top: 10px; margin-bottom: 10px;}
+.container_header        {margin-bottom: 10px;}
+.column_header           {border-bottom: 1px dashed #000; line-height: 1.5;}
+.column_details          {line-height: 1.5;margin-bottom: 2px;}
+.column_summary          {line-height: 1.5;margin-bottom: 2px; text-transform: uppercase; font-size: 115%; font-weight: bold; margin-top: 5px;}
+.number			 {text-align: right;}
+.details		 {border-bottom: 1px solid #000;}
+.report_header .date     {text-align: right;}

@@ -22,6 +22,11 @@
 			<?php echo h($tithe['Tithe']['month']); ?>
 			&nbsp;
 		</dd>
+		<dt><?php echo __('Month Reference'); ?></dt>
+		<dd>
+			<?php echo h($tithe['Tithe']['month_ref']); ?>
+			&nbsp;
+		</dd>
 		<dt><?php echo __('Year'); ?></dt>
 		<dd>
 			<?php echo h($tithe['Tithe']['year']); ?>

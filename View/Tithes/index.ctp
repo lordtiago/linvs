@@ -75,6 +75,7 @@
 		<tr>
 				<th><?php echo $this->Paginator->sort('value'); ?></th>
 				<th><?php echo $this->Paginator->sort('month'); ?></th>
+				<th><?php echo $this->Paginator->sort('month_ref'); ?></th>
 				<th><?php echo $this->Paginator->sort('year'); ?></th>
 				<th><?php echo $this->Paginator->sort('person_id'); ?></th>
 				<th class="actions"><?php echo __('Actions'); ?></th>
@@ -83,6 +84,7 @@
 		<tr>
 			<td><?php echo "R$ ".h($tithe['Tithe']['value']); ?></td>
 			<td><?php echo h($tithe['Tithe']['month']); ?></td>
+			<td><?php echo h($tithe['Tithe']['month_ref']); ?></td>
 			<td><?php echo h($tithe['Tithe']['year']); ?></td>
 			<td>
 				<?php echo $this->Html->link($tithe['Person']['name'], array('controller' => 'people', 'action' => 'view', $tithe['Person']['id'])); ?>
