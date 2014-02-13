@@ -139,57 +139,35 @@ class TithesController extends AppController {
 	}
 
 
-        public function report_simplify(){
+        public function report_simplify($month = null, $year = null){
 
-			$query = "SELECT SUM( value ) , DATE(created)
-							FROM  `tithes` 
-							WHERE month = 2 AND year = 2014
-							GROUP BY DAY( created ) 
-							LIMIT 0 , 30";
-  /*          $totais = '';
-            $option['material'] = 11;
-            $select = "SELECT  Material.name, Material.balance, UnitType.name, Shelf.name";
-            $from = " FROM  materials AS Material
-                        INNER JOIN  material_groups AS  MaterialGroup ON (  Material.material_group_id =  MaterialGroup.id )
-                        INNER JOIN  shelves AS  Shelf ON (  Material.shelf_id =  Shelf.id)
-                        INNER JOIN unit_types AS  UnitType ON (  Material.unit_type_id =  UnitType.id ) ";
-            $order = ' ORDER BY';
-            if($this->request->data['grupo']=='grupo'){
-                $select .= ", MaterialGroup.name";
-                $order .= " MaterialGroup.name";
-                $option['grupo'] = 'grupo';
-                $query2 = 'SELECT MaterialGroup.name AS grupo, SUM( Material.balance ) as total
-                            FROM materials AS Material
-                            INNER JOIN material_groups AS MaterialGroup ON ( Material.material_group_id = MaterialGroup.id )
-                            GROUP BY MaterialGroup.name';
-                $totais = $this->Material->query($query2);
-                if($this->request->data['asc']=='asc'){
-                    $order .= ", Material.name ASC";
-                }
-            }else if($this->request->data['asc']=='asc'){
-                $order .= " Material.name ASC";
-            }
-            if($this->request->data['codebar']=='codebar'){
-                $select .= ", Material.codebar";
-                $option['codebar'] = 3;
-                $option['material'] = 8;
-                if($this->request->data['man']=='man'){
-                    $select .= ", Material.manufacturer";
-                    $option['man'] = 3;
-                    $option['material'] = 5;
-                }
-            }else if($this->request->data['man']=='man'){
-                $select .= ", Material.manufacturer";
-                $option['man'] = 3;
-                $option['material'] = 8;
-            }
-            $query = $select.$from;
-            if($order != ' ORDER BY') $query .= $order;*/
-            $this->layout = 'report';
-            $tithes = $this->Tithe->query($query);
+            $tithes = $this->Tithe->find('all',array(
+                    'fields'=>array(
+                            'SUM(Tithe.value) as value',		
+							'DATE(Tithe.created) as created'						
+                    ),
+					'conditions'=>array(
+						'Tithe.month'=>$month, 
+						'Tithe.year'=>$year
+					),
+                    'group'=>array(
+                            'DAY(Tithe.created)'
+                    ),
+                    'recursive'=>0
+            ));
+			$total = $this->Tithe->find('first',array(
+                    'fields'=>array(
+                            'SUM(Tithe.value) as value',						
+                    ),
+					'conditions'=>array(
+						'Tithe.month'=>$month, 
+						'Tithe.year'=>$year
+					),
+                    'recursive'=>0
+            ));
+            $this->layout = 'report';			
             $this->set('tithes',$tithes);
-            //$this->set('options',$option);
-            //$this->set('totais',$totais);
+			$this->set('total',$total[0]['value']);
             $this->render();
         }
 }
