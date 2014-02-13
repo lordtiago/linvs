@@ -24,12 +24,21 @@
 			padding-top: 15px;
 			.transition-default;
 		}
+		span {
+			display: block;
+			width: 100%;
+		}
 		a { padding: 0 30px 15px; }
 		&:hover {
 			background: darken(@navbar-inverse-bg, 2%);
 			i { color: @brand-primary; }
 		}
 	}
+}
+
+.alert-msg {
+	font-weight: bold;
+	color: @brand-danger;
 }
 
 #footer {

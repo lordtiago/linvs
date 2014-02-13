@@ -113,6 +113,46 @@
 			&nbsp;
 		</dd>		
 		</dl>
+
+		<section id="related-tithes">
+			<div class="related">
+	<h3 class="tt"><?php echo __('Related Tithes'); ?></h3>
+<?php echo $this->Html->link(__('+'), array('controller' => 'tithes', 'action' => 'add'), array('class' => 'add glyphicon btn btn-primary')); ?>
+	</div>
+	<?php if (!empty($person['Tithe'])): ?>
+	<table cellpadding = "0" cellspacing = "0" class="table table-hover">
+		<thead>
+			<tr>
+				<th><?php echo __('Id'); ?></th>
+				<th><?php echo __('Value'); ?></th>
+				<th><?php echo __('Month'); ?></th>
+				<th><?php echo __('Year'); ?></th>
+				<th><?php echo __('Created'); ?></th>
+				<th><?php echo __('Modified'); ?></th>
+				<th><?php echo __('Person Id'); ?></th>
+				<th class="actions"><?php echo __('Actions'); ?></th>
+			</tr>
+		</thead>
+	<?php foreach ($person['Tithe'] as $tithe): ?>
+		<tr>
+			<td><?php echo $tithe['id']; ?></td>
+			<td><?php echo $tithe['value']; ?></td>
+			<td><?php echo $tithe['month']; ?></td>
+			<td><?php echo $tithe['year']; ?></td>
+			<td><?php echo $tithe['created']; ?></td>
+			<td><?php echo $tithe['modified']; ?></td>
+			<td><?php echo $tithe['person_id']; ?></td>
+			<td class="actions">
+				<?php echo $this->Html->link(__('View'), array('controller' => 'tithes', 'action' => 'view', $tithe['id']), array('class' => 'act-view', 'title' => __('View'))); ?>
+				<?php echo $this->Html->link(__('Edit'), array('controller' => 'tithes', 'action' => 'edit', $tithe['id']), array('class' => 'act-edit', 'title' => __('Edit'))); ?>
+				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'tithes', 'action' => 'delete', $tithe['id']), array('class' => 'act-remove', 'title' => __('Delete')), null, __('Are you sure you want to delete # %s?', $tithe['id'])); ?>
+			</td>
+		</tr>
+	<?php endforeach; ?>
+	</table>
+<?php endif; ?>
+		</section>
+
 	</div> 
 	<?php if($father || $father2):?>
 		<div class="parents-content tab-pane" id="parents-content">
@@ -175,41 +215,6 @@
 		<li><?php echo $this->Html->link(__('List Tithes'), array('controller' => 'tithes', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Tithe'), array('controller' => 'tithes', 'action' => 'add')); ?> </li>
 	</ul>
-<div class="related">
-	<h3 class="tt"><?php echo __('Related Tithes'); ?></h3>
-<?php echo $this->Html->link(__('+'), array('controller' => 'tithes', 'action' => 'add'), array('class' => 'add glyphicon btn btn-primary')); ?>
-	</div>
-	<?php if (!empty($person['Tithe'])): ?>
-	<table cellpadding = "0" cellspacing = "0" class="table table-hover">
-		<thead>
-			<tr>
-				<th><?php echo __('Id'); ?></th>
-				<th><?php echo __('Value'); ?></th>
-				<th><?php echo __('Month'); ?></th>
-				<th><?php echo __('Year'); ?></th>
-				<th><?php echo __('Created'); ?></th>
-				<th><?php echo __('Modified'); ?></th>
-				<th><?php echo __('Person Id'); ?></th>
-				<th class="actions"><?php echo __('Actions'); ?></th>
-			</tr>
-		</thead>
-	<?php foreach ($person['Tithe'] as $tithe): ?>
-		<tr>
-			<td><?php echo $tithe['id']; ?></td>
-			<td><?php echo $tithe['value']; ?></td>
-			<td><?php echo $tithe['month']; ?></td>
-			<td><?php echo $tithe['year']; ?></td>
-			<td><?php echo $tithe['created']; ?></td>
-			<td><?php echo $tithe['modified']; ?></td>
-			<td><?php echo $tithe['person_id']; ?></td>
-			<td class="actions">
-				<?php echo $this->Html->link(__('View'), array('controller' => 'tithes', 'action' => 'view', $tithe['id']), array('class' => 'act-view', 'title' => __('View'))); ?>
-				<?php echo $this->Html->link(__('Edit'), array('controller' => 'tithes', 'action' => 'edit', $tithe['id']), array('class' => 'act-edit', 'title' => __('Edit'))); ?>
-				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'tithes', 'action' => 'delete', $tithe['id']), array('class' => 'act-remove', 'title' => __('Delete')), null, __('Are you sure you want to delete # %s?', $tithe['id'])); ?>
-			</td>
-		</tr>
-	<?php endforeach; ?>
-	</table>
-<?php endif; ?>
-</div>
+
+
 <!-- <?php echo __('Father2'); ?>-->
