@@ -12,6 +12,7 @@
 	line-height: 61px;
 	padding-right: 30px;
 	color: lighten(@navbar-inverse-bg, 20%);
+	.transition-default;
 }
 
 .navbar-nav {
@@ -235,4 +236,71 @@ div.actions{
 
 .add {
 	margin: -10px 0 0 10px;
+}
+
+#people-tabs {
+	.make-sm-column(12);
+}
+
+
+
+
+.view-list-group {
+	padding: 0;
+	margin-top: @padding-large-vertical;
+	position: relative;
+	float: left;
+	width: 100%;
+	margin-left: -1px;
+	.list-group {
+		list-style: none;
+		border-top: 1px solid @gray-lighter;
+		padding-top: @padding-large-vertical;
+		min-height: 55px !important;
+	}
+	li+li {border-left: 1px solid @gray-lighter; }
+	
+	#view-month,
+	#view-month-ref,
+	#view-year,
+	#view-id,
+	#view-number
+	{ .make-sm-column(2); }
+
+	#view-value,
+	#view-birth,
+	#view-cpf,
+	#view-rg,
+	#view-cep,
+	#view-city,
+	#view-uf,
+	#view-country,
+	#view-tel,
+	#view-cel,
+	#view-cel2,
+	#view-parish
+	{ .make-sm-column(4); }
+
+	#view-created,
+	#view-modified
+	{ .make-sm-column(6); }
+
+	#view-email,
+	#view-district
+	{ .make-sm-column(8); }
+
+
+	#view-name,
+	#view-street
+	{ .make-sm-column(10); } 
+
+	#view-name-related
+	{ .make-sm-column(6); }
+
+	#view-tel-related,
+	#view-birth-related
+	{ .make-sm-column(3); }
+
+	#view-name-tithe
+	{ .make-sm-column(12); }	
 }

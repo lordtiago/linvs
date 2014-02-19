@@ -17,7 +17,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = __d('cake_dev', 'LINVS - Sistema de Gerenciamento Paroquial');
+$cakeDescription = __d('cake_dev', 'LINVS - Sistema de Gerenciamento Canônico');
 ?>
 <!DOCTYPE html>
 <html>
@@ -58,7 +58,7 @@ $cakeDescription = __d('cake_dev', 'LINVS - Sistema de Gerenciamento Paroquial')
 			      <span class="icon-bar"></span>
 			      <span class="icon-bar"></span>
 			    </button>
-			    <a class="navbar-brand" href="<?php echo Router::url('/', true); ?>">LINVS</a>
+			    <a class="navbar-brand" title="Ir para o Início" href="<?php echo Router::url('/', true); ?>">LINVS</a>
 			  </div>
 
 			  <!-- Collect the nav links, forms, and other content for toggling -->
@@ -81,7 +81,7 @@ $cakeDescription = __d('cake_dev', 'LINVS - Sistema de Gerenciamento Paroquial')
 			<?php echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer">
-			<p class="marca">© 2014 - LINVS - Sistema de Gerenciamento Paroquial</p>
+			<p class="marca">© 2014 - LINVS - Sistema de Gerenciamento Canônico</p>
 			<p class="developers">
 				Desenvolvido por:
 				<a href="mailto:daviddisans@gmail.com?Subject=Contato%20LINVS" target="_top">David Sans</a>,

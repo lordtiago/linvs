@@ -6018,6 +6018,8 @@ td.visible-print {
   line-height: 61px;
   padding-right: 30px;
   color: #0f518a;
+  -webkit-transition: all 0.15s easy-in-out;
+  transition: all 0.15s easy-in-out;
 }
 .navbar-nav li {
   text-align: center;
@@ -6266,6 +6268,169 @@ div.actions:hover ul {
 }
 .add {
   margin: -10px 0 0 10px;
+}
+#people-tabs {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  #people-tabs {
+    float: left;
+    width: 100%;
+  }
+}
+.view-list-group {
+  padding: 0;
+  margin-top: 10px;
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-left: -1px;
+}
+.view-list-group .list-group {
+  list-style: none;
+  border-top: 1px solid #eeeeee;
+  padding-top: 10px;
+  min-height: 55px !important;
+}
+.view-list-group li + li {
+  border-left: 1px solid #eeeeee;
+}
+.view-list-group #view-month,
+.view-list-group #view-month-ref,
+.view-list-group #view-year,
+.view-list-group #view-id,
+.view-list-group #view-number {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .view-list-group #view-month,
+  .view-list-group #view-month-ref,
+  .view-list-group #view-year,
+  .view-list-group #view-id,
+  .view-list-group #view-number {
+    float: left;
+    width: 16.666666666666664%;
+  }
+}
+.view-list-group #view-value,
+.view-list-group #view-birth,
+.view-list-group #view-cpf,
+.view-list-group #view-rg,
+.view-list-group #view-cep,
+.view-list-group #view-city,
+.view-list-group #view-uf,
+.view-list-group #view-country,
+.view-list-group #view-tel,
+.view-list-group #view-cel,
+.view-list-group #view-cel2,
+.view-list-group #view-parish {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .view-list-group #view-value,
+  .view-list-group #view-birth,
+  .view-list-group #view-cpf,
+  .view-list-group #view-rg,
+  .view-list-group #view-cep,
+  .view-list-group #view-city,
+  .view-list-group #view-uf,
+  .view-list-group #view-country,
+  .view-list-group #view-tel,
+  .view-list-group #view-cel,
+  .view-list-group #view-cel2,
+  .view-list-group #view-parish {
+    float: left;
+    width: 33.33333333333333%;
+  }
+}
+.view-list-group #view-created,
+.view-list-group #view-modified {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .view-list-group #view-created,
+  .view-list-group #view-modified {
+    float: left;
+    width: 50%;
+  }
+}
+.view-list-group #view-email,
+.view-list-group #view-district {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .view-list-group #view-email,
+  .view-list-group #view-district {
+    float: left;
+    width: 66.66666666666666%;
+  }
+}
+.view-list-group #view-name,
+.view-list-group #view-street {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .view-list-group #view-name,
+  .view-list-group #view-street {
+    float: left;
+    width: 83.33333333333334%;
+  }
+}
+.view-list-group #view-name-related {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .view-list-group #view-name-related {
+    float: left;
+    width: 50%;
+  }
+}
+.view-list-group #view-tel-related,
+.view-list-group #view-birth-related {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .view-list-group #view-tel-related,
+  .view-list-group #view-birth-related {
+    float: left;
+    width: 25%;
+  }
+}
+.view-list-group #view-name-tithe {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .view-list-group #view-name-tithe {
+    float: left;
+    width: 100%;
+  }
 }
 select,
 textarea,
@@ -6692,11 +6857,11 @@ a.act-edit,
 a.act-remove {
   overflow: hidden;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   margin-right: 6px;
   float: left;
-  font-size: 16px;
+  font-size: 18px;
 }
 a.act-view:before,
 a.act-edit:before,

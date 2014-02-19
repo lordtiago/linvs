@@ -6,48 +6,40 @@
 	<hgroup class="tt-g">
 		<h2 class="tt"><?php echo __('Tithe'); ?></h2>
 	</hgroup>
-	<dl>
-		<dt><?php echo __('Id'); ?></dt>
-		<dd>
-			<?php echo h($tithe['Tithe']['id']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Value'); ?></dt>
-		<dd>
-			<?php echo "R$ ".h($tithe['Tithe']['value']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Month'); ?></dt>
-		<dd>
-			<?php echo h($tithe['Tithe']['month']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Month Reference'); ?></dt>
-		<dd>
-			<?php echo h($tithe['Tithe']['month_ref']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Year'); ?></dt>
-		<dd>
-			<?php echo h($tithe['Tithe']['year']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Created'); ?></dt>
-		<dd>
-			<?php echo h($tithe['Tithe']['created']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Modified'); ?></dt>
-		<dd>
-			<?php echo h($tithe['Tithe']['modified']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Person'); ?></dt>
-		<dd>
-			<?php echo $this->Html->link($tithe['Person']['name'], array('controller' => 'people', 'action' => 'view', $tithe['Person']['id'])); ?>
-			&nbsp;
-		</dd>
-	</dl>
+	<ul class="view-list-group">
+  		<li id="view-id" class="list-group">
+  			<h4 class="list-group-item-heading"><?php echo __('Id'); ?></h4>
+  			<p class="list-group-item-text"><?php echo h($tithe['Tithe']['id']); ?></p>
+  		</li>
+  		<li id="view-value" class="list-group">
+  			<h4 class="list-group-item-heading"><?php echo __('Value'); ?></h4>
+  			<p class="list-group-item-text"><?php echo "R$ ".h($tithe['Tithe']['value']); ?></p>
+  		</li>
+  		<li id="view-month" class="list-group">
+  			<h4 class="list-group-item-heading"><?php echo __('Month'); ?></h4>
+  			<p class="list-group-item-text"><?php echo h($tithe['Tithe']['month']); ?></p>
+  		</li>
+  		<li id="view-month-ref" class="list-group">
+  			<h4 class="list-group-item-heading"><?php echo __('Month Reference'); ?></h4>
+  			<p class="list-group-item-text"><?php echo h($tithe['Tithe']['month_ref']); ?></p>
+  		</li>
+  		<li id="view-year" class="list-group">
+  			<h4 class="list-group-item-heading"><?php echo __('Year'); ?></h4>
+  			<p class="list-group-item-text"><?php echo h($tithe['Tithe']['year']); ?></p>
+  		</li>
+  		<li id="view-name-tithe" class="list-group">
+  			<h4 class="list-group-item-heading"><?php echo __('Person'); ?></h4>
+  			<p class="list-group-item-text"><?php echo $this->Html->link($tithe['Person']['name'], array('controller' => 'people', 'action' => 'view', $tithe['Person']['id'])); ?></p>
+  		</li>
+  		<li id="view-created" class="list-group">
+  			<h4 class="list-group-item-heading"><?php echo __('Created'); ?></h4>
+  			<p class="list-group-item-text"><?php echo h($tithe['Tithe']['created']); ?></p>
+  		</li>
+  		<li id="view-modified" class="list-group">
+  			<h4 class="list-group-item-heading"><?php echo __('Modified'); ?></h4>
+  			<p class="list-group-item-text"><?php echo h($tithe['Tithe']['modified']); ?></p>
+  		</li>
+  	</ul>
 </div>
 	<ul id="smart-menu">
 		<li><?php echo $this->Html->link(__('Edit Tithe'), array('action' => 'edit', $tithe['Tithe']['id'])); ?> </li>
