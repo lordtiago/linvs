@@ -104,7 +104,8 @@
 		<section id="related-tithes">
 			<div class="related">
 			<h3 class="tt"><?php echo __('Related Tithes'); ?></h3>
-		<?php echo $this->Html->link(__('+'), array('controller' => 'tithes', 'action' => 'add'), array('class' => 'add glyphicon btn btn-primary')); ?>
+			<a class="add glyphicon btn btn-primary" href="<?php echo Router::url('/', true).'dizimo/cadastrar/'.$person['Person']['id']; ?>"><?php echo __('+'); ?></a>
+		<?php //echo $this->Html->link(__('+'), array('controller' => 'tithes', 'action' => 'add'), array('class' => 'add glyphicon btn btn-primary')); ?>
 			</div>
 			<?php if (!empty($person['Tithe'])): ?>
 			<table cellpadding = "0" cellspacing = "0" class="table table-hover">

@@ -1,6 +1,16 @@
 <?php
+
+	 echo $this->Html->script('select2.min');
+
      $this->Html->addCrumb(__("People"), __("/people"));        
 ?>
+<?php echo __('Search');?>
+<select id="SearchPerson">
+	<option></option>
+	<?php foreach ($people as $person): ?>		
+			<option value="<?php echo $person['Person']['id']; ?>"><?php echo $person['Person']['name']; ?></option>
+	<?php endforeach; reset($people);?>
+</select>
 <div class="people index">
 	<hgroup class="tt-g">
 		<h2 class="tt"><?php echo __('People'); ?></h2><?php echo $this->Html->link(__('+'), array('action' => 'add'), array('class' => 'add glyphicon btn btn-primary')); ?>
@@ -54,6 +64,7 @@
 	?>	</p>
 	<div class="paging">
 		<span class="glyphicon glyphicon-chevron-left"></span>
+		<?php echo $this->Paginator->first(__('First', true), array('class' => 'first'));?>
 		<?php
 			echo $this->Paginator->prev(__('previous'), array(), null, array('class' => 'prev disabled'));
 		?>
@@ -63,6 +74,7 @@
 		<?php
 			echo $this->Paginator->next(__('next'), array(), null, array('class' => 'next disabled'));
 		?>
+		<?php echo $this->Paginator->last(__('Last', true), array('class' => 'end'));?>
 		<span class=" glyphicon glyphicon-chevron-right"></span>
 	</div>
 </div>
@@ -71,17 +83,12 @@
 	<li><?php echo $this->Html->link(__('List Tithes'), array('controller' => 'tithes', 'action' => 'index')); ?> </li>
 	<li><?php echo $this->Html->link(__('New Tithe'), array('controller' => 'tithes', 'action' => 'add')); ?> </li>
 </ul>
-<!-- 
-<style>
-#smart-menu {
-    display: none;
-    position: absolute;
-    padding: 10px;
-	list-style: none;
-    background-color: #000;
-    border: 1px solid #000;
-	border-radius: 5px;
-}
-#smart-menu li {padding: 5px;}
-</style>
--->
+<script>
+$(function($){
+	$("#SearchPerson").select2({placeholder: "<?php echo __('(choose one)'); ?>", allowClear: true}); 
+
+	$("#SearchPerson").change(function(){
+		window.location.href = "<?php echo Router::url('/', true).'pessoa/ver/'?>"+$("#SearchPerson :selected").val();
+	});
+});
+</script>

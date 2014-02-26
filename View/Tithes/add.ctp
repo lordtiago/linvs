@@ -20,7 +20,7 @@
 		echo $this->Form->input('month');
 		echo $this->Form->input('month_ref');
 		echo $this->Form->input('year');
-		echo $this->Form->input('person_id');
+		echo $this->Form->input('person_id',array('default'=>$person_id));
 	?>
 	</fieldset>
 

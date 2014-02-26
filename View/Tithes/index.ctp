@@ -77,7 +77,7 @@
 				<th><?php echo $this->Paginator->sort('month'); ?></th>
 				<th><?php echo $this->Paginator->sort('month_ref'); ?></th>
 				<th><?php echo $this->Paginator->sort('year'); ?></th>
-				<th><?php echo $this->Paginator->sort('person_id'); ?></th>
+				<th><?php echo $this->Paginator->sort('Person.name',__('Name')); ?></th>
 				<th class="actions"><?php echo __('Actions'); ?></th>
 		</tr>
 		<?php foreach ($tithes as $tithe): ?>
@@ -106,6 +106,7 @@
 	?>	</p>
 	<div class="paging">
 		<span class=" glyphicon glyphicon-chevron-left"></span>
+		<?php echo $this->Paginator->first(__('First', true), array('class' => 'first'));?>
 		<?php
 			echo $this->Paginator->prev(__('previous'), array(), null, array('class' => 'prev disabled'));
 		?>
@@ -115,6 +116,7 @@
 		<?php
 			echo $this->Paginator->next(__('next'), array(), null, array('class' => 'next disabled'));
 		?>
+		<?php echo $this->Paginator->last(__('Last', true), array('class' => 'end'));?>
 		<span class=" glyphicon glyphicon-chevron-right"></span>
 	</div>
 </div>

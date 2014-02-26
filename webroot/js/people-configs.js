@@ -11,7 +11,7 @@ $(function($){
 	  
   	$("#PersonFatherId").select2({allowClear: true});
   	$("#PersonFather2Id").select2({allowClear: true});	  
-	$("#PersonSpouseId").select2({allowClear: true}); 
+	$("#PersonSpouseId").select2({allowClear: true});	
 	 
 	  //Consulta CEP Webservice
       $("#PersonCep").focusout(function () {

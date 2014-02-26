@@ -187,6 +187,16 @@ msgstr "Editar Paroquiano"
 msgid "Delete"
 msgstr "Apagar"
 
+#: View/People/index.ctp:57
+#: View/Tithes/index.ctp:109
+msgid "First"
+msgstr "Primeiro"
+
+#: View/People/index.ctp:67
+#: View/Tithes/index.ctp:119
+msgid "Last"
+msgstr "Último"
+
 #: View/People/edit.ctp:53
 #: View/People/index.ctp:38
 #: View/People/view.ctp:173;208

@@ -34,6 +34,10 @@ class TithesController extends AppController {
 			'fields' => array('SUM(Tithe.value) as total'),			
 			)
 		);
+
+		$this->Paginator->settings = array(
+		        	'limit' => 50,
+				);
 		
 		$this->set('tithes', $this->Paginator->paginate(
 				'Tithe',
@@ -42,10 +46,11 @@ class TithesController extends AppController {
 					'Tithe.year =' => $year
 				),
 				array(
-					'Tithe.value',
-					'Tithe.month',
-					'Tithe.year',
-					'Tithe.person_id',
+					'value',
+					'month',
+					'month_ref',
+					'year',
+					'Person.name',
 
 				)
 			)
@@ -74,7 +79,7 @@ class TithesController extends AppController {
  *
  * @return void
  */
-	public function add() {
+	public function add($id = null) {
 		if ($this->request->is('post')) {
 			$this->Tithe->create();
 			if ($this->Tithe->save($this->request->data)) {
@@ -89,6 +94,7 @@ class TithesController extends AppController {
 		$this->request->data["Tithe"]["month_ref"] = date("m");
 		$this->request->data["Tithe"]["year"] = date("Y");
 		$this->set(compact('people'));
+		$this->set('person_id', $id);
 	}
 
 /**

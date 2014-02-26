@@ -88,9 +88,6 @@ Cache::config('default', array('engine' => 'File'));
  *
  * ));
  */
-
-date_default_timezone_set('America/Sao_Paulo');
-
 Configure::write('Dispatcher.filters', array(
 	'AssetDispatcher',
 	'CacheDispatcher'
@@ -111,3 +108,4 @@ CakeLog::config('error', array(
 	'file' => 'error',
 ));
 Configure::write('Config.language', 'por');
+date_default_timezone_set('America/Sao_Paulo');
