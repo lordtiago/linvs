@@ -92,7 +92,7 @@
   		</li>
   		<li id="view-email" class="list-group">
   			<h4 class="list-group-item-heading"><?php echo __('Email'); ?></h4>
-	    	<p class="list-group-item-text"<?php echo h($person['Person']['email']); ?></p>
+	    	<p class="list-group-item-text"><?php echo h($person['Person']['email']); ?></p>
   		</li>
   		<li id="view-parish" class="list-group">
   			<h4 class="list-group-item-heading"><?php echo __('Parish'); ?></h4>

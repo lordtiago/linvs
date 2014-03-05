@@ -15,8 +15,8 @@ $this->Html->addCrumb(__("Add"), __("/people/add"));
 			<legend class="tt"><?php echo __('Add Person'); ?></legend>
 		</hgroup>
 	<?php
-		echo $this->Form->input('name');
-		echo $this->Form->input('birth',array('minYear' => 1900,'dateFormat' => 'DMY','separator' => '<span>/</span>'));
+		echo $this->Form->input('name',array('autocomplete'=>"off"));
+		echo $this->Form->input('birth',array('minYear' => 1900, 'maxYear'=>date('Y'),'orderYear'=>'asc','dateFormat' => 'DMY','separator' => '<span>/</span>'));
 		echo $this->Form->input('cpf', array('div' =>  array('class' => 'cpf input text')));
 		echo $this->Form->input('rg', array('div' =>  array('class' => 'rg input text')));
 		echo $this->Form->input('cep', array('div' =>  array('class' => 'cep input text')));
