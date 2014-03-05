@@ -14,8 +14,9 @@
 			<legend class="tt"><?php echo __('Edit Person'); ?></legend>
 		</hgroup>
 	<?php
-		echo $this->Form->input('id');
-		echo $this->Form->input('name');
+		echo $this->Form->input('id');		
+		echo $this->Form->input('name',array('autocomplete'=>"off"));
+		echo $this->Form->input('parish_id', array("empty"=>__('Sem paróquia')));
 		echo $this->Form->input('birth',array('minYear' => 1900, 'maxYear'=>date('Y'),'orderYear'=>'asc','dateFormat' => 'DMY','separator' => '<span>/</span>'));
 		echo $this->Form->input('cpf', array('div' =>  array('class' => 'cpf input text')));
 		echo $this->Form->input('rg', array('div' =>  array('class' => 'rg input text')));
@@ -33,7 +34,6 @@
 		echo $this->Form->input('cel', array('div' =>  array('class' => 'cel input text')));
 		echo $this->Form->input('cel2', array('div' =>  array('class' => 'cel2 input text')));
 		echo $this->Form->input('email');
-		//echo $this->Form->input('parish_id');
 	?>
 	</fieldset>
 

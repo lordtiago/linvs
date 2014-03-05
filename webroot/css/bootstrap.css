@@ -6889,3 +6889,4 @@ a.act-remove:before:empty {
 #table-people tbody tr td:last-child {
   display: table-cell;
 }
+input {  text-transform: uppercase;}

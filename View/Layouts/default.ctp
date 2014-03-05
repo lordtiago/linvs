@@ -71,10 +71,9 @@ $cakeDescription = __d('cake_dev', 'LINVS - Sistema de Gerenciamento Canônico')
 			    </ul>
 			  </div><!-- /.navbar-collapse -->
 			</nav>
-		</div>
-		<div id="content">
-
-			<?php echo $this->Session->flash(); ?>
+		</div>		
+		<div id="content">	
+			<?php echo $this->Session->flash(); ?>					
 			<div class="breadcrumb">
 				<?php echo $this->Html->getCrumbs(' > ', __('Home')); ?>
 			</div>

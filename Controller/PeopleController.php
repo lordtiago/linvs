@@ -41,7 +41,7 @@ class PeopleController extends AppController {
  */
 	public function view($id = null) {
 		if (!$this->Person->exists($id)) {
-			throw new NotFoundException(__('Invalid person'));
+			throw new NotFoundException(__('Invalid person'),'flash_error');
 		}
 		$options = array('conditions' => array('Person.' . $this->Person->primaryKey => $id));
 		$person = $this->Person->find('first', $options);
@@ -67,12 +67,27 @@ class PeopleController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Person->create();
 			//In the future to check, what is the parish that user work
-			$this->request->data["Person"]["parish_id"] = 1;
+			//$this->request->data["Person"]["parish_id"] = 1;
+			//transformando cadastro em maiusculas
+			$this->request->data["Person"]["name"] = strtoupper($this->request->data["Person"]["name"]);
+			$spouse = $this->request->data["Person"]["spouse_id"];
 			if ($this->Person->save($this->request->data)) {
-				$this->Session->setFlash(__('The person has been saved.'));
+				if($spouse != 0){
+					//set in spouse, the same value
+					$options = array('conditions' => array('Person.id' => $spouse));
+					$spouse = $this->Person->find('first', $options);
+					$spouse["Person"]["spouse_id"] = $this->Person->id;
+					$this->Person->save($spouse);					
+				}else{
+					$options = array('conditions' => array('Person.spouse_id' => $this->request->data["Person"]["id"]));
+					$spouse = $this->Person->find('first', $options);
+					$spouse["Person"]["spouse_id"] = 0;
+					$this->Person->save($spouse);										
+				}
+				$this->Session->setFlash(__('The person has been saved.'),'flash_success');
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The person could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The person could not be saved. Please, try again.'),'flash_error');
 			}
 		}
 		$parishes = $this->Person->Parish->find('list');
@@ -95,7 +110,8 @@ class PeopleController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			//In the future to check, what is the parish that user work
-			$this->request->data["Person"]["parish_id"] = 1;
+			//$this->request->data["Person"]["parish_id"] = 1;
+			$this->request->data["Person"]["name"] = strtoupper($this->request->data["Person"]["name"]);
 			$spouse = $this->request->data["Person"]["spouse_id"];
 			
 			if ($this->Person->save($this->request->data)) {
@@ -113,10 +129,10 @@ class PeopleController extends AppController {
 					$this->Person->save($spouse);										
 				}
 				
-				$this->Session->setFlash(__('The person has been saved.'));
+				$this->Session->setFlash(__('The person has been saved.'),'flash_success');
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The person could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The person could not be saved. Please, try again.'),'flash_error');
 			}
 		} else {
 			$options = array('conditions' => array('Person.' . $this->Person->primaryKey => $id));
@@ -143,9 +159,9 @@ class PeopleController extends AppController {
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->Person->delete()) {
-			$this->Session->setFlash(__('The person has been deleted.'));
+			$this->Session->setFlash(__('The person has been deleted.'),'flash_success');
 		} else {
-			$this->Session->setFlash(__('The person could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('The person could not be deleted. Please, try again.'),'flash_error');
 		}
 		return $this->redirect(array('action' => 'index'));
 	}}

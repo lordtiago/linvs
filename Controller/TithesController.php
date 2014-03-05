@@ -113,7 +113,7 @@ class TithesController extends AppController {
 				$this->Session->setFlash(__('The tithe has been saved.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The tithe could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The tithe could not be saved. Please, try again.'),'flash_error');
 			}
 		} else {
 			$options = array('conditions' => array('Tithe.' . $this->Tithe->primaryKey => $id));
@@ -137,9 +137,9 @@ class TithesController extends AppController {
 		}
 		$this->request->onlyAllow('post', 'delete');
 		if ($this->Tithe->delete()) {
-			$this->Session->setFlash(__('The tithe has been deleted.'));
+			$this->Session->setFlash(__('The tithe has been deleted.'),'flash_success');
 		} else {
-			$this->Session->setFlash(__('The tithe could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('The tithe could not be deleted. Please, try again.'),'flash_error');
 		}
 		return $this->redirect(array('action' => 'index'));
 	}

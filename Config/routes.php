@@ -55,7 +55,7 @@ Router::connect(
 );	
 
 Router::connect('/dizimo', array('controller' => 'tithes', 'action' => 'index'));
-Router::connect('/dizimo/cadastrar/', array('controller' => 'tithes', 'action' => 'add'));
+Router::connect('/dizimo/cadastrar', array('controller' => 'tithes', 'action' => 'add'));
 Router::connect('/dizimo/cadastrar/:id', array('controller' => 'tithes', 'action' => 'add'),
 					array('pass'=>array('id'), 'id' => '[0-9]{1,9}?')
 				);
