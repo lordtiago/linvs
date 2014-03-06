@@ -32,11 +32,11 @@ msgstr "A pessoa não foi salvo. Por favor, tente novamente."
 
 #: Controller/PeopleController.php:138
 msgid "The person has been deleted."
-msgstr "A pessoa foi deletado"
+msgstr "A pessoa foi deletada"
 
 #: Controller/PeopleController.php:140
 msgid "The person could not be deleted. Please, try again."
-msgstr "A pessoa não pode ser deletado. Por favor, tente mais tarde."
+msgstr "A pessoa não pode ser deletada. Por favor, tente mais tarde."
 
 #: Controller/TithesController.php:48;84;111
 msgid "Invalid tithe"
@@ -260,7 +260,7 @@ msgstr "Pessoa"
 
 #: View/People/view.ctp:14
 msgid "Parents"
-msgstr "Filiação"
+msgstr "Pai/Mãe"
 
 #: View/People/view.ctp:18;143
 msgid "Spouse"
@@ -341,10 +341,10 @@ msgstr "Paróquia"
 
 #: View/People/view.ctp:120
 msgid "Father"
-msgstr "Filiação"
+msgstr "Pai/Mãe"
 #: View/People/view.ctp:223
 msgid "Father2"
-msgstr "Filiação"
+msgstr "Pai/Mãe"
 
 #: View/People/view.ctp:123;131;145;159
 msgid "Name: "

@@ -83,10 +83,10 @@ class TithesController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Tithe->create();
 			if ($this->Tithe->save($this->request->data)) {
-				$this->Session->setFlash(__('The tithe has been saved.'));
+				$this->Session->setFlash(__('The tithe has been saved.'),'flash_success');
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The tithe could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The tithe could not be saved. Please, try again.'),'flash_error');
 			}
 		}
 		$people = $this->Tithe->Person->find('list',array('order' => array('Person.name ASC')));
@@ -110,7 +110,7 @@ class TithesController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Tithe->save($this->request->data)) {
-				$this->Session->setFlash(__('The tithe has been saved.'));
+				$this->Session->setFlash(__('The tithe has been saved.'),'flash_success');
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The tithe could not be saved. Please, try again.'),'flash_error');
