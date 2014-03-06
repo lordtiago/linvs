@@ -38,7 +38,7 @@ endif;
 		echo $this->Form->input('father_id', array("empty"=>__('(choose one)')));
 	?>
 	<?php if(!$dialog): ?>
-		<button class="btn btn-primary btn-lg" data-toggle="modal" data-target=".createPerson">+</button>
+		<button class="btn btn-primary btn-lg" style="float: left;" data-toggle="modal" data-target=".createPerson">+</button>
 	<?php endif; ?>
 	<?php
 		echo $this->Form->input('father2_id', array('options' => $fathers, "empty"=>__('(choose one)')));

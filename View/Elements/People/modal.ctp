@@ -7,7 +7,7 @@
 	  </div>
 	<div class="modal-content">
 	  <div class="modal-body">
- 		<iframe src="<?php echo Router::url('/', true); ?>people/add/modal" height="255px" width="100%" frameborder="0" style="border:0;padding-top:5px;">
+ 		<iframe src="<?php echo Router::url('/', true); ?>people/add/modal" height="285px" width="100%" frameborder="0" style="border:0;padding-top:5px;">
 		</iframe>      
 	  </div>
 	</div>

@@ -17,11 +17,17 @@
  */
 ?>
 <?php echo $this->html->scriptBlock('var webroot = "'.$this->Html->url('/').'";');?>
-<?php 
-	//echo $this->Html->css('admin'); 
+<?php 	
 	echo $this->Html->css('bootstrap');
 	echo $this->Html->css('select2');
+	//echo $this->Html->css('admin'); 
 ?>
+<style>
+.date select {
+  float: left;
+  width: 16.666666666666664%;
+}
+</style>
 <?php
 		echo $this->fetch('script');
 		
