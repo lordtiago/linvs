@@ -68,8 +68,8 @@ $(function($){
 
                             a.innerHTML = key;
 
-                            $("#PersonFatherId").append($(a).clone());
-							$("#PersonFather2Id").append($(a).clone());
+                            $("#PersonFatherId").append(a);
+							$("#PersonFather2Id").append(a);
 							$("#PersonSpouseId").append(a);
                       });
                 }

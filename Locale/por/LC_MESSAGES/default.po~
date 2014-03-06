@@ -24,7 +24,7 @@ msgstr "Esta pessoa já foi cadastrada"
 
 #: Controller/PeopleController.php:64;108
 msgid "The person has been saved."
-msgstr "A pessoa foi salva."
+msgstr "A pessoa foi salvo."
 
 #: Controller/PeopleController.php:67;111
 msgid "The person could not be saved. Please, try again."

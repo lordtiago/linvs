@@ -194,7 +194,7 @@
 		  			<p class="list-group-item-text"><?php echo h($spouse['Person']['tel']); ?></p>
 		  		</li>
 		  		<li id="view-marriage-related" class="list-group">
-		  			<h4 class="list-group-item-heading"><?php echo __("Marriage");?>: </h4>
+		  			<h4 class="list-group-item-heading"><?php echo __("Marriage: ");?></h4>
 		  			<p class="list-group-item-text"><?php echo $this->Time->format('d/m/Y',$spouse['Person']['marriage']); ?></p>
 		  		</li>
 		  	</ul>

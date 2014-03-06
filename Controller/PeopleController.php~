@@ -75,7 +75,6 @@ class PeopleController extends AppController {
 			$this->Person->create();
 			//In the future to check, what is the parish that user work
 			//$this->request->data["Person"]["parish_id"] = 1;
-
 			//transformando cadastro em maiusculas
 			$this->request->data["Person"]["name"] = strtoupper($this->request->data["Person"]["name"]);
 			$spouse = $this->request->data["Person"]["spouse_id"];
