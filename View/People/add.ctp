@@ -16,7 +16,7 @@ $this->Html->addCrumb(__("Add"), __("/people/add"));
 		</hgroup>
 	<?php
 		echo $this->Form->input('name',array('autocomplete'=>"off"));
-		echo $this->Form->input('parish_id', array("empty"=>__('choose one')));
+		echo $this->Form->input('parish_id', array("empty"=>__('Sem paróquia')));
 		echo $this->Form->input('birth',array('minYear' => 1900, 'maxYear'=>date('Y'),'orderYear'=>'asc','dateFormat' => 'DMY','separator' => '<span>/</span>'));
 		echo $this->Form->input('cpf', array('div' =>  array('class' => 'cpf input text')));
 		echo $this->Form->input('rg', array('div' =>  array('class' => 'rg input text')));
