@@ -4,16 +4,18 @@
 
      $this->Html->addCrumb(__("People"), __("/people"));        
 ?>
-<?php echo __('Search');?>
-<select id="SearchPerson">
-	<option></option>
-	<?php foreach ($people as $person): ?>		
-			<option value="<?php echo $person['Person']['id']; ?>"><?php echo $person['Person']['name']; ?></option>
-	<?php endforeach; reset($people);?>
-</select>
 <div class="people index">
 	<hgroup class="tt-g">
 		<h2 class="tt"><?php echo __('People'); ?></h2><?php echo $this->Html->link(__('+'), array('action' => 'add'), array('class' => 'add glyphicon btn btn-primary')); ?>
+		<div id="SelectPerson">
+			<?php echo __('Search');?>
+			<select id="SearchPerson">
+				<option></option>
+				<?php foreach ($people as $person): ?>		
+						<option value="<?php echo $person['Person']['id']; ?>"><?php echo $person['Person']['name']; ?></option>
+				<?php endforeach; reset($people);?>
+			</select>
+		</div>
 	</hgroup>
 	<div class="table-responsive">
 		<table cellpadding="0" cellspacing="0" id="table-people" class="table table-hover">
@@ -63,19 +65,23 @@
 	));
 	?>	</p>
 	<div class="paging">
-		<span class="glyphicon glyphicon-chevron-left"></span>
-		<?php echo $this->Paginator->first(__('First', true), array('class' => 'first'));?>
-		<?php
-			echo $this->Paginator->prev(__('previous'), array(), null, array('class' => 'prev disabled'));
+		<?php echo $this->Paginator->first(__('First', true), 
+			array('tag' => false, 'class' => 'first glyphicon glyphicon-step-backward'));
+		?>
+		<?php echo $this->Paginator->prev(__('previous'), 
+			array('tag' => false, 'class' => 'prev glyphicon glyphicon-chevron-left'), 
+			null, array('class' => 'prev disabled glyphicon glyphicon-chevron-left'));
 		?>
 		<?php
-			echo $this->Paginator->numbers(array('separator' => ''));
+			echo $this->Paginator->numbers(array('separator' => '|'));
 		?>
-		<?php
-			echo $this->Paginator->next(__('next'), array(), null, array('class' => 'next disabled'));
+		<?php echo $this->Paginator->next(__('next'), 
+			array('tag' => false, 'class' => 'prev glyphicon glyphicon-chevron-right'), 
+			null, array('class' => 'next disabled  glyphicon glyphicon-chevron-right'));
 		?>
-		<?php echo $this->Paginator->last(__('Last', true), array('class' => 'end'));?>
-		<span class=" glyphicon glyphicon-chevron-right"></span>
+		<?php echo $this->Paginator->last(__('Last', true), 
+			array('tag' => false, 'class' => 'end glyphicon glyphicon-step-forward'));
+		?>
 	</div>
 </div>
 <ul id="smart-menu">
