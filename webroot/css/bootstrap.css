@@ -6432,6 +6432,37 @@ div.actions:hover ul {
     width: 100%;
   }
 }
+.paging a {
+  padding: 0 4px;
+  margin: 0 2px;
+}
+.paging .next,
+.paging .prev {
+  overflow: hidden;
+}
+.paging a.next,
+.paging a.prev {
+  width: 18px;
+}
+.paging span.next,
+.paging span.prev {
+  width: 14px;
+}
+input {
+  text-transform: uppercase;
+}
+#SelectPerson {
+  position: relative;
+  float: right;
+  margin-top: 30px;
+}
+#SearchPerson {
+  width: 300px;
+}
+.modal-header {
+  background-color: #eeeeee;
+  margin-bottom: 1px;
+}
 select,
 textarea,
 input[type="text"],
@@ -6766,6 +6797,55 @@ fieldset legend {
     width: 50%;
   }
 }
+.addnew {
+  margin-top: 10px;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  float: left;
+}
+@media (min-width: 992px) {
+  .addnew {
+    right: 8.333333333333332%;
+  }
+}
+@media (min-width: 992px) {
+  .addnew {
+    left: 8.333333333333332%;
+  }
+}
+@media (min-width: 992px) {
+  .addnew {
+    float: left;
+    width: 75%;
+  }
+}
+.add-new-people {
+  margin-top: 10px;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  float: left;
+  clear: left;
+}
+@media (min-width: 992px) {
+  .add-new-people {
+    right: 8.333333333333332%;
+  }
+}
+@media (min-width: 992px) {
+  .add-new-people {
+    left: 8.333333333333332%;
+  }
+}
+@media (min-width: 992px) {
+  .add-new-people {
+    float: left;
+    width: 8.333333333333332%;
+  }
+}
 form#TitheEditForm .text,
 form#TitheAddForm .text {
   position: relative;
@@ -6889,6 +6969,7 @@ a.act-remove:before:empty {
 #table-people tbody tr td:last-child {
   display: table-cell;
 }
+
 input {  text-transform: uppercase;}
 /*envolvendo os familiares, para o botao de adicionar ficar armado, David inclua isto no less*/
 .kin {float: left; width: 85%;}

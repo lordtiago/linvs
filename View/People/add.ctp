@@ -34,11 +34,17 @@ endif;
 		echo $this->Form->input('district', array('div' =>  array('class' => 'district input text')));
 		echo $this->Form->input('city', array('div' =>  array('class' => 'city input text')));
 		echo $this->Form->input('uf', array('div' =>  array('class' => 'uf input text')));
+
 		echo $this->Form->input('country', array('div' =>  array('class' => 'country input text')));		
 	?>
 	<fieldset class="kin">
+	<?php if(!$dialog): ?>
+		<div class="add-new-people">
+			<button class="btn btn-primary btn-lg" data-toggle="modal" data-target=".createPerson">+<span class="hide">Adicionar Pessoa</span></button>
+		</div>
+	<?php endif; ?>
 	<?php
-		echo $this->Form->input('father_id', array("empty"=>__('(choose one)')));
+		echo $this->Form->input('father_id', array('div' =>  array('class' => 'addnew input text')), array("empty"=>__('(choose one)')));
 		echo $this->Form->input('father2_id', array('options' => $fathers, "empty"=>__('(choose one)')));
 		echo $this->Form->input('spouse_id', array("empty"=>__('(choose one)')));
 		echo $this->Form->input('marriage',array('minYear' => 1900, 'maxYear'=>date('Y'),'orderYear'=>'asc','dateFormat' => 'DMY','separator' => '<span>/</span>'));
