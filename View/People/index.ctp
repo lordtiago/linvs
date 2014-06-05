@@ -1,5 +1,6 @@
 <?php
-
+	 //Configs
+	 echo $this->Html->script('modal');  
 	 echo $this->Html->script('select2.min');
 
      $this->Html->addCrumb(__("People"), __("/people"));        
@@ -13,7 +14,9 @@
 </select>
 <div class="people index">
 	<hgroup class="tt-g">
-		<h2 class="tt"><?php echo __('People'); ?></h2><?php echo $this->Html->link(__('+'), array('action' => 'add'), array('class' => 'add glyphicon btn btn-primary')); ?>
+		<h2 class="tt"><?php echo __('People'); ?></h2>
+		<?php echo $this->Html->link(__('+'), array('action' => 'add'), array('class' => 'add glyphicon btn btn-primary')); ?>
+		<button class="glyphicon btn btn-primary report" data-toggle="modal" data-target=".peopleReport">Relatórios</button>
 	</hgroup>
 	<div class="table-responsive">
 		<table cellpadding="0" cellspacing="0" id="table-people" class="table table-hover">
@@ -83,6 +86,7 @@
 	<li><?php echo $this->Html->link(__('List Tithes'), array('controller' => 'tithes', 'action' => 'index')); ?> </li>
 	<li><?php echo $this->Html->link(__('New Tithe'), array('controller' => 'tithes', 'action' => 'add')); ?> </li>
 </ul>
+<?php echo $this->element('People/report'); ?>
 <script>
 $(function($){
 	$("#SearchPerson").select2({placeholder: "<?php echo __('(choose one)'); ?>", allowClear: true}); 

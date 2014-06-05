@@ -14,6 +14,7 @@ class TithesController extends AppController {
  * @var array
  */
 	public $components = array('Paginator');
+	
 
 /**
  * index method
@@ -37,6 +38,9 @@ class TithesController extends AppController {
 
 		$this->Paginator->settings = array(
 		        	'limit' => 50,
+					'order' => array(
+							'day' => 'ASC'
+					)
 				);
 		
 		$this->set('tithes', $this->Paginator->paginate(
@@ -47,6 +51,7 @@ class TithesController extends AppController {
 				),
 				array(
 					'value',
+					'day',
 					'month',
 					'month_ref',
 					'year',
@@ -55,6 +60,18 @@ class TithesController extends AppController {
 				)
 			)
 		);
+		
+        $report_simplify_year = $this->Tithe->find('list',array(
+                'fields'=>array(
+                        'Tithe.year'						
+                ),
+                'group'=>array(
+                        'Tithe.year'
+                ),
+                'recursive'=>0
+        ));
+		
+		$this->set('report_simplify_year', $report_simplify_year);
 		
 		$this->set('sum',$sum);
 	}
@@ -145,11 +162,15 @@ class TithesController extends AppController {
 	}
 
 
-        public function report_simplify($month = null, $year = null){
+    public function report_simplify($month = null, $year = null){
+		
+		$meses = array(__('January'),__('February'),__('March'),__('April'),__('May'),__('June'),__('July'),__('August'),__('September'),
+					__('October'),__('November'),__('December'));				
 
             $tithes = $this->Tithe->find('all',array(
                     'fields'=>array(
-                            'SUM(Tithe.value) as value',		
+                            'SUM(Tithe.value) as value',
+							'Concat(Tithe.year,"-",Tithe.month,"-",Tithe.day) as data',
 							'DATE(Tithe.created) as created'						
                     ),
 					'conditions'=>array(
@@ -157,7 +178,7 @@ class TithesController extends AppController {
 						'Tithe.year'=>$year
 					),
                     'group'=>array(
-                            'DAY(Tithe.created)'
+                            'DAY(data)'
                     ),
                     'recursive'=>0
             ));
@@ -171,7 +192,8 @@ class TithesController extends AppController {
 					),
                     'recursive'=>0
             ));
-            $this->layout = 'report';			
+            $this->layout = 'report';	
+			$this->set('month',$meses[$month-1]);		
             $this->set('tithes',$tithes);
 			$this->set('total',$total[0]['value']);
             $this->render();

@@ -17,6 +17,7 @@
 		</hgroup>
 	<?php
 		echo $this->Form->input('value', array('type' => 'text','autocomplete'=>"off"));
+		echo $this->Form->input('day');
 		echo $this->Form->input('month');
 		echo $this->Form->input('month_ref');
 		echo $this->Form->input('year');

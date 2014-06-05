@@ -23,6 +23,7 @@ class PeopleController extends AppController {
  */
 	public function index() {
 		$this->Person->recursive = 0;
+		
 		$this->Paginator->settings = array(
 		        'limit' => 50,
 		        'order' => array(
@@ -194,4 +195,28 @@ class PeopleController extends AppController {
             echo json_encode($result);
         }
 	}
+	
+    public function report_birthday($month = null){
+		
+		$meses = array(__('January'),__('February'),__('March'),__('April'),__('May'),__('June'),__('July'),__('August'),__('September'),
+					__('October'),__('November'),__('December'));				
+
+            $people = $this->Person->find('all',array(
+                    'fields'=>array(
+                            'Person.name as name',
+							'Person.birth as birth',						
+                    ),
+					'conditions'=>array(
+						'MONTH(birth)'=>$month
+					),
+					'order'=>array(
+						'DAY(Person.birth) ASC'
+					),
+                    'recursive'=>0
+            ));
+            $this->layout = 'report';	
+			$this->set('month',$meses[$month-1]);		
+            $this->set('people',$people);
+            $this->render();
+        }
 }

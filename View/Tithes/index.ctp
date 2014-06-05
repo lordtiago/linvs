@@ -48,14 +48,19 @@
 	   			$next_year = date('Y');
 	   		}
 			
-	   }	   
+	   }	
+	   
+	   //Configs
+	   echo $this->Html->script('modal');   
 ?>
 <?php
 	$this->Html->addCrumb(__("Tithes"), __("/tithes"));
 ?>
 <div class="tithes index">
 	<hgroup class="tt-g">
-		<h2 class="tt"><?php echo __('Tithes'); ?></h2><?php echo $this->Html->link(__('+'), array('action' => 'add'), array('class' => 'add glyphicon btn btn-primary')); ?>
+		<h2 class="tt"><?php echo __('Tithes'); ?></h2>
+		<?php echo $this->Html->link(__('+'), array('action' => 'add'), array('class' => 'add glyphicon btn btn-primary')); ?>
+		<button class="glyphicon btn btn-primary report" data-toggle="modal" data-target=".tithesReport">Relatórios</button>
 		<div id="nav-date-tithes" class="btn-group">
 			<?php echo $this->Html->link(
 				$this->Html->tag('span', '', array('class' => 'glyphicon glyphicon-chevron-left')), 
@@ -74,6 +79,7 @@
 		<table cellpadding="0" cellspacing="0 id="table-tithes" class="table table-hover"">
 		<tr>
 				<th><?php echo $this->Paginator->sort('value'); ?></th>
+				<th><?php echo $this->Paginator->sort('day'); ?></th>
 				<th><?php echo $this->Paginator->sort('month'); ?></th>
 				<th><?php echo $this->Paginator->sort('month_ref'); ?></th>
 				<th><?php echo $this->Paginator->sort('year'); ?></th>
@@ -83,6 +89,7 @@
 		<?php foreach ($tithes as $tithe): ?>
 		<tr>
 			<td><?php echo "R$ ".h($tithe['Tithe']['value']); ?></td>
+			<td><?php echo h($tithe['Tithe']['day']); ?></td>
 			<td><?php echo h($tithe['Tithe']['month']); ?></td>
 			<td><?php echo h($tithe['Tithe']['month_ref']); ?></td>
 			<td><?php echo h($tithe['Tithe']['year']); ?></td>
@@ -126,3 +133,4 @@
 		<li><?php echo $this->Html->link(__('List People'), array('controller' => 'people', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Person'), array('controller' => 'people', 'action' => 'add')); ?> </li>
 	</ul>
+<?php echo $this->element('Tithes/report'); ?>

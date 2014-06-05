@@ -6696,7 +6696,7 @@ textareainput[type="color"] {
 }
 fieldset legend {
   margin-top: 0;
-  font-size: 30px;
+  font-size: 16px;
   line-height: 2.857142858;
   letter-spacing: 1px;
   color: #6688a6;
@@ -6890,3 +6890,6 @@ a.act-remove:before:empty {
   display: table-cell;
 }
 input {  text-transform: uppercase;}
+/*envolvendo os familiares, para o botao de adicionar ficar armado, David inclua isto no less*/
+.kin {float: left; width: 85%;}
+.people form .add {margin-top: 50px;}

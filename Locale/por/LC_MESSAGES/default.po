@@ -380,6 +380,10 @@ msgstr "Valor"
 msgid "Month"
 msgstr "Mês"
 
+#: View/Tithes/view.ctp:17
+msgid "Day"
+msgstr "Dia"
+
 #: View/Tithes/view.ctp:25
 msgid "Month Reference"
 msgstr "Mês de Referência"
@@ -516,6 +520,10 @@ msgstr "Dízimo"
 #: View/Tithes/view.ctp:49
 msgid "Delete Tithe"
 msgstr "Apagar Dízimo"
+
+#: View/Tithes/report_simplify.ctp:10
+msgid "Date"
+msgstr "Data"
 
 #: Model/Person.php:validation for field name
 msgid "This field doesn't should be empty"
@@ -4164,7 +4172,7 @@ msgstr ""
 
 #: Utility/CakeTime.php:160
 msgid "day"
-msgstr ""
+msgstr "dia"
 
 #: Utility/CakeTime.php:166
 msgid "d_t_fmt"
