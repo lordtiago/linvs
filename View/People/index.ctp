@@ -15,9 +15,9 @@
 			<?php echo __('Search');?>
 			<select id="SearchPerson">
 				<option></option>
-				<?php foreach ($people as $person): ?>		
+				<?php foreach ($search_box as $person): ?>		
 						<option value="<?php echo $person['Person']['id']; ?>"><?php echo $person['Person']['name']; ?></option>
-				<?php endforeach; reset($people);?>
+				<?php endforeach;?>
 			</select>
 		</div>
 	</hgroup>

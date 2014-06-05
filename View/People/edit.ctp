@@ -30,14 +30,18 @@
 		echo $this->Form->input('district', array('div' =>  array('class' => 'district input text')));
 		echo $this->Form->input('city', array('div' =>  array('class' => 'city input text')));
 		echo $this->Form->input('uf', array('div' =>  array('class' => 'uf input text')));
-		echo $this->Form->input('country', array('div' =>  array('class' => 'country input text')));
-		echo $this->Form->input('father_id', array("empty"=>__('(choose one)')));
+		echo $this->Form->input('country', array('div' =>  array('class' => 'country input text')));		
 	?>
-		<button class="btn btn-primary btn-lg" style="float: left;" data-toggle="modal" data-target=".createPerson">+</button>
+	<fieldset class="kin">
 	<?php
+		echo $this->Form->input('father_id', array('div' =>  array('class' => 'addnew input text')), array("empty"=>__('(choose one)')));
 		echo $this->Form->input('father2_id', array('options' => $fathers, "empty"=>__('(choose one)')));
 		echo $this->Form->input('spouse_id', array("empty"=>__('(choose one)')));
 		echo $this->Form->input('marriage',array('minYear' => 1900, 'maxYear'=>date('Y'),'orderYear'=>'asc','dateFormat' => 'DMY','separator' => '<span>/</span>'));
+	?>
+	</fieldset>
+		<button class="btn btn-primary btn-lg add" style="float: left;" data-toggle="modal" data-target=".createPerson">+</button>
+	<?php
 		echo $this->Form->input('tel', array('div' =>  array('class' => 'tel input text')));
 		echo $this->Form->input('cel', array('div' =>  array('class' => 'cel input text')));
 		echo $this->Form->input('cel2', array('div' =>  array('class' => 'cel2 input text')));

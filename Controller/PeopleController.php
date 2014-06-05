@@ -23,7 +23,7 @@ class PeopleController extends AppController {
  */
 	public function index() {
 		$this->Person->recursive = 0;
-		
+		$search_box = $this->Person->find("all",array('order' => array('Person.name ASC')));
 		$this->Paginator->settings = array(
 		        'limit' => 50,
 		        'order' => array(
@@ -31,6 +31,7 @@ class PeopleController extends AppController {
 						)
 		);
 		$this->set('people', $this->Paginator->paginate());
+		$this->set('search_box', $search_box);
 	}
 
 /**
