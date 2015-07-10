@@ -7,6 +7,5 @@
 tags
 tmp/*
 /app/tmp/
-Config/*
 Config/database.php
 *˜
