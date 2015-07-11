@@ -8,7 +8,7 @@
 	$this->Html->addCrumb(__("People"), __("/people"));
 	$this->Html->addCrumb(__("Edit"), __("/people/edit"));                  
  ?>
-<div class="people form">
+<div class="people form content-container">
 <?php echo $this->Form->create('Person'); ?>
 	<fieldset>
 		<hgroup class="tt-g">
