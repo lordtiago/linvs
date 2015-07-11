@@ -61,18 +61,6 @@ class TithesController extends AppController {
 			)
 		);
 		
-        $report_simplify_year = $this->Tithe->find('list',array(
-                'fields'=>array(
-                        'Tithe.year'						
-                ),
-                'group'=>array(
-                        'Tithe.year'
-                ),
-                'recursive'=>0
-        ));
-		
-		$this->set('report_simplify_year', $report_simplify_year);
-		
 		$this->set('sum',$sum);
 	}
 
@@ -160,9 +148,28 @@ class TithesController extends AppController {
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
+    
+    public function report_main_panel(){
+        $this->layout = 'framework7';
+        $report_simplify_year = $this->Tithe->find('list',array(
+                'fields'=>array(
+                        'Tithe.year'						
+                ),
+                'group'=>array(
+                        'Tithe.year'
+                ),
+                'recursive'=>0
+        ));
+		
+		$this->set('report_simplify_year', $report_simplify_year);
+        $this->render();
+    }
 
 
     public function report_simplify($month = null, $year = null){
+        //debug($this->params->query);exit;
+        $month = $this->params->query["month"];
+        $year = $this->params->query["year"];
 		
 		$meses = array(__('January'),__('February'),__('March'),__('April'),__('May'),__('June'),__('July'),__('August'),__('September'),
 					__('October'),__('November'),__('December'));				

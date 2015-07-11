@@ -44,6 +44,12 @@ a:active,
 a:hover {
   outline: 0;
 }
+iframe {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;        
+}
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
