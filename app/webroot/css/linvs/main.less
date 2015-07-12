@@ -1,6 +1,12 @@
 @navbar-inverse-link-color: #90B4D3;
 @navbar-inverse-bg: #051B2E;
-@navbar-inverse-border: darken(@navbar-inverse-bg, 2%);
+@navbar-inverse-border: darken(@navbar-inverse-bg, 2);
+iframe {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;        
+}
 .transition-default {
 	.transition(all 0.15s easy-in-out);
 }
@@ -285,8 +291,9 @@ div.actions{
 	#view-month-ref,
 	#view-year,
 	#view-id,
-	#view-number
-	{ .make-sm-column(2); }
+	#view-number { 
+        .make-sm-column(2); 
+    }
 
 	#view-value,
 	#view-birth,
@@ -299,31 +306,37 @@ div.actions{
 	#view-tel,
 	#view-cel,
 	#view-cel2,
-	#view-parish
-	{ .make-sm-column(4); }
+	#view-parish { 
+        .make-sm-column(4); 
+    }
 
 	#view-created,
-	#view-modified
-	{ .make-sm-column(6); }
+	#view-modified { 
+        .make-sm-column(6); 
+    }
 
 	#view-email,
-	#view-district
-	{ .make-sm-column(8); }
-
+	#view-district { 
+        .make-sm-column(8); 
+    }
 
 	#view-name,
-	#view-street
-	{ .make-sm-column(10); } 
+	#view-street { 
+        .make-sm-column(10); 
+    } 
 
-	#view-name-related
-	{ .make-sm-column(6); }
+	#view-name-related	{ 
+        .make-sm-column(6); 
+    }
 
 	#view-tel-related,
-	#view-birth-related
-	{ .make-sm-column(3); }
+	#view-birth-related	{
+        .make-sm-column(3); 
+    }
 
-	#view-name-tithe
-	{ .make-sm-column(12); }	
+	#view-name-tithe { 
+        .make-sm-column(12); 
+    }	
 }
 
 .paging {
