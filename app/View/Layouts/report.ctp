@@ -5,7 +5,6 @@
 	<?php
 		echo $this->Html->css('bootstrap');
         echo $this->Html->css('report', array('media' => 'all'));
-
 		echo $scripts_for_layout;
 	?>
     </head>

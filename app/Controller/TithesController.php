@@ -149,6 +149,41 @@ class TithesController extends AppController {
 		return $this->redirect(array('action' => 'index'));
 	}
     
+    public function facade_get_people($type = null){
+        if($type != null){
+            if($type == "all"){
+                return $this->get_all_tithing();
+            }
+        }
+    }
+    
+    public function facade_get_title($type = null){
+        if($type != null){
+            if($type == "all"){
+                return "Relatório de Dizimistas agrupados por Rua";
+            }
+        }
+    }    
+    
+    public function get_all_tithing(){
+        $this->Tithe->Person->virtualFields['data'] = "SELECT Concat(month,'/',year) as data FROM tithes WHERE person_id = Person.id ORDER BY id DESC Limit 1";
+         $people = $this->Tithe->Person->find('all',array(
+                    'fields'=>array(
+                            'Person.street as street',
+							'Person.number as number',
+							'Person.name as name',
+                            'Person.tel as tel',
+                            'Person.cel as cel',
+                            'data'
+                    ),
+                    'order'=>array(
+                            'Person.street DESC'
+                    ),
+                    'recursive'=>0
+            ));
+        return $people;
+    }
+    
     public function report_main_panel(){
         $this->layout = 'framework7';
         $report_simplify_year = $this->Tithe->find('list',array(
@@ -167,9 +202,6 @@ class TithesController extends AppController {
 
 
     public function report_simplify($month = null, $year = null){
-        //debug($this->params->query);exit;
-        $month = $this->params->query["month"];
-        $year = $this->params->query["year"];
 		
 		$meses = array(__('January'),__('February'),__('March'),__('April'),__('May'),__('June'),__('July'),__('August'),__('September'),
 					__('October'),__('November'),__('December'));				
@@ -204,5 +236,15 @@ class TithesController extends AppController {
             $this->set('tithes',$tithes);
 			$this->set('total',$total[0]['value']);
             $this->render();
-        }
+    }
+
+    public function report_tithing_street($type = null){			
+//SELECT * FROM people WHERE 1 ORDER BY `people`.`street` DESC
+            $people = $this->facade_get_people($type);
+            $title = $this->facade_get_title($type);
+            $this->layout = 'report';		
+            $this->set('people',$people);
+            $this->set('title',$title);
+            $this->render();
+    }    
 }

@@ -33,6 +33,10 @@
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
+    Router::connect('/tithes/:month/:year', array('controller' => 'tithes', 'action' => 'report_simplify'),array('pass' => array('month','year'),'month' => '[0-9]+','year' => '[0-9]+'));
+
+
+    Router::connect('/tithes/:type', array('controller' => 'tithes', 'action' => 'report_tithing_street'),array('pass' => array('type'),'type' => '[a-z]+'));
 /**
  * Load all plugin routes. See the CakePlugin documentation on
  * how to customize the loading of plugin routes.

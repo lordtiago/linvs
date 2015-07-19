@@ -8,6 +8,10 @@
     <title>My App</title>
     <?php echo $this->Html->css('framework7.min'); ?>
     <?php echo $this->Html->css('app'); ?>  
+      
+    <!-- Path to Framework7 Library JS-->
+    <?php echo $this->Html->script('framework7.min'); ?>
+    <?php echo $this->Html->script('jquery-1.10.2.min'); ?>      
   </head>
     <body>
         
@@ -22,9 +26,6 @@
                     <?php echo $this->fetch('content'); ?>
                 </div>
             </div>
-      
-        <!-- Path to Framework7 Library JS-->
-        <?php echo $this->Html->script('framework7.min'); ?>
         <!-- Path to your app js-->
         <?php echo $this->Html->script('app'); ?>
     </body>

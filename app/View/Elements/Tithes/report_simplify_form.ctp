@@ -57,6 +57,7 @@
 $(".form_report_simplify").submit(function(){
 	var url = "<?php echo $this->webroot; ?>tithes/report_simplify/"+$(".report_simplify_month").val()+"/"+$(".report_simplify_year").val();
 	window.open(url);
+    event.preventDefault();
 	return false;
 });
 </script>

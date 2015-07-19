@@ -1,4 +1,4 @@
-<form method="get" target = "_blank" action="<?php echo $this->webroot; ?>tithes/report_simplify" class="form_report_simplify" >
+<form method="get" target = "_blank" action="<?php echo $this->webroot; ?>tithes/report_tithing" class="form_report_tithing" >
         <div class="content-block-title">Opções:</div>
         <div class="list-block">
             <ul>
@@ -50,9 +50,12 @@
         </div>
 </form>   
 <script>
-$(".form_report_simplify").submit(function(){
-	var url = "<?php echo $this->webroot; ?>tithes/report_tithing_street/"+$(".report_simplify_month").val();
+$(".form_report_tithing").submit(function(){
+    //var teste = $('input[name=filter]:checked').val();
+    //console.log(teste);
+	var url = "<?php echo $this->webroot; ?>tithes/report_tithing_street/"+$('input[name=filter]:checked').val();
 	window.open(url);
+    event.preventDefault();
 	return false;
 });
 </script>

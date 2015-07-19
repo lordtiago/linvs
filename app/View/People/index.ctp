@@ -1,6 +1,6 @@
 <?php
 	 //Configs
-	 echo $this->Html->script('modal');  
+	 echo $this->Html->script('modal');
 	 echo $this->Html->script('select2.min');
 
      $this->Html->addCrumb(__("People"), __("/people"));        
