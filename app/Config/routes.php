@@ -27,16 +27,43 @@
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
 	//Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
-    Router::connect('/', array('controller' => 'people', 'action' => 'index', 'home'));
+	//Router::connect('/', array('controller' => 'people', 'action' => 'index', 'home'));
+    Router::connect('/', array('plugin' => 'usermgmt', 'controller' => 'users', 'action' => 'dashboard', 'admin' => true));
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
-    Router::connect('/tithes/:month/:year', array('controller' => 'tithes', 'action' => 'report_simplify'),array('pass' => array('month','year'),'month' => '[0-9]+','year' => '[0-9]+'));
 
+//my custom routes	
+	Router::connect(
+	    '/tithes/:month/:year',
+	    array('controller' => 'tithes', 'action' => 'index'),
+	    array('pass'=>array('month','year'), 'month' => '0?[1-9]|1[012]','year' => '[12][0-9]{3}')
+	);
+	
+//portuguese routes
 
-    Router::connect('/tithes/:type', array('controller' => 'tithes', 'action' => 'report_tithing_street'),array('pass' => array('type'),'type' => '[a-z]+'));
+Router::connect(
+    '/dizimo/:month/:year',
+    array('controller' => 'tithes', 'action' => 'index'),
+    array('pass'=>array('month','year'), 'month' => '0?[1-9]|1[012]','year' => '[12][0-9]{3}')
+);	
+
+Router::connect('/dizimo', array('controller' => 'tithes', 'action' => 'index'));
+Router::connect('/dizimo/cadastrar', array('controller' => 'tithes', 'action' => 'add'));
+Router::connect('/dizimo/editar', array('controller' => 'tithes', 'action' => 'edit'));
+Router::connect('/dizimo/editar/:id', array('controller' => 'tithes', 'action' => 'edit'),array('pass' => array('id'),'id' => '[0-9]+'));
+Router::connect('/dizimo/ver', array('controller' => 'tithes', 'action' => 'view'));
+Router::connect('/dizimo/ver/:id', array('controller' => 'tithes', 'action' => 'view'),array('pass' => array('id'),'id' => '[0-9]+'));
+
+Router::connect('/pessoa', array('controller' => 'people', 'action' => 'index'));
+Router::connect('/pessoa/cadastrar', array('controller' => 'people', 'action' => 'add'));
+Router::connect('/pessoa/editar', array('controller' => 'people', 'action' => 'edit'));
+Router::connect('/pessoa/editar/:id', array('controller' => 'people', 'action' => 'edit'),array('pass' => array('id'),'id' => '[0-9]+'));
+Router::connect('/pessoa/ver', array('controller' => 'people', 'action' => 'view')); 
+Router::connect('/pessoa/ver/:id', array('controller' => 'people', 'action' => 'view'),array('pass' => array('id'),'id' => '[0-9]+'));
+
 /**
  * Load all plugin routes. See the CakePlugin documentation on
  * how to customize the loading of plugin routes.

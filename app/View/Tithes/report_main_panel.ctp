@@ -67,7 +67,7 @@
   <!-- Anual Page-->
   <div data-page="yearly" class="page cached">
     <div class="page-content">
-        <?php //echo $this->element("Tithes/report_tithing");?>
+        <?php echo $this->element("Tithes/report_yearly_form",array("report_simplify_year"=>$report_simplify_year));?>
     </div>
   </div>    
 </div>

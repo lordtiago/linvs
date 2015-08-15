@@ -20,17 +20,17 @@
                   </li>
                   <li>
                     <label class="label-radio item-content">
-                      <input type="radio" name="filter" value="inactive_2">
+                      <input type="radio" name="filter" value="inactive_3">
                       <div class="item-inner">
-                        <div class="item-title">Inativos (02 meses)</div>
+                        <div class="item-title">Inativos (03 meses)</div>
                       </div>
                     </label>
                   </li>
                   <li>
                     <label class="label-radio item-content">
-                      <input type="radio" name="filter" value="inactive_3">
+                      <input type="radio" name="filter" value="inactive_6">
                       <div class="item-inner">
-                        <div class="item-title">Inativos (03 meses)</div>
+                        <div class="item-title">Inativos (06 meses)</div>
                       </div>
                     </label>
                   </li>                

@@ -16,6 +16,35 @@ class TithesController extends AppController {
 	public $components = array('Paginator');
 	
 
+    public $order = array(
+                'Person.street DESC',
+                'Person.name ASC'
+            );
+    
+    public $fields = array(
+                'Person.street as street',
+                'Person.number as number',
+                'Person.name as name',
+                'Person.tel as tel',
+                'Person.cel as cel',
+                'data'
+            );
+    
+    public $group = array(
+                'Person.id'
+            );
+    
+    public $joins = array(
+            array('table' => 'tithes',
+                'alias' => 'Tithe',
+                'type' => 'INNER',
+                'conditions' => array(
+                    'Person.id = Tithe.person_id',
+                )
+            )
+        );
+    
+    public $subquery = "SELECT Concat(LPAD(month,2,0),'/',year) as data FROM tithes WHERE person_id = Person.id ORDER BY id DESC Limit 1";
 /**
  * index method
  *
@@ -153,6 +182,13 @@ class TithesController extends AppController {
         if($type != null){
             if($type == "all"){
                 return $this->get_all_tithing();
+            }else if ($type == "active"){
+                return $this->get_active_tithing();
+            }else if ($type == "inactive_3"){
+                return $this->get_inactive_tithing(4);
+            }
+            else if ($type == "inactive_6"){
+                return $this->get_inactive_tithing(7);
             }
         }
     }
@@ -161,27 +197,89 @@ class TithesController extends AppController {
         if($type != null){
             if($type == "all"){
                 return "Relatório de Dizimistas agrupados por Rua";
+            }else if ($type == "active"){
+                return "Relatório de Dizimistas Ativos (que apresentaram nos últimos 06 meses) agrupados por Rua";
+            }else if ($type == "inactive_3"){
+                return "Relatório de Dizimistas Inativos que não apresentaram o dízimo nos últimos 3 meses (agrupados por Rua)";
+            }else if ($type == "inactive_6"){
+                return "Relatório de Dizimistas Inativos que não apresentaram o dízimo nos últimos 6 meses (agrupados por Rua)";
             }
         }
     }    
     
     public function get_all_tithing(){
-        $this->Tithe->Person->virtualFields['data'] = "SELECT Concat(month,'/',year) as data FROM tithes WHERE person_id = Person.id ORDER BY id DESC Limit 1";
+        $this->Tithe->Person->virtualFields['data'] = $this->subquery;
          $people = $this->Tithe->Person->find('all',array(
-                    'fields'=>array(
-                            'Person.street as street',
-							'Person.number as number',
-							'Person.name as name',
-                            'Person.tel as tel',
-                            'Person.cel as cel',
-                            'data'
-                    ),
-                    'order'=>array(
-                            'Person.street DESC'
-                    ),
+                    'fields'=> $this->fields,
+                    'order'=> $this->order,
                     'recursive'=>0
             ));
         return $people;
+    }
+
+    public function get_active_tithing(){
+        $limitDate = $this->get_limit_date();
+        $this->Tithe->Person->virtualFields['data'] = $this->subquery;
+        
+        $options = array(
+                'fields'=> $this->fields,
+                'conditions'=>array(
+                    'CONCAT(Tithe.year,LPAD(Tithe.month,2,0)) >='=>$limitDate
+                ),
+                'group'=> $this->group, 
+                'order'=> $this->order,
+                'recursive'=>0
+        );
+        
+        $options['joins'] = $this->joins; 
+        $people = $this->Tithe->Person->find('all',$options);
+        
+        return $people;
+    }
+
+    public function get_inactive_tithing($limit = NULL){
+        $limitDate =  $this->get_limit_date($limit);
+        $this->Tithe->Person->virtualFields['data'] = $this->subquery;
+        
+        $ids = $this->get_people_id($limitDate);
+        
+        $options = array(
+                'fields'=> $this->fields,
+                'conditions'=>array(
+                    "Tithe.person_id NOT IN $ids",
+                ),
+                'group'=> $this->group, 
+                'order'=> $this->order,
+                'recursive'=>0
+        );
+        
+        $options['joins'] = $this->joins; 
+        $people = $this->Tithe->Person->find('all',$options);        
+        return $people;
+    }
+    
+    public function get_people_id($limitDate){
+                $options = array(
+                'fields'=> array(
+                    'Person.id as id',
+                ),
+                'conditions'=>array(
+                    'CONCAT(Tithe.year,LPAD(Tithe.month,2,0)) >'=>$limitDate
+                ),
+                'group'=>$this->group, 
+                'order'=> array(
+                    'Person.id ASC'
+                ),
+                'recursive'=>0
+        );
+        
+        $options['joins'] = $this->joins;
+        $people = $this->Tithe->Person->find('all',$options);
+        $ids = "(0";
+        foreach($people as $person){
+            $ids .= ",".$person["Person"]["id"];
+        }
+        return $ids .=")";
     }
     
     public function report_main_panel(){
@@ -246,5 +344,36 @@ class TithesController extends AppController {
             $this->set('people',$people);
             $this->set('title',$title);
             $this->render();
-    }    
+    }  
+
+    public function report_yearly($year = null){				
+
+            $tithes = $this->Tithe->find('all',array(
+                    'fields'=>array(
+                            'SUM(Tithe.value) as value',
+							'Tithe.month',					
+                    ),
+					'conditions'=>array(
+						'Tithe.year'=>$year
+					),
+                    'group'=>array(
+                            'Tithe.month'
+                    ),
+                    'recursive'=>0
+            ));
+			$total = $this->Tithe->find('first',array(
+                    'fields'=>array(
+                            'SUM(Tithe.value) as value',						
+                    ),
+					'conditions'=>array(
+						'Tithe.year'=>$year
+					),
+                    'recursive'=>0
+            ));
+            $this->layout = 'report';
+            $this->set('year',$year);
+            $this->set('tithes',$tithes);
+			$this->set('total',$total[0]['value']);
+            $this->render();
+    }
 }

@@ -27,6 +27,7 @@ $cakeDescription = __d('cake_dev', 'LINVS - Sistema de Gerenciamento Canônico')
 		<?php echo $cakeDescription ?>:
 		<?php echo $title_for_layout; ?>
 	</title>
+    <meta name="robots" content="noindex,nofollow">
 	<?php
 		echo $this->Html->meta(
 			'favicon.ico',
@@ -36,7 +37,21 @@ $cakeDescription = __d('cake_dev', 'LINVS - Sistema de Gerenciamento Canônico')
 
 		// echo $this->Html->css('cake.generic');
 		echo $this->Html->css('bootstrap');
+		/* Usermgmt Plugin CSS */
+		echo $this->Html->css('/usermgmt/css/umstyle.css?q='.QRDN);
+		
+		/* Bootstrap Datepicker is taken from https://github.com/eternicode/bootstrap-datepicker */
+		echo $this->Html->css('/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css?q='.QRDN);
+
+		/* Bootstrap Datepicker is taken from https://github.com/smalot/bootstrap-datetimepicker */
+		echo $this->Html->css('/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css?q='.QRDN);
+		
+		/* Chosen is taken from https://github.com/harvesthq/chosen/releases/ */
+		echo $this->Html->css('/plugins/chosen/chosen.min.css?q='.QRDN);
+
+
 		echo $this->Html->css('select2');
+        echo $this->Html->css('dashboard');
 		echo $this->html->scriptBlock('var webroot = "'.$this->Html->url('/').'";');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -44,6 +59,26 @@ $cakeDescription = __d('cake_dev', 'LINVS - Sistema de Gerenciamento Canônico')
 		
 		echo $this->Html->script('jquery-1.10.2.min');
 		echo $this->Html->script('smart-menu');
+        echo $this->Html->script('bootstrap.min');
+
+		/* Bootstrap Datepicker is taken from https://github.com/eternicode/bootstrap-datepicker */
+		echo $this->Html->script('/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js?q='.QRDN);
+        echo $this->Html->script('/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.pt-BR.min.js?q='.QRDN);
+
+		/* Bootstrap Datepicker is taken from https://github.com/smalot/bootstrap-datetimepicker */
+		//echo $this->Html->script('/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js?q='.QRDN);
+		
+		/* Bootstrap Typeahead is taken from https://github.com/biggora/bootstrap-ajax-typeahead */
+		echo $this->Html->script('/plugins/bootstrap-ajax-typeahead/js/bootstrap-typeahead.min.js?q='.QRDN);
+		
+		/* Chosen is taken from https://github.com/harvesthq/chosen/releases/ */
+		echo $this->Html->script('/plugins/chosen/chosen.jquery.min.js?q='.QRDN);
+
+		/* Usermgmt Plugin JS */
+		echo $this->Html->script('/usermgmt/js/umscript.js?q='.QRDN);
+		echo $this->Html->script('/usermgmt/js/ajaxValidation.js?q='.QRDN);
+
+		echo $this->Html->script('/usermgmt/js/chosen/chosen.ajaxaddition.jquery.js?q='.QRDN);
 	?>
 </head>
 <body>
@@ -65,9 +100,9 @@ $cakeDescription = __d('cake_dev', 'LINVS - Sistema de Gerenciamento Canônico')
 			  <div class="collapse navbar-collapse" id="linvs-nav">
 			    <ul class="nav navbar-nav">
 					<?php $span = $this->Html->tag('i', '', array('class' => 'glyphicon glyphicon-user')).$this->Html->tag('span',__("People"));?>
-					<li><?php echo$this->Html->link($span, array('action' => 'index', "controller"=>"people"),array('escape'=>false)); ?></li>
+					<li><?php echo $this->Html->link($span, '/people/index',array('escape'=>false)); ?></li>
 					<?php $span = $this->Html->tag('i', '', array('class' => 'glyphicon glyphicon-heart')).$this->Html->tag('span',__("Tithe"));?>
-			    	<li><?php echo$this->Html->link($span, array('action' => 'index', "controller"=>"tithes"),array('escape'=>false)); ?></li>	    	
+			    	<li><?php echo $this->Html->link($span, '/tithes/index',array('escape'=>false)); ?></li>	    	
 			    </ul>
 			  </div><!-- /.navbar-collapse -->
 			</nav>

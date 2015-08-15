@@ -1,6 +1,7 @@
 <?php header("Content-type: application/pdf");  ?>
 <html>
-    <head>        
+    <head>
+        <meta name="robots" content="noindex,nofollow">
 	<?php echo $this->Html->charset(); ?>
 	<?php
 		echo $this->Html->css('bootstrap');

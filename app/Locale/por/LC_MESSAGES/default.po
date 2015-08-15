@@ -14,6 +14,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
+#: Utility/CakeTime.php:160
+msgid "day"
+msgstr "dia"
+
 #: Controller/PeopleController.php:38;86;134
 msgid "Invalid person"
 msgstr "Pessoa inexistente"
@@ -730,3475 +734,2060 @@ msgstr "há um dia atras"
 msgid "about a week ago"
 msgstr ""
 
-#: Utility/CakeTime.php:918
-msgid "about a year ago"
-msgstr ""
-
-#: Utility/CakeTime.php:927
-msgid "in about a second"
-msgstr ""
-
-#: Utility/CakeTime.php:928
-msgid "in about a minute"
-msgstr ""
-
-#: Utility/CakeTime.php:929
-msgid "in about an hour"
-msgstr ""
-
-#: Utility/CakeTime.php:930
-msgid "in about a day"
-msgstr ""
-
-#: Utility/CakeTime.php:931
-msgid "in about a week"
-msgstr ""
-
-#: Utility/CakeTime.php:932
-msgid "in about a year"
-msgstr ""
-
-#: Utility/CakeTime.php:954;976
-msgid "days"
-msgstr ""
-
-#: Utility/CakeTime.php:886
-msgid "%d year"
-msgid_plural "%d years"
-msgstr[0] ""
-msgstr[1] ""
-
-#: Utility/CakeTime.php:889
-msgid "%d month"
-msgid_plural "%d months"
-msgstr[0] ""
-msgstr[1] ""
-
-#: Utility/CakeTime.php:892
-msgid "%d week"
-msgid_plural "%d weeks"
-msgstr[0] ""
-msgstr[1] ""
-
-#: Utility/CakeTime.php:895
-msgid "%d day"
-msgid_plural "%d days"
-msgstr[0] ""
-msgstr[1] ""
-
-#: Utility/CakeTime.php:898
-msgid "%d hour"
-msgid_plural "%d hours"
-msgstr[0] ""
-msgstr[1] ""
-
-#: Utility/CakeTime.php:901
-msgid "%d minute"
-msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
-
-#: Utility/CakeTime.php:904
-msgid "%d second"
-msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
-
-#: View/Helper/FormHelper.php:693
-msgid "Error in field %s"
-msgstr "Erro no campo %s"
-
-#: View/Helper/FormHelper.php:882
-#: View/Scaffolds/form.ctp:49
-#: View/Scaffolds/index.ctp:80;95
-#: View/Scaffolds/view.ctp:66;81;191
-msgid "New %s"
-msgstr "Novo %s"
-
-#: View/Helper/FormHelper.php:888
-#: View/Scaffolds/view.ctp:54;112
-msgid "Edit %s"
-msgstr ""
-
-#: View/Helper/FormHelper.php:1456
-msgid "empty"
-msgstr "vazio"
-
-#: View/Helper/FormHelper.php:2763
-msgid "January"
-msgstr "Janeiro"
-
-#: View/Helper/PaginatorHelper.php:627
-msgid " of "
-msgstr ""
-
-#: View/Scaffolds/form.ctp:38
-msgid "List"
-msgstr "Listar"
-
-#: View/Scaffolds/form.ctp:45
-#: View/Scaffolds/index.ctp:88
-#: View/Scaffolds/view.ctp:62;75
-msgid "List %s"
-msgstr ""
-
-#: View/Scaffolds/view.ctp:21
-msgid "View %s"
-msgstr ""
-
-#: View/Scaffolds/view.ctp:58
-msgid "Delete %s"
-msgstr ""
-
-#: View/Scaffolds/view.ctp:96;136
-msgid "Related %s"
-msgstr "Relacionado %s"
-
-#: View/Layouts/default.ctp:20
-msgid "LINVS - Sistema de Gerenciamento Paroquial"
-msgstr ""
-
-#: View/Layouts/error.ctp:20
-msgid "CakePHP: the rapid development php framework"
-msgstr ""
-
-#: View/Pages/home.ctp:17
-msgid "Release Notes for CakePHP %s."
-msgstr ""
-
-#: View/Pages/home.ctp:19
-msgid "Read the changelog"
-msgstr ""
-
-#: View/Pages/home.ctp:30
-msgid "URL rewriting is not properly configured on your server."
-msgstr ""
-
-#: View/Pages/home.ctp:41
-msgid "Your version of PHP is 5.2.8 or higher."
-msgstr ""
-
-#: View/Pages/home.ctp:45
-msgid "Your version of PHP is too low. You need PHP 5.2.8 or higher to use CakePHP."
-msgstr ""
-
-#: View/Pages/home.ctp:54
-msgid "Your tmp directory is writable."
-msgstr ""
-
-#: View/Pages/home.ctp:58
-msgid "Your tmp directory is NOT writable."
-msgstr ""
-
-#: View/Pages/home.ctp:68
-msgid "The %s is being used for core caching. To change the config edit %s"
-msgstr ""
-
-#: View/Pages/home.ctp:72
-msgid "Your cache is NOT working. Please check the settings in %s"
-msgstr ""
-
-#: View/Pages/home.ctp:82
-msgid "Your database configuration file is present."
-msgstr ""
-
-#: View/Pages/home.ctp:87
-msgid "Your database configuration file is NOT present."
-msgstr ""
-
-#: View/Pages/home.ctp:89
-msgid "Rename %s to %s"
-msgstr ""
-
-#: View/Pages/home.ctp:114
-msgid "CakePHP is able to connect to the database."
-msgstr ""
-
-#: View/Pages/home.ctp:118
-msgid "CakePHP is NOT able to connect to the database."
-msgstr ""
-
-#: View/Pages/home.ctp:130
-msgid "PCRE has not been compiled with Unicode support."
-msgstr ""
-
-#: View/Pages/home.ctp:132
-msgid "Recompile PCRE with Unicode support by adding <code>--enable-unicode-properties</code> when configuring"
-msgstr ""
-
-#: View/Pages/home.ctp:141
-msgid "DebugKit plugin is present"
-msgstr ""
-
-#: View/Pages/home.ctp:145
-msgid "DebugKit is not installed. It will help you inspect and debug different aspects of your application."
-msgstr ""
-
-#: View/Pages/home.ctp:147
-msgid "You can install it from %s"
-msgstr ""
-
-#: View/Pages/home.ctp:153
-msgid "Editing this Page"
-msgstr ""
-
-#: View/Pages/home.ctp:156
-msgid "To change the content of this page, edit: %s.<br />\nTo change its layout, edit: %s.<br />\nYou can also add some CSS styles for your pages at: %s."
-msgstr ""
-
-#: View/Pages/home.ctp:163
-msgid "Getting Started"
-msgstr ""
-
-#: View/Pages/home.ctp:167
-msgid "New"
-msgstr ""
-
-#: View/Pages/home.ctp:167
-msgid "CakePHP 2.0 Docs"
-msgstr ""
-
-#: View/Pages/home.ctp:176
-msgid "The 15 min Blog Tutorial"
-msgstr ""
-
-#: View/Pages/home.ctp:183
-msgid "Official Plugins"
-msgstr ""
-
-#: View/Pages/home.ctp:188
-msgid "provides a debugging toolbar and enhanced debugging tools for CakePHP applications."
-msgstr ""
-
-#: View/Pages/home.ctp:192
-msgid "contains various localized validation classes and translations for specific countries"
-msgstr ""
-
-#: View/Pages/home.ctp:197
-msgid "More about Cake"
-msgstr ""
-
-#: View/Pages/home.ctp:199
-msgid "CakePHP is a rapid development framework for PHP which uses commonly known design patterns like Active Record, Association Data Mapping, Front Controller and MVC."
-msgstr ""
-
-#: View/Pages/home.ctp:202
-msgid "Our primary goal is to provide a structured framework that enables PHP users at all levels to rapidly develop robust web applications, without any loss to flexibility."
-msgstr ""
-
-#: View/Pages/home.ctp:206
-msgid "Cake Software Foundation"
-msgstr ""
-
-#: View/Pages/home.ctp:207
-msgid "Promoting development related to CakePHP"
-msgstr ""
-
-#: View/Pages/home.ctp:209
-msgid "The Rapid Development Framework"
-msgstr ""
-
-#: View/Pages/home.ctp:210
-msgid "CakePHP Documentation"
-msgstr ""
-
-#: View/Pages/home.ctp:211
-msgid "Your Rapid Development Cookbook"
-msgstr ""
-
-#: View/Pages/home.ctp:212
-msgid "CakePHP API"
-msgstr ""
-
-#: View/Pages/home.ctp:213
-msgid "Quick Reference"
-msgstr ""
-
-#: View/Pages/home.ctp:214
-msgid "The Bakery"
-msgstr ""
-
-#: View/Pages/home.ctp:215
-msgid "Everything CakePHP"
-msgstr ""
-
-#: View/Pages/home.ctp:216
-msgid "CakePHP plugins repo"
-msgstr ""
-
-#: View/Pages/home.ctp:217
-msgid "A comprehensive list of all CakePHP plugins created by the community"
-msgstr ""
-
-#: View/Pages/home.ctp:218
-msgid "CakePHP Google Group"
-msgstr ""
-
-#: View/Pages/home.ctp:219
-msgid "Community mailing list"
-msgstr ""
-
-#: View/Pages/home.ctp:221
-msgid "Live chat about CakePHP"
-msgstr ""
-
-#: View/Pages/home.ctp:222
-msgid "CakePHP Code"
-msgstr ""
-
-#: View/Pages/home.ctp:223
-msgid "For the Development of CakePHP Git repository, Downloads"
-msgstr ""
-
-#: View/Pages/home.ctp:224
-msgid "CakePHP Lighthouse"
-msgstr ""
-
-#: View/Pages/home.ctp:225
-msgid "CakePHP Tickets, Wiki pages, Roadmap"
-msgstr ""
-
-#: webroot/test.php:95
-msgid "Debug setting does not allow access to this url."
-msgstr ""
-
-#: Cache/Cache.php:173
-msgid "Cache engine %s is not available."
-msgstr ""
-
-#: Cache/Cache.php:177
-msgid "Cache engines must use %s as a base class."
-msgstr ""
-
-#: Cache/Cache.php:181
-msgid "Cache engine %s is not properly configured."
-msgstr ""
-
-#: Cache/Cache.php:318
-msgid "%s cache was unable to write '%s' to %s cache"
-msgstr ""
-
-#: Cache/Cache.php:542
-msgid "Invalid cache group %s"
-msgstr ""
-
-#: Cache/Engine/FileEngine.php:314
-msgid "Files cannot be atomically decremented."
-msgstr ""
-
-#: Cache/Engine/FileEngine.php:326
-msgid "Files cannot be atomically incremented."
-msgstr ""
-
-#: Cache/Engine/FileEngine.php:363
-msgid "Could not apply permission mask \"%s\" on cache file \"%s\""
-msgstr ""
-
-#: Cache/Engine/FileEngine.php:386
-msgid "%s is not writable"
-msgstr ""
-
-#: Cache/Engine/MemcacheEngine.php:168;185
-msgid "Method %s not implemented for compressed cache in %s"
-msgstr ""
-
-#: Configure/IniReader.php:102
-#: Configure/PhpReader.php:64
-msgid "Cannot load configuration files with ../ in them."
-msgstr ""
-
-#: Configure/IniReader.php:107
-#: Configure/PhpReader.php:69
-msgid "Could not load configuration file: %s"
-msgstr ""
-
-#: Configure/PhpReader.php:74
-msgid "No variable %s found in %s"
-msgstr ""
-
-#: Console/Command/TestShell.php:176
-msgid "Please install PHPUnit framework <info>(http://www.phpunit.de)</info>"
-msgstr ""
-
-#: Console/Command/TestShell.php:372
-msgid "Test case %s cannot be run via this shell"
-msgstr ""
-
-#: Console/Command/TestShell.php:385;402
-msgid "Test case %s not found"
-msgstr ""
-
-#: Console/Command/Task/PluginTask.php:182
-msgid "%s modified"
-msgstr ""
-
-#: Console/Command/Task/TestTask.php:324
-msgid "Invalid object type."
-msgstr ""
-
-#: Console/Command/Task/TestTask.php:343
-msgid "Invalid type name"
-msgstr ""
-
-#: Controller/Component/AclComponent.php:67
-msgid "Could not find %s."
-msgstr ""
-
-#: Controller/Component/AclComponent.php:91
-msgid "AclComponent adapters must implement AclInterface"
-msgstr ""
-
-#: Controller/Component/AclComponent.php:162;176
-msgid "%s is deprecated, use %s instead"
-msgstr ""
-
-#: Controller/Component/AuthComponent.php:493
-msgid "Authorization adapter \"%s\" was not found."
-msgstr ""
-
-#: Controller/Component/AuthComponent.php:496
-msgid "Authorization objects must implement an %s method."
-msgstr ""
-
-#: Controller/Component/AuthComponent.php:782
-msgid "Authentication adapter \"%s\" was not found."
-msgstr ""
-
-#: Controller/Component/AuthComponent.php:785
-msgid "Authentication objects must implement an %s method."
-msgstr ""
-
-#: Controller/Component/CookieComponent.php:370
-msgid "You must use cipher or rijndael for cookie encryption type"
-msgstr ""
-
-#: Controller/Component/RequestHandlerComponent.php:757
-msgid "You must give a handler callback."
-msgstr ""
-
-#: Controller/Component/SecurityComponent.php:337;615
-msgid "The request has been black-holed"
-msgstr ""
-
-#: Controller/Component/Acl/PhpAcl.php:102
-msgid "\"roles\" section not found in configuration."
-msgstr ""
-
-#: Controller/Component/Acl/PhpAcl.php:106
-msgid "Neither \"allow\" nor \"deny\" rules were provided in configuration."
-msgstr ""
-
-#: Controller/Component/Acl/PhpAcl.php:524
-msgid "cycle detected when inheriting %s from %s. Path: %s"
-msgstr ""
-
-#: Controller/Component/Auth/BaseAuthenticate.php:156
-msgid "Password hasher class \"%s\" was not found."
-msgstr ""
-
-#: Controller/Component/Auth/BaseAuthenticate.php:159
-msgid "Password hasher must extend AbstractPasswordHasher class."
-msgstr ""
-
-#: Controller/Component/Auth/BaseAuthorize.php:97
-msgid "$controller needs to be an instance of Controller"
-msgstr ""
-
-#: Controller/Component/Auth/ControllerAuthorize.php:51
-msgid "$controller does not implement an %s method."
-msgstr ""
-
-#: Controller/Component/Auth/CrudAuthorize.php:85
-msgid "CrudAuthorize::authorize() - Attempted access of un-mapped action \"%1$s\" in controller \"%2$s\""
-msgstr ""
-
-#: Core/Configure.php:73
-msgid "Can't find application core file. Please create %s, and make sure it is readable by PHP."
-msgstr ""
-
-#: Core/Configure.php:93
-msgid "Can't find application bootstrap file. Please create %s, and make sure it is readable by PHP."
-msgstr ""
-
-#: Core/Configure.php:340
-msgid "There is no \"%s\" adapter."
-msgstr ""
-
-#: Core/Configure.php:343
-msgid "The \"%s\" adapter, does not have a %s method."
-msgstr ""
-
-#: Event/CakeEventManager.php:105
-msgid "The eventKey variable is required"
-msgstr ""
-
-#: I18n/I18n.php:166
-msgid "You cannot use \"\" as a domain."
-msgstr ""
-
-#: I18n/I18n.php:204
-msgid "Missing plural form translation for \"%s\" in \"%s\" domain, \"%s\" locale.  Check your po file for correct plurals and valid Plural-Forms header."
-msgstr ""
-
-#: Log/CakeLog.php:192
-msgid "Invalid key name"
-msgstr ""
-
-#: Log/CakeLog.php:195
-msgid "Missing logger classname"
-msgstr ""
-
-#: Log/CakeLog.php:316;334;353
-msgid "Stream %s not found"
-msgstr ""
-
-#: Log/LogEngineCollection.php:46
-msgid "logger class %s does not implement a %s method."
-msgstr ""
-
-#: Log/LogEngineCollection.php:71
-msgid "Could not load class %s"
-msgstr ""
-
-#: Log/Engine/FileLog.php:152
-msgid "Could not apply permission mask \"%s\" on log file \"%s\""
-msgstr ""
-
-#: Model/AclNode.php:177
-msgid "AclNode::node() - Couldn't find %s node identified by \"%s\""
-msgstr ""
-
-#: Model/BehaviorCollection.php:231
-msgid "%s - Method %s not found in any attached behavior"
-msgstr ""
-
-#: Model/CakeSchema.php:617
-msgid "Schema generation error: invalid column type %s for %s.%s does not exist in DBO"
-msgstr ""
-
-#: Model/Model.php:1376
-msgid "(Model::getColumnTypes) Unable to build model field data. If you are using a model without a database table, try implementing schema()"
-msgstr ""
-
-#: Model/Model.php:3561
-msgid "Invalid join model settings in %s. The association parameter has the wrong type, expecting a string or array, but was passed type: %s"
-msgstr ""
-
-#: Model/Permission.php:87
-msgid "%s - Failed ARO/ACO node lookup in permissions check. Node references:\nAro: %s\nAco: %s"
-msgstr ""
-
-#: Model/Permission.php:98
-msgid "%s - Failed ACO node lookup in permissions check. Node references:\nAro: %s\nAco: %s"
-msgstr ""
-
-#: Model/Permission.php:109
-msgid "ACO permissions key %s does not exist in %s"
-msgstr ""
-
-#: Model/Permission.php:180
-msgid "%s - Invalid node"
-msgstr ""
-
-#: Model/Permission.php:198
-msgid "Invalid permission key \"%s\""
-msgstr ""
-
-#: Model/Behavior/AclBehavior.php:68
-msgid "Callback %s not defined in %s"
-msgstr ""
-
-#: Model/Behavior/AclBehavior.php:85
-msgid "AclBehavior is setup with more then one type, please specify type parameter for node()"
-msgstr ""
-
-#: Model/Behavior/ContainableBehavior.php:344
-msgid "Model \"%s\" is not associated with model \"%s\""
-msgstr ""
-
-#: Model/Behavior/TranslateBehavior.php:71
-msgid "Datasource %s for TranslateBehavior of model %s is not connected"
-msgstr ""
-
-#: Model/Behavior/TranslateBehavior.php:590
-msgid "You cannot bind a translation named \"name\"."
-msgstr ""
-
-#: Model/Behavior/TranslateBehavior.php:612
-msgid "Association %s is already bound to model %s"
-msgstr ""
-
-#: Model/Datasource/CakeSession.php:489
-msgid "Unable to configure the session, setting %s failed."
-msgstr ""
-
-#: Model/Datasource/CakeSession.php:523
-msgid "Could not load %s to handle the session."
-msgstr ""
-
-#: Model/Datasource/CakeSession.php:529
-msgid "Chosen SessionHandler does not implement CakeSessionHandlerInterface it cannot be used with an engine key."
-msgstr ""
-
-#: Model/Datasource/DboSource.php:257
-msgid "Selected driver is not enabled"
-msgstr ""
-
-#: Model/Datasource/DboSource.php:1189
-msgid "Error in Model %s"
-msgstr ""
-
-#: Model/Datasource/DboSource.php:2966
-msgid "Invalid schema object"
-msgstr ""
-
-#: Model/Datasource/DboSource.php:3076
-#: Model/Datasource/Database/Sqlite.php:403
-msgid "Column name or type not defined in schema"
-msgstr ""
-
-#: Model/Datasource/DboSource.php:3081
-#: Model/Datasource/Database/Sqlite.php:408
-msgid "Column type %s does not exist"
-msgstr ""
-
-#: Model/Datasource/Database/Mysql.php:335
-#: Model/Datasource/Database/Sqlserver.php:218
-msgid "Could not describe table for %s"
-msgstr ""
-
-#: Model/Validator/CakeValidationRule.php:283
-msgid "Could not find validation handler %s for %s"
-msgstr ""
-
-#: Network/CakeRequest.php:455
-msgid "Method %s does not exist"
-msgstr ""
-
-#: Network/CakeResponse.php:624
-msgid "Unknown status code"
-msgstr ""
-
-#: Network/CakeResponse.php:668
-msgid "Invalid status code"
-msgstr ""
-
-#: Network/CakeResponse.php:1268
-msgid "The requested file %s was not found or not readable"
-msgstr ""
-
-#: Network/CakeSocket.php:306
-msgid "Connection timed out"
-msgstr ""
-
-#: Network/CakeSocket.php:374
-msgid "Invalid encryption scheme chosen"
-msgstr ""
-
-#: Network/CakeSocket.php:387
-msgid "Unable to perform enableCrypto operation on CakeSocket"
-msgstr ""
-
-#: Network/Email/CakeEmail.php:370
-msgid "From requires only 1 email address."
-msgstr ""
-
-#: Network/Email/CakeEmail.php:385
-msgid "Sender requires only 1 email address."
-msgstr ""
-
-#: Network/Email/CakeEmail.php:400
-msgid "Reply-To requires only 1 email address."
-msgstr ""
-
-#: Network/Email/CakeEmail.php:415
-msgid "Disposition-Notification-To requires only 1 email address."
-msgstr ""
-
-#: Network/Email/CakeEmail.php:430
-msgid "Return-Path requires only 1 email address."
-msgstr ""
-
-#: Network/Email/CakeEmail.php:564;578;618;632
-msgid "Invalid email: \"%s\""
-msgstr ""
-
-#: Network/Email/CakeEmail.php:663;678
-msgid "$headers should be an array."
-msgstr ""
-
-#: Network/Email/CakeEmail.php:883
-msgid "Format not available."
-msgstr ""
-
-#: Network/Email/CakeEmail.php:918
-msgid "Class \"%s\" not found."
-msgstr ""
-
-#: Network/Email/CakeEmail.php:920
-msgid "The \"%s\" does not have a %s method."
-msgstr ""
-
-#: Network/Email/CakeEmail.php:941
-msgid "Invalid format for Message-ID. The text should be something like \"<uuid@server.com>\""
-msgstr ""
-
-#: Network/Email/CakeEmail.php:1020
-msgid "No file or data specified."
-msgstr ""
-
-#: Network/Email/CakeEmail.php:1023
-msgid "No filename specified."
-msgstr ""
-
-#: Network/Email/CakeEmail.php:1029
-msgid "File not found: \"%s\""
-msgstr ""
-
-#: Network/Email/CakeEmail.php:1112
-msgid "From is not specified."
-msgstr ""
-
-#: Network/Email/CakeEmail.php:1115
-msgid "You need to specify at least one destination for to, cc or bcc."
-msgstr ""
-
-#: Network/Email/CakeEmail.php:1190
-msgid "%s not found."
-msgstr ""
-
-#: Network/Email/CakeEmail.php:1194
-msgid "Unknown email configuration \"%s\"."
-msgstr ""
-
-#: Network/Email/MailTransport.php:66;70
-msgid "Could not send email."
-msgstr ""
-
-#: Network/Email/SmtpTransport.php:102
-msgid "Unable to connect to SMTP server."
-msgstr ""
-
-#: Network/Email/SmtpTransport.php:123
-msgid "SMTP server did not accept the connection or trying to connect to non TLS SMTP server using TLS."
-msgstr ""
-
-#: Network/Email/SmtpTransport.php:128
-msgid "SMTP server did not accept the connection."
-msgstr ""
-
-#: Network/Email/SmtpTransport.php:144
-msgid "SMTP server did not accept the username."
-msgstr ""
-
-#: Network/Email/SmtpTransport.php:147
-msgid "SMTP server did not accept the password."
-msgstr ""
-
-#: Network/Email/SmtpTransport.php:150
-msgid "SMTP authentication method not allowed, check if SMTP server requires TLS"
-msgstr ""
-
-#: Network/Email/SmtpTransport.php:152
-msgid "SMTP does not require authentication."
-msgstr ""
-
-#: Network/Email/SmtpTransport.php:244
-msgid "SMTP timeout."
-msgstr ""
-
-#: Network/Email/SmtpTransport.php:255
-msgid "SMTP Error: %s"
-msgstr ""
-
-#: Network/Http/HttpResponse.php:23
-msgid "HttpResponse is deprecated due to naming conflicts. Use HttpSocketResponse instead."
-msgstr ""
-
-#: Network/Http/HttpSocket.php:246
-msgid "Invalid resource."
-msgstr ""
-
-#: Network/Http/HttpSocket.php:406
-msgid "Class %s not found."
-msgstr ""
-
-#: Network/Http/HttpSocket.php:604
-msgid "Unknown authentication method."
-msgstr ""
-
-#: Network/Http/HttpSocket.php:607
-msgid "The %s does not support authentication."
-msgstr ""
-
-#: Network/Http/HttpSocket.php:633
-msgid "Unknown authentication method for proxy."
-msgstr ""
-
-#: Network/Http/HttpSocket.php:636
-msgid "The %s does not support proxy authentication."
-msgstr ""
-
-#: Network/Http/HttpSocket.php:888
-msgid "HttpSocket::_buildRequestLine - Passed an invalid request line string. Activate quirks mode to do this."
-msgstr ""
-
-#: Network/Http/HttpSocket.php:906
-msgid "HttpSocket::_buildRequestLine - The \"*\" asterisk character is only allowed for the following methods: %s. Activate quirks mode to work outside of HTTP/1.1 specs."
-msgstr ""
-
-#: Network/Http/HttpSocketResponse.php:153
-msgid "Invalid response."
-msgstr ""
-
-#: Network/Http/HttpSocketResponse.php:157
-msgid "Invalid HTTP response."
-msgstr ""
-
-#: Network/Http/HttpSocketResponse.php:225
-msgid "HttpSocket::_decodeChunkedBody - Could not parse malformed chunk."
-msgstr ""
-
-#: Routing/Router.php:205
-msgid "Route class not found, or route class is not a subclass of CakeRoute"
-msgstr ""
-
-#: Utility/CakeNumber.php:165
-msgid "No unit type."
-msgstr ""
-
-#: Utility/ClassRegistry.php:116
-msgid "(ClassRegistry::init() Attempted to create instance of a class with a numeric name"
-msgstr ""
-
-#: Utility/ClassRegistry.php:148
-msgid "Cannot create instance of %s, as it is abstract or is an interface"
-msgstr ""
-
-#: Utility/ClassRegistry.php:189
-msgid "(ClassRegistry::init() could not create instance of %s"
-msgstr ""
-
-#: Utility/Debugger.php:633
-msgid "Invalid Debugger output format."
-msgstr ""
-
-#: Utility/Debugger.php:849
-msgid "Please change the value of %s in %s to a salt value specific to your application."
-msgstr ""
-
-#: Utility/Debugger.php:853
-msgid "Please change the value of %s in %s to a numeric (digits only) seed value specific to your application."
-msgstr ""
-
-#: Utility/Folder.php:385;408
-msgid "%s changed to %s"
-msgstr ""
-
-#: Utility/Folder.php:389;410
-msgid "%s NOT changed to %s"
-msgstr ""
-
-#: Utility/Folder.php:506
-msgid "%s is a file"
-msgstr ""
-
-#: Utility/Folder.php:517;695
-msgid "%s created"
-msgstr ""
-
-#: Utility/Folder.php:521
-msgid "%s NOT created"
-msgstr ""
-
-#: Utility/Folder.php:593;601;613
-msgid "%s removed"
-msgstr ""
-
-#: Utility/Folder.php:595;603;615
-msgid "%s NOT removed"
-msgstr ""
-
-#: Utility/Folder.php:653
-#: Console/Command/AclShell.php:319;321;530
-#: Console/Command/ApiShell.php:94
-#: Console/Command/Task/DbConfigTask.php:256
-msgid "%s not found"
-msgstr ""
-
-#: Utility/Folder.php:662
-msgid "%s not writable"
-msgstr ""
-
-#: Utility/Folder.php:678
-msgid "%s copied to %s"
-msgstr ""
-
-#: Utility/Folder.php:680
-msgid "%s NOT copied to %s"
-msgstr ""
-
-#: Utility/Folder.php:699
-msgid "%s not created"
-msgstr ""
-
-#: Utility/ObjectCollection.php:128
-msgid "Cannot use modParams with indexes that do not exist."
-msgstr ""
-
-#: Utility/Security.php:160
-msgid "Invalid value, cost must be between %s and %s"
-msgstr ""
-
-#: Utility/Security.php:187;220
-msgid "You cannot use an empty key for %s"
-msgstr ""
-
-#: Utility/Security.php:224
-msgid "You must specify the operation for Security::rijndael(), either encrypt or decrypt"
-msgstr ""
-
-#: Utility/Security.php:228
-msgid "You must use a key larger than 32 bytes for Security::rijndael()"
-msgstr ""
-
-#: Utility/Security.php:282
-msgid "Invalid salt: %s for %s Please visit http://www.php.net/crypt and read the appropriate section for building %s salts."
-msgstr ""
-
-#: Utility/Validation.php:257
-msgid "You must define the $operator parameter for %s"
-msgstr ""
-
-#: Utility/Validation.php:275
-msgid "You must define a regular expression for %s"
-msgstr ""
-
-#: Utility/Validation.php:817
-msgid "Could not find %s class, unable to complete validation."
-msgstr ""
-
-#: Utility/Validation.php:821
-msgid "Method %s does not exist on %s unable to complete validation."
-msgstr ""
-
-#: Utility/Validation.php:915
-msgid "Can not determine the mimetype."
-msgstr ""
-
-#: Utility/Xml.php:110;114;119
-msgid "XML cannot be read."
-msgstr ""
-
-#: Utility/Xml.php:117;196
-msgid "Invalid input."
-msgstr ""
-
-#: Utility/Xml.php:151
-msgid "Xml cannot be read."
-msgstr ""
-
-#: Utility/Xml.php:200
-msgid "The key of input must be alphanumeric"
-msgstr ""
-
-#: Utility/Xml.php:277;290
-msgid "Invalid array"
-msgstr ""
-
-#: Utility/Xml.php:341
-msgid "The input is not instance of SimpleXMLElement, DOMDocument or DOMNode."
-msgstr ""
-
-#: View/Helper.php:191
-msgid "Method %1$s::%2$s does not exist"
-msgstr ""
-
-#: View/View.php:415
-msgid "Element Not Found: %s"
-msgstr ""
-
-#: View/View.php:710
-msgid "You cannot extend an element which does not exist (%s)."
-msgstr ""
-
-#: View/View.php:726
-msgid "You cannot have views extend themselves."
-msgstr ""
-
-#: View/View.php:729
-msgid "You cannot have views extend in a loop."
-msgstr ""
-
-#: View/View.php:912
-msgid "The \"%s\" block was left open. Blocks are not allowed to cross files."
-msgstr ""
-
-#: View/Elements/sql_dump.ctp:83
-msgid "Encountered unexpected %s. Cannot generate SQL log."
-msgstr ""
-
-#: View/Errors/fatal_error.ctp:21
-msgid "Fatal Error"
-msgstr ""
-
-#: View/Errors/fatal_error.ctp:27
-msgid "File"
-msgstr ""
-
-#: View/Errors/fatal_error.ctp:31
-msgid "Line"
-msgstr ""
-
-#: View/Errors/fatal_error.ctp:35
-#: View/Errors/missing_action.ctp:41
-#: View/Errors/missing_behavior.ctp:38
-#: View/Errors/missing_component.ctp:38
-#: View/Errors/missing_connection.ctp:38
-#: View/Errors/missing_controller.ctp:38
-#: View/Errors/missing_database.ctp:30
-#: View/Errors/missing_datasource.ctp:31
-#: View/Errors/missing_datasource_config.ctp:26
-#: View/Errors/missing_helper.ctp:38
-#: View/Errors/missing_layout.ctp:30
-#: View/Errors/missing_plugin.ctp:42
-#: View/Errors/missing_table.ctp:26
-#: View/Errors/missing_view.ctp:30
-#: View/Errors/pdo_error.ctp:36
-#: View/Errors/private_action.ctp:26
-#: View/Errors/scaffold_error.ctp:26
-msgid "Notice"
-msgstr ""
-
-#: View/Errors/fatal_error.ctp:36
-#: View/Errors/missing_action.ctp:42
-#: View/Errors/missing_behavior.ctp:39
-#: View/Errors/missing_component.ctp:39
-#: View/Errors/missing_connection.ctp:39
-#: View/Errors/missing_controller.ctp:39
-#: View/Errors/missing_database.ctp:31
-#: View/Errors/missing_datasource.ctp:32
-#: View/Errors/missing_datasource_config.ctp:27
-#: View/Errors/missing_helper.ctp:39
-#: View/Errors/missing_layout.ctp:31
-#: View/Errors/missing_plugin.ctp:43
-#: View/Errors/missing_table.ctp:27
-#: View/Errors/missing_view.ctp:31
-#: View/Errors/pdo_error.ctp:37
-#: View/Errors/private_action.ctp:27
-#: View/Errors/scaffold_error.ctp:27
-msgid "If you want to customize this error message, create %s"
-msgstr ""
-
-#: View/Errors/missing_action.ctp:21
-msgid "Missing Method in %s"
-msgstr ""
-
-#: View/Errors/missing_action.ctp:23
-msgid "The action %1$s is not defined in controller %2$s"
-msgstr ""
-
-#: View/Errors/missing_action.ctp:27
-msgid "Create %1$s%2$s in file: %3$s."
-msgstr ""
-
-#: View/Errors/missing_behavior.ctp:22
-msgid "Missing Behavior"
-msgstr ""
-
-#: View/Errors/missing_behavior.ctp:25
-#: View/Errors/missing_component.ctp:25
-#: View/Errors/missing_controller.ctp:25
-#: View/Errors/missing_helper.ctp:25
-msgid "%s could not be found."
-msgstr ""
-
-#: View/Errors/missing_behavior.ctp:29
-#: View/Errors/missing_component.ctp:29
-#: View/Errors/missing_controller.ctp:29
-#: View/Errors/missing_helper.ctp:29
-msgid "Create the class %s below in file: %s"
-msgstr ""
-
-#: View/Errors/missing_component.ctp:22
-msgid "Missing Component"
-msgstr ""
-
-#: View/Errors/missing_connection.ctp:20
-#: View/Errors/missing_database.ctp:20
-msgid "Missing Database Connection"
-msgstr ""
-
-#: View/Errors/missing_connection.ctp:23
-msgid "A Database connection using \"%s\" was missing or unable to connect."
-msgstr ""
-
-#: View/Errors/missing_connection.ctp:27
-msgid "The database server returned this error: %s"
-msgstr ""
-
-#: View/Errors/missing_connection.ctp:34
-msgid "%s driver is NOT enabled"
-msgstr ""
-
-#: View/Errors/missing_controller.ctp:22
-msgid "Missing Controller"
-msgstr ""
-
-#: View/Errors/missing_database.ctp:23
-msgid "Scaffold requires a database connection"
-msgstr ""
-
-#: View/Errors/missing_database.ctp:27
-#: View/Errors/missing_layout.ctp:27
-#: View/Errors/missing_view.ctp:27
-msgid "Confirm you have created the file: %s"
-msgstr ""
-
-#: View/Errors/missing_datasource.ctp:22
-msgid "Missing Datasource"
-msgstr ""
-
-#: View/Errors/missing_datasource.ctp:25
-msgid "Datasource class %s could not be found."
-msgstr ""
-
-#: View/Errors/missing_datasource_config.ctp:20
-msgid "Missing Datasource Configuration"
-msgstr ""
-
-#: View/Errors/missing_datasource_config.ctp:23
-msgid "The datasource configuration %1$s was not found in database.php."
-msgstr ""
-
-#: View/Errors/missing_helper.ctp:22
-msgid "Missing Helper"
-msgstr ""
-
-#: View/Errors/missing_layout.ctp:20
-msgid "Missing Layout"
-msgstr ""
-
-#: View/Errors/missing_layout.ctp:23
-msgid "The layout file %s can not be found or does not exist."
-msgstr ""
-
-#: View/Errors/missing_plugin.ctp:20
-msgid "Missing Plugin"
-msgstr ""
-
-#: View/Errors/missing_plugin.ctp:23
-msgid "The application is trying to load a file from the %s plugin"
-msgstr ""
-
-#: View/Errors/missing_plugin.ctp:27
-msgid "Make sure your plugin %s is in the %s directory and was loaded"
-msgstr ""
-
-#: View/Errors/missing_plugin.ctp:35
-msgid "Loading all plugins"
-msgstr ""
-
-#: View/Errors/missing_plugin.ctp:36
-msgid "If you wish to load all plugins at once, use the following line in your %s file"
-msgstr ""
-
-#: View/Errors/missing_table.ctp:20
-msgid "Missing Database Table"
-msgstr ""
-
-#: View/Errors/missing_table.ctp:23
-msgid "Table %1$s for model %2$s was not found in datasource %3$s."
-msgstr ""
-
-#: View/Errors/missing_view.ctp:20
-msgid "Missing View"
-msgstr ""
-
-#: View/Errors/missing_view.ctp:23
-msgid "The view for %1$s%2$s was not found."
-msgstr ""
-
-#: View/Errors/pdo_error.ctp:20
-msgid "Database Error"
-msgstr ""
-
-#: View/Errors/pdo_error.ctp:27
-msgid "SQL Query"
-msgstr ""
-
-#: View/Errors/pdo_error.ctp:32
-msgid "SQL Query Params"
-msgstr ""
-
-#: View/Errors/private_action.ctp:20
-msgid "Private Method in %s"
-msgstr ""
-
-#: View/Errors/private_action.ctp:23
-msgid "%s%s cannot be accessed directly."
-msgstr ""
-
-#: View/Errors/scaffold_error.ctp:20
-msgid "Scaffold Error"
-msgstr ""
-
-#: View/Errors/scaffold_error.ctp:23
-msgid "Method _scaffoldError in was not found in the controller"
-msgstr ""
-
-#: View/Helper/CacheHelper.php:158
-msgid "Unable to write view cache file: \"%s\" for \"%s\""
-msgstr ""
-
-#: View/Helper/FormHelper.php:1581
-msgid "Missing field name for FormHelper::%s"
-msgstr ""
-
-#: View/Helper/HtmlHelper.php:1220
-msgid "Cannot load the configuration file. Wrong \"configFile\" configuration."
-msgstr ""
-
-#: View/Helper/HtmlHelper.php:1226
-msgid "Cannot load the configuration file. Unknown reader."
-msgstr ""
-
-#: View/Helper/JsHelper.php:154
-msgid "JsHelper:: Missing Method %s is undefined"
-msgstr ""
-
-#: View/Helper/MootoolsEngineHelper.php:311
-msgid "%s requires a \"drag\" option to properly function"
-msgstr ""
-
-#: View/Helper/NumberHelper.php:65
-#: View/Helper/TextHelper.php:80
-#: View/Helper/TimeHelper.php:63
-#: Console/Command/ApiShell.php:209
-msgid "%s could not be found"
-msgstr ""
-
-#: View/Helper/PaginatorHelper.php:99
-msgid "%s does not implement a %s method, it is incompatible with %s"
-msgstr ""
-
-#: Console/ConsoleErrorHandler.php:59
-msgid "<error>Error:</error> %s\n%s"
-msgstr ""
-
-#: Console/ConsoleErrorHandler.php:83
-msgid "%s in [%s, line %s]"
-msgstr ""
-
-#: Console/ConsoleErrorHandler.php:84
-msgid "<error>%s Error:</error> %s\n"
-msgstr ""
-
-#: Console/ConsoleInputArgument.php:100
-msgid " <comment>(optional)</comment>"
-msgstr ""
-
-#: Console/ConsoleInputArgument.php:103
-#: Console/ConsoleInputOption.php:132
-msgid " <comment>(choices: %s)</comment>"
-msgstr ""
-
-#: Console/ConsoleInputArgument.php:147
-msgid "\"%s\" is not a valid value for %s. Please use one of \"%s\""
-msgstr ""
-
-#: Console/ConsoleInputOption.php:97
-msgid "Short option \"%s\" is invalid, short options must be one letter."
-msgstr ""
-
-#: Console/ConsoleInputOption.php:129
-msgid " <comment>(default: %s)</comment>"
-msgstr ""
-
-#: Console/ConsoleInputOption.php:192
-msgid "\"%s\" is not a valid value for --%s. Please use one of \"%s\""
-msgstr ""
-
-#: Console/ConsoleOptionParser.php:149
-msgid "Display this help."
-msgstr ""
-
-#: Console/ConsoleOptionParser.php:156
-msgid "Enable verbose output."
-msgstr ""
-
-#: Console/ConsoleOptionParser.php:160
-msgid "Enable quiet output."
-msgstr ""
-
-#: Console/ConsoleOptionParser.php:484
-msgid "Missing required arguments. %s is required."
-msgstr ""
-
-#: Console/ConsoleOptionParser.php:568
-msgid "Unknown short option `%s`"
-msgstr ""
-
-#: Console/ConsoleOptionParser.php:584
-msgid "Unknown option `%s`"
-msgstr ""
-
-#: Console/ConsoleOptionParser.php:636
-msgid "Too many arguments."
-msgstr ""
-
-#: Console/HelpFormatter.php:72
-msgid "<info>Usage:</info>"
-msgstr ""
-
-#: Console/HelpFormatter.php:77
-msgid "<info>Subcommands:</info>"
-msgstr ""
-
-#: Console/HelpFormatter.php:88
-msgid "To see help on a subcommand use <info>`cake %s [subcommand] --help`</info>"
-msgstr ""
-
-#: Console/HelpFormatter.php:95
-msgid "<info>Options:</info>"
-msgstr ""
-
-#: Console/HelpFormatter.php:110
-msgid "<info>Arguments:</info>"
-msgstr ""
-
-#: Console/Shell.php:228
-#: Console/Command/ServerShell.php:110
-msgid "<info>Welcome to CakePHP %s Console</info>"
-msgstr ""
-
-#: Console/Shell.php:230
-#: Console/Command/ServerShell.php:112
-msgid "App : %s"
-msgstr ""
-
-#: Console/Shell.php:231
-#: Console/Command/ServerShell.php:113
-#: Console/Command/Task/PluginTask.php:66
-#: Console/Command/Task/TestTask.php:114
-msgid "Path: %s"
-msgstr ""
-
-#: Console/Shell.php:660
-msgid "<error>Error:</error> %s"
-msgstr ""
-
-#: Console/Shell.php:698
-msgid "<warning>File `%s` exists</warning>"
-msgstr ""
-
-#: Console/Shell.php:699
-msgid "Do you want to overwrite?"
-msgstr ""
-
-#: Console/Shell.php:702
-msgid "<error>Quitting</error>."
-msgstr ""
-
-#: Console/Shell.php:705
-msgid "Skip `%s`"
-msgstr ""
-
-#: Console/Shell.php:709
-msgid "Creating file %s"
-msgstr ""
-
-#: Console/Shell.php:716
-msgid "<success>Wrote</success> `%s`"
-msgstr ""
-
-#: Console/Shell.php:720
-msgid "<error>Could not write to `%s`</error>."
-msgstr ""
-
-#: Console/Shell.php:740
-msgid "PHPUnit is not installed. Do you want to bake unit test files anyway?"
-msgstr ""
-
-#: Console/Shell.php:746
-msgid "You can download PHPUnit from %s"
-msgstr ""
-
-#: Console/Command/AclShell.php:79
-msgid "Error: Your current CakePHP configuration is set to an ACL implementation other than DB."
-msgstr ""
-
-#: Console/Command/AclShell.php:80
-msgid "Please change your core config to reflect your decision to use DbAcl before attempting to use this script"
-msgstr ""
-
-#: Console/Command/AclShell.php:82
-msgid "Current ACL Classname: %s"
-msgstr ""
-
-#: Console/Command/AclShell.php:90
-#: Console/Command/BakeShell.php:90
-#: Console/Command/I18nShell.php:56
-msgid "Your database configuration was not found. Take a moment to create one."
-msgstr ""
-
-#: Console/Command/AclShell.php:135
-msgid "/ can not be used as an alias!"
-msgstr ""
-
-#: Console/Command/AclShell.php:135
-msgid "\t/ is the root, please supply a sub alias"
-msgstr ""
-
-#: Console/Command/AclShell.php:141
-msgid "<success>New %s</success> '%s' created."
-msgstr ""
-
-#: Console/Command/AclShell.php:143
-msgid "There was a problem creating a new %s '%s'."
-msgstr ""
-
-#: Console/Command/AclShell.php:159
-msgid "Node Not Deleted"
-msgstr ""
-
-#: Console/Command/AclShell.php:159
-msgid "There was an error deleting the %s. Check that the node exists."
-msgstr ""
-
-#: Console/Command/AclShell.php:161
-msgid "<success>%s deleted.</success>"
-msgstr ""
-
-#: Console/Command/AclShell.php:182
-msgid "Error in setting new parent. Please make sure the parent node exists, and is not a descendant of the node specified."
-msgstr ""
-
-#: Console/Command/AclShell.php:184
-msgid "Node parent set to %s"
-msgstr ""
-
-#: Console/Command/AclShell.php:202
-msgid "Supplied Node '%s' not found"
-msgstr ""
-
-#: Console/Command/AclShell.php:203;319;321;530
-msgid "No tree returned."
-msgstr ""
-
-#: Console/Command/AclShell.php:206
-msgid "Path:"
-msgstr ""
-
-#: Console/Command/AclShell.php:240
-msgid "%s is <success>allowed</success>."
-msgstr ""
-
-#: Console/Command/AclShell.php:242
-msgid "%s is <error>not allowed</error>."
-msgstr ""
-
-#: Console/Command/AclShell.php:255
-msgid "Permission <success>granted</success>."
-msgstr ""
-
-#: Console/Command/AclShell.php:257
-msgid "Permission was <error>not granted</error>."
-msgstr ""
-
-#: Console/Command/AclShell.php:270
-msgid "Permission denied."
-msgstr ""
-
-#: Console/Command/AclShell.php:272
-msgid "Permission was not denied."
-msgstr ""
-
-#: Console/Command/AclShell.php:285
-msgid "Permission inherited."
-msgstr ""
-
-#: Console/Command/AclShell.php:287
-msgid "Permission was not inherited."
-msgstr ""
-
-#: Console/Command/AclShell.php:371
-msgid "Type of node to create."
-msgstr ""
-
-#: Console/Command/AclShell.php:375
-msgid "A console tool for managing the DbAcl"
-msgstr ""
-
-#: Console/Command/AclShell.php:377
-msgid "Create a new ACL node"
-msgstr ""
-
-#: Console/Command/AclShell.php:379
-msgid "Creates a new ACL object <node> under the parent"
-msgstr ""
-
-#: Console/Command/AclShell.php:380
-msgid "You can use `root` as the parent when creating nodes to create top level nodes."
-msgstr ""
-
-#: Console/Command/AclShell.php:384
-msgid "The node selector for the parent."
-msgstr ""
-
-#: Console/Command/AclShell.php:388
-msgid "The alias to use for the newly created node."
-msgstr ""
-
-#: Console/Command/AclShell.php:394
-msgid "Deletes the ACL object with the given <node> reference"
-msgstr ""
-
-#: Console/Command/AclShell.php:396
-msgid "Delete an ACL node."
-msgstr ""
-
-#: Console/Command/AclShell.php:400
-msgid "The node identifier to delete."
-msgstr ""
-
-#: Console/Command/AclShell.php:406
-msgid "Moves the ACL node under a new parent."
-msgstr ""
-
-#: Console/Command/AclShell.php:408
-msgid "Moves the ACL object specified by <node> beneath <parent>"
-msgstr ""
-
-#: Console/Command/AclShell.php:412
-msgid "The node to move"
-msgstr ""
-
-#: Console/Command/AclShell.php:416
-msgid "The new parent for <node>."
-msgstr ""
-
-#: Console/Command/AclShell.php:422
-msgid "Print out the path to an ACL node."
-msgstr ""
-
-#: Console/Command/AclShell.php:425
-msgid "Returns the path to the ACL object specified by <node>."
-msgstr ""
-
-#: Console/Command/AclShell.php:426
-msgid "This command is useful in determining the inheritance of permissions for a certain object in the tree."
-msgstr ""
-
-#: Console/Command/AclShell.php:431
-msgid "The node to get the path of"
-msgstr ""
-
-#: Console/Command/AclShell.php:437
-msgid "Check the permissions between an ACO and ARO."
-msgstr ""
-
-#: Console/Command/AclShell.php:440
-msgid "Use this command to check ACL permissions."
-msgstr ""
-
-#: Console/Command/AclShell.php:443
-msgid "ARO to check."
-msgstr ""
-
-#: Console/Command/AclShell.php:444
-msgid "ACO to check."
-msgstr ""
-
-#: Console/Command/AclShell.php:445
-msgid "Action to check"
-msgstr ""
-
-#: Console/Command/AclShell.php:449
-msgid "Grant an ARO permissions to an ACO."
-msgstr ""
-
-#: Console/Command/AclShell.php:452
-msgid "Use this command to grant ACL permissions. Once executed, the ARO specified (and its children, if any) will have ALLOW access to the specified ACO action (and the ACO's children, if any)."
-msgstr ""
-
-#: Console/Command/AclShell.php:455
-msgid "ARO to grant permission to."
-msgstr ""
-
-#: Console/Command/AclShell.php:456
-msgid "ACO to grant access to."
-msgstr ""
-
-#: Console/Command/AclShell.php:457
-msgid "Action to grant"
-msgstr ""
-
-#: Console/Command/AclShell.php:461
-msgid "Deny an ARO permissions to an ACO."
-msgstr ""
-
-#: Console/Command/AclShell.php:464
-msgid "Use this command to deny ACL permissions. Once executed, the ARO specified (and its children, if any) will have DENY access to the specified ACO action (and the ACO's children, if any)."
-msgstr ""
-
-#: Console/Command/AclShell.php:467
-msgid "ARO to deny."
-msgstr ""
-
-#: Console/Command/AclShell.php:468
-msgid "ACO to deny."
-msgstr ""
-
-#: Console/Command/AclShell.php:469
-msgid "Action to deny"
-msgstr ""
-
-#: Console/Command/AclShell.php:473
-msgid "Inherit an ARO's parent permissions."
-msgstr ""
-
-#: Console/Command/AclShell.php:476
-msgid "Use this command to force a child ARO object to inherit its permissions settings from its parent."
-msgstr ""
-
-#: Console/Command/AclShell.php:479
-msgid "ARO to have permissions inherit."
-msgstr ""
-
-#: Console/Command/AclShell.php:480
-msgid "ACO to inherit permissions on."
-msgstr ""
-
-#: Console/Command/AclShell.php:481
-msgid "Action to inherit"
-msgstr ""
-
-#: Console/Command/AclShell.php:485
-msgid "View a tree or a single node's subtree."
-msgstr ""
-
-#: Console/Command/AclShell.php:488
-msgid "The view command will return the ARO or ACO tree."
-msgstr ""
-
-#: Console/Command/AclShell.php:489
-msgid "The optional node parameter allows you to return"
-msgstr ""
-
-#: Console/Command/AclShell.php:490
-msgid "only a portion of the requested tree."
-msgstr ""
-
-#: Console/Command/AclShell.php:494
-msgid "The optional node to view the subtree of."
-msgstr ""
-
-#: Console/Command/AclShell.php:498
-msgid "Initialize the DbAcl tables. Uses this command : cake schema create DbAcl"
-msgstr ""
-
-#: Console/Command/AclShell.php:566
-msgid "Could not find node using reference \"%s\""
-msgstr ""
-
-#: Console/Command/ApiShell.php:102
-msgid "%s::%s() could not be found"
-msgstr ""
-
-#: Console/Command/ApiShell.php:119
-msgid "Select a number to see the more information about a specific method. q to quit. l to list."
-msgstr ""
-
-#: Console/Command/ApiShell.php:121
-msgid "Done"
-msgstr ""
-
-#: Console/Command/ApiShell.php:149
-msgid "Either a full path or type of class (model, behavior, controller, component, view, helper)"
-msgstr ""
-
-#: Console/Command/ApiShell.php:151
-msgid "A CakePHP core class name (e.g: Component, HtmlHelper)."
-msgstr ""
-
-#: Console/Command/ApiShell.php:154
-msgid "The specific method you want help on."
-msgstr ""
-
-#: Console/Command/ApiShell.php:155
-msgid "Lookup doc block comments for classes in CakePHP."
-msgstr ""
-
-#: Console/Command/ApiShell.php:192
-msgid "Command %s not found"
-msgstr ""
-
-#: Console/Command/BakeShell.php:94
-msgid "Interactive Bake Shell"
-msgstr ""
-
-#: Console/Command/BakeShell.php:96
-msgid "[D]atabase Configuration"
-msgstr ""
-
-#: Console/Command/BakeShell.php:97
-msgid "[M]odel"
-msgstr ""
-
-#: Console/Command/BakeShell.php:98
-msgid "[V]iew"
-msgstr ""
-
-#: Console/Command/BakeShell.php:99
-msgid "[C]ontroller"
-msgstr ""
-
-#: Console/Command/BakeShell.php:100
-msgid "[P]roject"
-msgstr ""
-
-#: Console/Command/BakeShell.php:101
-msgid "[F]ixture"
-msgstr ""
-
-#: Console/Command/BakeShell.php:102
-msgid "[T]est case"
-msgstr ""
-
-#: Console/Command/BakeShell.php:103
-#: Console/Command/I18nShell.php:73
-msgid "[Q]uit"
-msgstr ""
-
-#: Console/Command/BakeShell.php:105
-msgid "What would you like to Bake?"
-msgstr ""
-
-#: Console/Command/BakeShell.php:131
-msgid "You have made an invalid selection. Please choose a type of class to Bake by entering D, M, V, F, T, or C."
-msgstr ""
-
-#: Console/Command/BakeShell.php:199
-msgid "<success>Bake All complete</success>"
-msgstr ""
-
-#: Console/Command/BakeShell.php:202
-msgid "Bake All could not continue without a valid model"
-msgstr ""
-
-#: Console/Command/BakeShell.php:214
-msgid "The Bake script generates controllers, views and models for your application. If run with no command line arguments, Bake guides the user through the class creation process. You can customize the generation process by telling Bake where different parts of your application are using command line arguments."
-msgstr ""
-
-#: Console/Command/BakeShell.php:219
-msgid "Bake a complete MVC. optional <name> of a Model"
-msgstr ""
-
-#: Console/Command/BakeShell.php:221
-msgid "Bake a new app folder in the path supplied or in current directory if no path is specified"
-msgstr ""
-
-#: Console/Command/BakeShell.php:224
-msgid "Bake a new plugin folder in the path supplied or in current directory if no path is specified."
-msgstr ""
-
-#: Console/Command/BakeShell.php:227
-msgid "Bake a database.php file in config directory."
-msgstr ""
-
-#: Console/Command/BakeShell.php:230
-msgid "Bake a model."
-msgstr ""
-
-#: Console/Command/BakeShell.php:233
-msgid "Bake views for controllers."
-msgstr ""
-
-#: Console/Command/BakeShell.php:236
-msgid "Bake a controller."
-msgstr ""
-
-#: Console/Command/BakeShell.php:239
-msgid "Bake a fixture."
-msgstr ""
-
-#: Console/Command/BakeShell.php:242
-msgid "Bake a unit test."
-msgstr ""
-
-#: Console/Command/BakeShell.php:245
-msgid "Database connection to use in conjunction with `bake all`."
-msgstr ""
-
-#: Console/Command/BakeShell.php:250
-#: Console/Command/Task/ControllerTask.php:485
-#: Console/Command/Task/FixtureTask.php:92
-#: Console/Command/Task/ModelTask.php:999
-#: Console/Command/Task/ProjectTask.php:440
-#: Console/Command/Task/TestTask.php:568
-#: Console/Command/Task/ViewTask.php:439
-msgid "Theme to use when baking code."
-msgstr ""
-
-#: Console/Command/CommandListShell.php:45
-msgid "<info>Current Paths:</info>"
-msgstr ""
-
-#: Console/Command/CommandListShell.php:51
-msgid "<info>Changing Paths:</info>"
-msgstr ""
-
-#: Console/Command/CommandListShell.php:52
-msgid "Your working path should be the same as your application path. To change your path use the '-app' param."
-msgstr ""
-
-#: Console/Command/CommandListShell.php:53
-msgid "Example: %s or %s"
-msgstr ""
-
-#: Console/Command/CommandListShell.php:55
-msgid "<info>Available Shells:</info>"
-msgstr ""
-
-#: Console/Command/CommandListShell.php:125
-msgid "To run an app or core command, type <info>cake shell_name [args]</info>"
-msgstr ""
-
-#: Console/Command/CommandListShell.php:126
-msgid "To run a plugin command, type <info>cake Plugin.shell_name [args]</info>"
-msgstr ""
-
-#: Console/Command/CommandListShell.php:127
-msgid "To get help on a specific command, type <info>cake shell_name --help</info>"
-msgstr ""
-
-#: Console/Command/CommandListShell.php:164
-msgid "Get the list of available shells for this CakePHP application."
-msgstr ""
-
-#: Console/Command/CommandListShell.php:166
-msgid "Does nothing (deprecated)"
-msgstr ""
-
-#: Console/Command/CommandListShell.php:170
-msgid "Get the listing as XML."
-msgstr ""
-
-#: Console/Command/ConsoleShell.php:91;250
-msgid "Model classes:"
-msgstr ""
-
-#: Console/Command/ConsoleShell.php:99
-msgid "There was an error loading the routes config. Please check that the file exists and contains no errors."
-msgstr ""
-
-#: Console/Command/ConsoleShell.php:212
-msgid "Invalid command"
-msgstr ""
-
-#: Console/Command/ConsoleShell.php:277
-msgid "Created %s association between %s and %s"
-msgstr ""
-
-#: Console/Command/ConsoleShell.php:280
-msgid "Please verify you are using valid models and association types"
-msgstr ""
-
-#: Console/Command/ConsoleShell.php:314
-msgid "Removed %s association between %s and %s"
-msgstr ""
-
-#: Console/Command/ConsoleShell.php:317
-msgid "Please verify you are using valid models, valid current association, and valid association types"
-msgstr ""
-
-#: Console/Command/ConsoleShell.php:376
-msgid "No result set found"
-msgstr ""
-
-#: Console/Command/ConsoleShell.php:379
-msgid "%s is not a valid model"
-msgstr ""
-
-#: Console/Command/ConsoleShell.php:403
-msgid "Saved record for %s"
-msgstr ""
-
-#: Console/Command/ConsoleShell.php:431
-msgid "Please verify that you selected a valid model"
-msgstr ""
-
-#: Console/Command/ConsoleShell.php:442
-msgid "There was an error loading the routes config. Please check that the file exists and is free of parse errors."
-msgstr ""
-
-#: Console/Command/ConsoleShell.php:444
-msgid "Routes configuration reloaded, %d routes connected"
-msgstr ""
-
-#: Console/Command/I18nShell.php:68
-msgid "<info>I18n Shell</info>"
-msgstr ""
-
-#: Console/Command/I18nShell.php:70
-msgid "[E]xtract POT file from sources"
-msgstr ""
-
-#: Console/Command/I18nShell.php:71
-msgid "[I]nitialize i18n database table"
-msgstr ""
-
-#: Console/Command/I18nShell.php:72
-msgid "[H]elp"
-msgstr ""
-
-#: Console/Command/I18nShell.php:75
-msgid "What would you like to do?"
-msgstr ""
-
-#: Console/Command/I18nShell.php:89
-msgid "You have made an invalid selection. Please choose a command to execute by entering E, I, H, or Q."
-msgstr ""
-
-#: Console/Command/I18nShell.php:112
-msgid "I18n Shell initializes i18n database table for your application and generates .pot files(s) with translations."
-msgstr ""
-
-#: Console/Command/I18nShell.php:114
-msgid "Initialize the i18n table."
-msgstr ""
-
-#: Console/Command/I18nShell.php:116
-msgid "Extract the po translations from your application"
-msgstr ""
-
-#: Console/Command/SchemaShell.php:112
-msgid "Schema file (%s) could not be found."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:123
-msgid "Generating Schema..."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:138
-msgid "Schema file exists.\n [O]verwrite\n [S]napshot\n [Q]uit\nWould you like to do?"
-msgstr ""
-
-#: Console/Command/SchemaShell.php:192;195
-msgid "Schema file: %s generated"
-msgstr ""
-
-#: Console/Command/SchemaShell.php:212
-msgid "Schema could not be loaded"
-msgstr ""
-
-#: Console/Command/SchemaShell.php:236
-msgid "SQL dump file created in %s"
-msgstr ""
-
-#: Console/Command/SchemaShell.php:239
-msgid "SQL dump could not be created"
-msgstr ""
-
-#: Console/Command/SchemaShell.php:282
-msgid "Performing a dry run."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:294
-msgid "The chosen schema could not be loaded. Attempted to load:"
-msgstr ""
-
-#: Console/Command/SchemaShell.php:295
-msgid "File: %s"
-msgstr ""
-
-#: Console/Command/SchemaShell.php:296
-msgid "Name: %s"
-msgstr ""
-
-#: Console/Command/SchemaShell.php:329;389
-msgid "Schema is up to date."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:333
-msgid "The following table(s) will be dropped."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:336
-msgid "Are you sure you want to drop the table(s)?"
-msgstr ""
-
-#: Console/Command/SchemaShell.php:337
-msgid "Dropping table(s)."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:341
-msgid "The following table(s) will be created."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:344
-msgid "Are you sure you want to create the table(s)?"
-msgstr ""
-
-#: Console/Command/SchemaShell.php:345
-msgid "Creating table(s)."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:348
-msgid "End create."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:362
-msgid "Comparing Database to Schema..."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:393
-msgid "The following statements will run."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:395
-msgid "Are you sure you want to alter the tables?"
-msgstr ""
-
-#: Console/Command/SchemaShell.php:397
-msgid "Updating Database..."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:401
-msgid "End update."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:414
-msgid "Sql could not be run"
-msgstr ""
-
-#: Console/Command/SchemaShell.php:422
-msgid "%s is up to date."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:425
-msgid "Dry run for %s :"
-msgstr ""
-
-#: Console/Command/SchemaShell.php:443
-msgid "%s updated."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:458
-msgid "The plugin to use."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:462
-msgid "Set the db config to use."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:466
-msgid "Path to read and write schema.php"
-msgstr ""
-
-#: Console/Command/SchemaShell.php:470
-msgid "File name to read and write."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:474
-msgid "Classname to use. If its Plugin.class, both name and plugin options will be set."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:478
-msgid "Snapshot number to use/make."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:482
-msgid "Specify models as comma separated list."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:485
-msgid "Perform a dry run on create and update commands. Queries will be output instead of run."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:490
-msgid "Force \"generate\" to create a new schema"
-msgstr ""
-
-#: Console/Command/SchemaShell.php:494
-msgid "Write the dumped SQL to a file."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:497
-msgid "Tables to exclude as comma separated list."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:502
-msgid "The Schema Shell generates a schema object from the database and updates the database from the schema."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:504
-msgid "Read and output the contents of a schema file"
-msgstr ""
-
-#: Console/Command/SchemaShell.php:510
-msgid "Reads from --connection and writes to --path. Generate snapshots with -s"
-msgstr ""
-
-#: Console/Command/SchemaShell.php:514
-msgid "Generate a snapshot."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:518
-msgid "Dump database SQL based on a schema file to stdout."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:524
-msgid "Drop and create tables based on the schema file."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:529;542
-msgid "Name of schema to use."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:532;545
-msgid "Only create the specified table."
-msgstr ""
-
-#: Console/Command/SchemaShell.php:537
-msgid "Alter the tables based on the schema file."
-msgstr ""
-
-#: Console/Command/ServerShell.php:114
-msgid "DocumentRoot: %s"
-msgstr ""
-
-#: Console/Command/ServerShell.php:125
-msgid "<warning>This command is available on %s or above</warning>"
-msgstr ""
-
-#: Console/Command/ServerShell.php:137
-msgid "built-in server is running in http://%s%s/"
-msgstr ""
-
-#: Console/Command/ServerShell.php:151
-msgid "ServerHost"
-msgstr ""
-
-#: Console/Command/ServerShell.php:155
-msgid "ListenPort"
-msgstr ""
-
-#: Console/Command/ServerShell.php:159
-msgid "DocumentRoot"
-msgstr ""
-
-#: Console/Command/ServerShell.php:163
-msgid "PHP Built-in Server for CakePHP"
-msgstr ""
-
-#: Console/Command/ServerShell.php:164
-msgid "<warning>[WARN] Don't use this at the production environment</warning>"
-msgstr ""
-
-#: Console/Command/TestShell.php:50
-#: Console/Command/TestsuiteShell.php:44
-msgid "The CakePHP Testsuite allows you to run test cases from the command line"
-msgstr ""
-
-#: Console/Command/TestShell.php:52
-msgid "The category for the test, or test file, to test."
-msgstr ""
-
-#: Console/Command/TestShell.php:55
-msgid "The path to the file, or test file, to test."
-msgstr ""
-
-#: Console/Command/TestShell.php:58
-msgid "<file> Log test execution in JUnit XML format to file."
-msgstr ""
-
-#: Console/Command/TestShell.php:61
-msgid "<file> Log test execution in JSON format to file."
-msgstr ""
-
-#: Console/Command/TestShell.php:64
-msgid "<file> Log test execution in TAP format to file."
-msgstr ""
-
-#: Console/Command/TestShell.php:67
-msgid "Log test execution to DBUS."
-msgstr ""
-
-#: Console/Command/TestShell.php:70
-msgid "<dir> Generate code coverage report in HTML format."
-msgstr ""
-
-#: Console/Command/TestShell.php:73
-msgid "<file> Write code coverage data in Clover XML format."
-msgstr ""
-
-#: Console/Command/TestShell.php:76
-msgid "<file> Write agile documentation in HTML format to file."
-msgstr ""
-
-#: Console/Command/TestShell.php:79
-msgid "<file> Write agile documentation in Text format to file."
-msgstr ""
-
-#: Console/Command/TestShell.php:82
-msgid "<pattern> Filter which tests to run."
-msgstr ""
-
-#: Console/Command/TestShell.php:85
-msgid "<name> Only runs tests from the specified group(s)."
-msgstr ""
-
-#: Console/Command/TestShell.php:88
-msgid "<name> Exclude tests from the specified group(s)."
-msgstr ""
-
-#: Console/Command/TestShell.php:91
-msgid "List available test groups."
-msgstr ""
-
-#: Console/Command/TestShell.php:94
-msgid "TestSuiteLoader implementation to use."
-msgstr ""
-
-#: Console/Command/TestShell.php:97
-msgid "<times> Runs the test(s) repeatedly."
-msgstr ""
-
-#: Console/Command/TestShell.php:100
-msgid "Report test execution progress in TAP format."
-msgstr ""
-
-#: Console/Command/TestShell.php:103
-msgid "Report test execution progress in TestDox format."
-msgstr ""
-
-#: Console/Command/TestShell.php:107
-msgid "Do not use colors in output."
-msgstr ""
-
-#: Console/Command/TestShell.php:110
-msgid "Write to STDERR instead of STDOUT."
-msgstr ""
-
-#: Console/Command/TestShell.php:113
-msgid "Stop execution upon first error or failure."
-msgstr ""
-
-#: Console/Command/TestShell.php:116
-msgid "Stop execution upon first failure."
-msgstr ""
-
-#: Console/Command/TestShell.php:119
-msgid "Stop execution upon first skipped test."
-msgstr ""
-
-#: Console/Command/TestShell.php:122
-msgid "Stop execution upon first incomplete test."
-msgstr ""
-
-#: Console/Command/TestShell.php:125
-msgid "Mark a test as incomplete if no assertions are made."
-msgstr ""
-
-#: Console/Command/TestShell.php:128
-msgid "Waits for a keystroke after each test."
-msgstr ""
-
-#: Console/Command/TestShell.php:131
-msgid "Run each test in a separate PHP process."
-msgstr ""
-
-#: Console/Command/TestShell.php:134
-msgid "Do not backup and restore $GLOBALS for each test."
-msgstr ""
-
-#: Console/Command/TestShell.php:137
-msgid "Backup and restore static attributes for each test."
-msgstr ""
-
-#: Console/Command/TestShell.php:140
-msgid "Try to check source files for syntax errors."
-msgstr ""
-
-#: Console/Command/TestShell.php:143
-msgid "<file> A \"bootstrap\" PHP file that is run before the tests."
-msgstr ""
-
-#: Console/Command/TestShell.php:146
-msgid "<file> Read configuration from XML file."
-msgstr ""
-
-#: Console/Command/TestShell.php:149
-msgid "Ignore default configuration file (phpunit.xml)."
-msgstr ""
-
-#: Console/Command/TestShell.php:152
-msgid "<path(s)> Prepend PHP include_path with given path(s)."
-msgstr ""
-
-#: Console/Command/TestShell.php:155
-msgid "key[=value] Sets a php.ini value."
-msgstr ""
-
-#: Console/Command/TestShell.php:158
-msgid "Choose a custom fixture manager."
-msgstr ""
-
-#: Console/Command/TestShell.php:160
-msgid "More verbose output."
-msgstr ""
-
-#: Console/Command/TestShell.php:251
-#: Console/Command/TestsuiteShell.php:89
-msgid "CakePHP Test Shell"
-msgstr ""
-
-#: Console/Command/TestShell.php:300
-msgid "No test cases available \n\n"
-msgstr ""
-
-#: Console/Command/TestShell.php:314
-msgid "What test case would you like to run?"
-msgstr ""
-
-#: Console/Command/TestsuiteShell.php:45
-msgid "<warning>This shell is for backwards-compatibility only</warning>\nuse the test shell instead"
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:74
-msgid "<warning>Dry-run mode enabled!</warning>"
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:77
-msgid "<warning>No git repository detected!</warning>"
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:92
-msgid "Running %s"
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:141
-msgid "Upgrading locations for plugin %s"
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:146
-msgid "Upgrading locations for app directory"
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:163;590;617;709
-msgid "Moving %s to %s"
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:732
-msgid "Updating %s..."
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:773
-msgid " * Updating %s"
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:777
-msgid "Done updating %s"
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:793
-msgid "The plugin to update. Only the specified plugin will be updated."
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:797
-msgid "The extension(s) to search. A pipe delimited list, or a preg_match compatible subpattern"
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:802
-msgid "Use git command for moving files around."
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:807
-msgid "Dry run the update, no files will actually be modified."
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:814
-msgid "A shell to help automate upgrading from CakePHP 1.3 to 2.0. \nBe sure to have a backup of your application before running these commands."
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:817
-msgid "Run all upgrade commands."
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:821
-msgid "Update tests class names to FooTest rather than FooTestCase."
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:825
-msgid "Move files and folders to their new homes."
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:829
-msgid "Update the i18n translation method calls."
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:833
-msgid "Update calls to helpers."
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:837
-msgid "Update removed basics functions to PHP native functions."
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:841
-msgid "Update removed request access, and replace with $this->request."
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:845
-msgid "Update Configure::read() to Configure::read('debug')"
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:849
-msgid "Replace Obsolete constants"
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:853
-msgid "Update components to extend Component class."
-msgstr ""
-
-#: Console/Command/UpgradeShell.php:857
-msgid "Replace use of cakeError with exceptions."
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:77
-msgid "Baking basic crud methods for "
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:83;122
-msgid "Adding %s methods"
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:140
-msgid "Bake Controller\nPath: %s"
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:149
-msgid "Baking %sController"
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:159
-msgid "Would you like to build your controller interactively?"
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:161
-msgid "Warning: Choosing no will overwrite the %sController."
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:168
-msgid "Would you like to use dynamic scaffolding?"
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:181
-msgid "Would you like to use Session flash messages?"
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:199
-#: Console/Command/Task/DbConfigTask.php:240
-#: Console/Command/Task/ModelTask.php:276
-#: Console/Command/Task/PluginTask.php:107
-#: Console/Command/Task/ProjectTask.php:199
-#: Console/Command/Task/ViewTask.php:334
-msgid "Look okay?"
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:228
-msgid "The following controller will be created:"
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:230
-msgid "Controller Name:\n\t%s"
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:237
-msgid "Helpers:"
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:238
-msgid "Components:"
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:265
-msgid "Would you like to create some basic class methods \n(index(), add(), view(), edit())?"
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:269
-msgid "Would you like to create the basic class methods for admin routing?"
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:291
-msgid "You must have a model for this class to build basic methods. Please try again."
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:323
-msgid "Baking controller class for %s..."
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:367
-msgid "Would you like this controller to use other helpers\nbesides HtmlHelper and FormHelper?"
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:368
-msgid "Please provide a comma separated list of the other\nhelper names you'd like to use.\nExample: 'Text, Js, Time'"
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:380
-msgid "Would you like this controller to use other components\nbesides PaginatorComponent?"
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:381
-msgid "Please provide a comma separated list of the component names you'd like to use.\nExample: 'Acl, Security, RequestHandler'"
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:416
-msgid "Possible Controllers based on your current database:"
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:440
-msgid "Enter a number from the list above,\ntype in the name of another controller, or 'q' to exit"
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:442
-#: Console/Command/Task/ModelTask.php:964
-msgid "Exit"
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:447
-msgid "The Controller name you supplied was empty,\nor the number you selected was not an option. Please try again."
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:468
-msgid "Bake a controller for a model. Using options you can bake public, admin or both."
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:470
-msgid "Name of the controller to bake. Can use Plugin.name to bake controllers into plugins."
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:472
-msgid "Bake a controller with basic crud actions (index, view, add, edit, delete)."
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:475
-msgid "Bake a controller with crud actions for one of the Routing.prefixes."
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:479
-msgid "Plugin to bake the controller into."
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:482
-msgid "The connection the controller's model is on."
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:488
-#: Console/Command/Task/FixtureTask.php:95
-#: Console/Command/Task/ModelTask.php:1005
-#: Console/Command/Task/TestTask.php:574
-#: Console/Command/Task/ViewTask.php:445
-msgid "Force overwriting existing files without prompting."
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:490
-msgid "Bake all controllers with CRUD methods."
-msgstr ""
-
-#: Console/Command/Task/ControllerTask.php:491
-#: Console/Command/Task/FixtureTask.php:100
-#: Console/Command/Task/ModelTask.php:1006
-#: Console/Command/Task/TestTask.php:575
-#: Console/Command/Task/ViewTask.php:448
-msgid "Omitting all arguments and options will enter into an interactive mode."
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:91
-msgid "Database Configuration:"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:100
-msgid "Name:"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:103
-msgid "The name may only contain unaccented latin characters, numbers or underscores"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:106
-msgid "The name must start with an unaccented latin character or an underscore"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:110
-msgid "Datasource:"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:112
-msgid "Persistent Connection?"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:121
-msgid "Database Host:"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:126
-msgid "Port?"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:135
-msgid "User:"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:141
-msgid "Password:"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:144
-msgid "The password you supplied was empty. Use an empty password?"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:153
-msgid "Database Name:"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:158
-msgid "Table Prefix?"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:166
-msgid "Table encoding?"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:175
-msgid "Table schema?"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:189
-msgid "Do you wish to add another database configuration?"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:212
-msgid "The following database configuration will be created:"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:214
-msgid "Name:         %s"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:215
-msgid "Datasource:   %s"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:216
-msgid "Persistent:   %s"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:217
-msgid "Host:         %s"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:220
-msgid "Port:         %s"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:223
-msgid "User:         %s"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:224
-msgid "Pass:         %s"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:225
-msgid "Database:     %s"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:228
-msgid "Table prefix: %s"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:232
-msgid "Schema:       %s"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:236
-msgid "Encoding:     %s"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:367
-msgid "Use Database Config"
-msgstr ""
-
-#: Console/Command/Task/DbConfigTask.php:380
-msgid "Bake new database configuration settings."
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:125
-msgid "Current paths: %s\nWhat is the path you would like to extract?\n[Q]uit [D]one"
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:132;209
-msgid "Extract Aborted"
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:138
-msgid "<warning>No directories selected.</warning> Please choose a directory."
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:143;215
-msgid "The directory path you supplied was not found. Please try again."
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:177
-msgid "Would you like to extract the messages from the CakePHP core?"
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:205
-msgid "What is the path you would like to output?\n[Q]uit"
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:225
-msgid "Would you like to merge all domain and category strings into the default.pot file?"
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:235
-msgid "The output directory %s was not found or writable."
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:281
-msgid "Extracting..."
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:283
-msgid "Paths:"
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:287
-msgid "Output Directory: "
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:297
-msgid "Done."
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:307
-msgid "CakePHP Language String Extraction:"
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:308
-msgid "Directory where your application is located."
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:309
-msgid "Comma separated list of paths."
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:311
-msgid "Merge all domain and category strings into the default.po file."
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:314
-msgid "Full path to output directory."
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:315
-msgid "Comma separated list of files."
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:319
-msgid "Ignores all files in plugins if this command is run inside from the same app directory."
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:322
-msgid "Extracts tokens only from the plugin specified and puts the result in the plugin's Locale directory."
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:327
-msgid "Ignores validation messages in the $validate property. If this flag is not set and the command is run from the same app directory, all messages in model validation rules will be extracted as tokens."
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:332
-msgid "If set to a value, the localization domain to be used for model validation messages."
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:335
-msgid "Comma separated list of directories to exclude. Any path containing a path segment with the provided values will be skipped. E.g. test,vendors"
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:341
-msgid "Always overwrite existing .pot files."
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:344
-msgid "Extract messages from the CakePHP core libs."
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:357
-msgid "Processing %s..."
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:630
-msgid "Error: %s already exists in this location. Overwrite? [Y]es, [N]o, [A]ll"
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:637
-msgid "What would you like to name this file?"
-msgstr ""
-
-#: Console/Command/Task/ExtractTask.php:734
-msgid "Invalid marker content in %s:%s\n* %s("
-msgstr ""
-
-#: Console/Command/Task/FixtureTask.php:72
-msgid "Generate fixtures for use with the test suite. You can use `bake fixture all` to bake all fixtures."
-msgstr ""
-
-#: Console/Command/Task/FixtureTask.php:74
-msgid "Name of the fixture to bake. Can use Plugin.name to bake plugin fixtures."
-msgstr ""
-
-#: Console/Command/Task/FixtureTask.php:76
-msgid "When using generated data, the number of records to include in the fixture(s)."
-msgstr ""
-
-#: Console/Command/Task/FixtureTask.php:80
-msgid "Which database configuration to use for baking."
-msgstr ""
-
-#: Console/Command/Task/FixtureTask.php:84
-msgid "CamelCased name of the plugin to bake fixtures for."
-msgstr ""
-
-#: Console/Command/Task/FixtureTask.php:87
-msgid "Importing schema for fixtures rather than hardcoding it."
-msgstr ""
-
-#: Console/Command/Task/FixtureTask.php:97
-msgid "Used with --count and <name>/all commands to pull [n] records from the live tables, where [n] is either --count or the default of 10."
-msgstr ""
-
-#: Console/Command/Task/FixtureTask.php:156
-msgid "Bake Fixture\nPath: %s"
-msgstr ""
-
-#: Console/Command/Task/FixtureTask.php:180
-msgid "Would you like to import schema for this fixture?"
-msgstr ""
-
-#: Console/Command/Task/FixtureTask.php:188
-msgid "Would you like to use record importing for this fixture?"
-msgstr ""
-
-#: Console/Command/Task/FixtureTask.php:194
-msgid "Would you like to build this fixture with data from %s's table?"
-msgstr ""
-
-#: Console/Command/Task/FixtureTask.php:282
-msgid "Baking test fixture for %s..."
-msgstr ""
-
-#: Console/Command/Task/FixtureTask.php:415
-msgid "Please provide a SQL fragment to use as conditions\nExample: WHERE 1=1"
-msgstr ""
-
-#: Console/Command/Task/FixtureTask.php:419
-msgid "How many records do you want to import?"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:130
-msgid "Baking %s"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:178
-msgid "Make a selection from the choices above"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:195
-msgid "Bake Model\nPath: %s"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:210
-msgid "The table %s doesn't exist or could not be automatically detected\ncontinue anyway?"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:236
-msgid "Would you like to supply validation criteria \nfor the fields in your model?"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:242
-msgid "Would you like to define model associations\n(hasMany, hasOne, belongsTo, etc.)?"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:251
-msgid "The following Model will be created:"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:253
-msgid "Name:       %s"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:256
-msgid "DB Config:  %s"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:259
-msgid "DB Table:   %s"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:262
-msgid "Primary Key: %s"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:265
-msgid "Validation: %s"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:268
-msgid "Associations:"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:322
-msgid "What is the primaryKey?"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:333
-msgid "A displayField could not be automatically detected\nwould you like to choose one?"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:338
-msgid "Choose a field from the options above:"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:408
-msgid "Field: <info>%s</info>"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:409
-msgid "Type: <info>%s</info>"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:411
-msgid "Please select one of the following validation options:"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:423
-msgid "%s - Do not do any validation on this field."
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:427
-msgid "... or enter in a valid regex validation string.\n"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:459
-msgid "You have already chosen that validation rule,\nplease choose again"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:463
-msgid "Please make a valid selection."
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:485
-msgid "Would you like to add another validation rule?"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:502
-msgid "One moment while the associations are detected."
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:532
-msgid "None found."
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:534
-msgid "Please confirm the following associations:"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:706
-msgid "Would you like to define some additional model associations?"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:711
-msgid "What is the association type?"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:712
-msgid "Enter a number"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:714
-msgid "For the following options be very careful to match your setup exactly.\nAny spelling mistakes will cause errors."
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:718
-msgid "What is the alias for this association?"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:719
-msgid "What className will %s use?"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:741
-msgid "What is the table for this model?"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:747
-msgid "A helpful List of possible keys"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:748
-msgid "What is the foreignKey?"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:752
-msgid "What is the foreignKey? Specify your own."
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:755
-msgid "What is the associationForeignKey?"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:756
-msgid "What is the joinTable?"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:768
-msgid "Define another association?"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:840
-msgid "Baking model class for %s..."
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:874
-msgid "Possible Models based on your current database:"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:906
-msgid "Given your model named '%s',\nCake would expect a database table named '%s'"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:907
-msgid "Do you want to use this table?"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:910
-msgid "What is the name of the table?"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:942
-msgid "Your database does not have any tables."
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:960
-msgid "Enter a number from the list above,\ntype in the name of another model, or 'q' to exit"
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:969
-msgid "The model name you supplied was empty,\nor the number you selected was not an option. Please try again."
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:989
-msgid "Bake models."
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:991
-msgid "Name of the model to bake. Can use Plugin.name to bake plugin models."
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:993
-msgid "Bake all model files with associations and validation."
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:996
-msgid "Plugin to bake the model into."
-msgstr ""
-
-#: Console/Command/Task/ModelTask.php:1002
-msgid "The connection the model table is on."
-msgstr ""
-
-#: Console/Command/Task/PluginTask.php:65
-msgid "Plugin: %s already exists, no action taken"
-msgstr ""
-
-#: Console/Command/Task/PluginTask.php:83
-msgid "Enter the name of the plugin in CamelCase format"
-msgstr ""
-
-#: Console/Command/Task/PluginTask.php:87
-msgid "An error occurred trying to bake: %s in %s"
-msgstr ""
-
-#: Console/Command/Task/PluginTask.php:103
-msgid "<info>Plugin Name:</info> %s"
-msgstr ""
-
-#: Console/Command/Task/PluginTask.php:104
-msgid "<info>Plugin Directory:</info> %s"
-msgstr ""
-
-#: Console/Command/Task/PluginTask.php:164
-#: Console/Command/Task/ProjectTask.php:210
-msgid "<success>Created:</success> %s in %s"
-msgstr ""
-
-#: Console/Command/Task/PluginTask.php:204
-msgid "Choose a plugin path from the paths above."
-msgstr ""
-
-#: Console/Command/Task/PluginTask.php:220
-msgid "Create the directory structure, AppModel and AppController classes for a new plugin. Can create plugins in any of your bootstrapped plugin paths."
-msgstr ""
 
-#: Console/Command/Task/PluginTask.php:224
-msgid "CamelCased name of the plugin to create."
-msgstr ""
+#: Plugin/Usermgmt/Controller/ContentsController.php:127;163
+msgid "The page has been saved"
+msgstr "Página salva com sucesso."
 
-#: Console/Command/Task/ProjectTask.php:61
-msgid "What is the path to the project you want to bake?"
-msgstr ""
+#: Plugin/Usermgmt/Controller/ContentsController.php:206
+msgid "Selected page has been deleted successfully"
+msgstr "A Página selecionada foi excluída com sucesso."
 
-#: Console/Command/Task/ProjectTask.php:71
-msgid "<warning>A project already exists in this location:</warning> %s Overwrite?"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UserContactsController.php:137
+msgid "thank you for contacting us. we will be in touch with you very soon"
+msgstr "Muito obrigado por nos contatar. Nós entraremos em contato em breve."
 
-#: Console/Command/Task/ProjectTask.php:83
-msgid " * Random hash key created for 'Security.salt'"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UserContactsController.php:166
+msgid "Contact Enquiry"
+msgstr "Contato armazenado."
 
-#: Console/Command/Task/ProjectTask.php:85
-msgid "Unable to generate random hash for 'Security.salt', you should change it in %s"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UserEmailSignaturesController.php:127;163
+msgid "The signature has been saved"
+msgstr "A assinatura foi salva."
 
-#: Console/Command/Task/ProjectTask.php:90
-msgid " * Random seed created for 'Security.cipherSeed'"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UserEmailSignaturesController.php:186
+msgid "Selected signature has been deleted successfully"
+msgstr "A assinatura selecionada foi deletada com sucesso"
 
-#: Console/Command/Task/ProjectTask.php:92
-msgid "Unable to generate random seed for 'Security.cipherSeed', you should change it in %s"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UserEmailTemplatesController.php:127;163
+msgid "The template has been saved"
+msgstr "O Modelo de Email foi salvo."
 
-#: Console/Command/Task/ProjectTask.php:97
-msgid " * Cache prefix set"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UserEmailTemplatesController.php:186
+msgid "Selected template has been deleted successfully"
+msgstr "O Modelo de Email selecionado foi deletado com sucesso."
 
-#: Console/Command/Task/ProjectTask.php:99
-msgid "The cache prefix was <error>NOT</error> set"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UserEmailsController.php:458
+msgid "Invalid Id"
+msgstr "Id Inválido"
 
-#: Console/Command/Task/ProjectTask.php:104
-msgid " * app/Console/cake.php path set."
-msgstr ""
+#: Plugin/Usermgmt/Controller/UserGroupsController.php:136
+msgid "The group is successfully added"
+msgstr "O Grupo foi adicionado com sucesso"
 
-#: Console/Command/Task/ProjectTask.php:106
-msgid "Unable to set console path for app/Console."
-msgstr ""
+#: Plugin/Usermgmt/Controller/UserGroupsController.php:174
+msgid "The group is successfully updated"
+msgstr "O Grupo foi atualizado com sucesso."
 
-#: Console/Command/Task/ProjectTask.php:112
-msgid "<info>CakePHP is on your `include_path`. CAKE_CORE_INCLUDE_PATH will be set, but commented out.</info>"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UserGroupsController.php:198
+msgid "Sorry some users are associated with this group, You cannot delete this group"
+msgstr "Desculpe-nos, mas existem usuários associados a este grupo, você não pode excluir o grupo."
 
-#: Console/Command/Task/ProjectTask.php:114
-msgid "<warning>CakePHP is not on your `include_path`, CAKE_CORE_INCLUDE_PATH will be hard coded.</warning>"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UserGroupsController.php:202
+msgid "Group is successfully deleted"
+msgstr "Grupo deletado com sucesso"
 
-#: Console/Command/Task/ProjectTask.php:115
-msgid "You can fix this by adding CakePHP to your `include_path`."
-msgstr ""
+#: Plugin/Usermgmt/Controller/UserGroupsController.php:205
+msgid "Sorry sub group(s) are exist for this group, You cannot delete this group"
+msgstr "Desculpe-nos existem sub-grupos associados a este grupo, você não pode excluir o grupo."
 
-#: Console/Command/Task/ProjectTask.php:120;121
-msgid " * CAKE_CORE_INCLUDE_PATH set to %s in %s"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UserSettingsController.php:126
+msgid "Selected setting is successfully updated"
+msgstr "Configuração selecionada foi atualizada com sucesso."
 
-#: Console/Command/Task/ProjectTask.php:123
-msgid "Unable to set CAKE_CORE_INCLUDE_PATH, you should change it in %s"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UserSettingsController.php:172
+msgid " has been modified successfully"
+msgstr " modificado com sucesso."
 
-#: Console/Command/Task/ProjectTask.php:127
-msgid "   * <warning>Remember to check these values after moving to production server</warning>"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UserSettingsController.php:190
+msgid " has been copied to "
+msgstr " foi copiado para "
 
-#: Console/Command/Task/ProjectTask.php:132
-msgid "Could not set permissions on %s"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UserSettingsController.php:192;217;241
+msgid " file does not exist."
+msgstr " arquivo não existe."
 
-#: Console/Command/Task/ProjectTask.php:137
-msgid "<success>Project baked successfully!</success>"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UserSettingsController.php:195;220;244
+msgid "Missing Filename"
+msgstr "Faltando nome do arquivo"
 
-#: Console/Command/Task/ProjectTask.php:139
-msgid "Project baked but with <warning>some issues.</warning>."
-msgstr ""
+#: Plugin/Usermgmt/Controller/UserSettingsController.php:212
+msgid " has been deleted"
+msgstr " foi deletado"
 
-#: Console/Command/Task/ProjectTask.php:176
-msgid "What is the path to the directory layout you wish to copy?"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UserSettingsController.php:214
+msgid " file could not be deleted"
+msgstr " arquivo não pode ser deletado"
 
-#: Console/Command/Task/ProjectTask.php:181
-msgid "The directory path you supplied was empty. Please try again."
-msgstr ""
+#: Plugin/Usermgmt/Controller/UserSettingsController.php:239
+msgid " has been done empty"
+msgstr " está vazio"
 
-#: Console/Command/Task/ProjectTask.php:185
-msgid "Directory path does not exist please choose another:"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:313
+msgid "Your profile has been successfully updated"
+msgstr "Seu perfil foi atualizado com sucesso."
 
-#: Console/Command/Task/ProjectTask.php:195
-msgid "<info>Skel Directory</info>: "
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:377;394
+msgid "Incorrect Email/Username or Password"
+msgstr "Email/Login ou Senha incorretos. "
 
-#: Console/Command/Task/ProjectTask.php:196
-msgid "<info>Will be copied to</info>: "
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:387
+msgid "Your email has not been confirmed please verify your email or contact to Administrator"
+msgstr "Seu email não está confirmado, por favor verifique-o ou contate o Administrador"
 
-#: Console/Command/Task/ProjectTask.php:213
-msgid "<error>Could not create</error> '%s' properly."
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:390;515;574;643;703;789;846
+msgid "Sorry your account is not active, please contact to Administrator"
+msgstr "Desculpe-nos sua conta está inativa, contate o Administrador"
 
-#: Console/Command/Task/ProjectTask.php:227
-msgid "<error>Bake Aborted.</error>"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:431
+msgid "Please fill recaptcha code"
+msgstr "Por favor, preencha-nos o código de recaptcha"
 
-#: Console/Command/Task/ProjectTask.php:390
-msgid "You have more than one routing prefix configured"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:489;569;633;694;765;841;964
+msgid "Sorry new registration is currently disabled, please try again later"
+msgstr "Desculpe-nos novos cadastros estão desabilitados, por favor tente novamente mais tarde."
 
-#: Console/Command/Task/ProjectTask.php:399
-msgid "Please choose a prefix to bake with."
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:521;795
+msgid "Sorry your email is not verified yet"
+msgstr "Desculpe-nos seu email ainda não foi verificado"
 
-#: Console/Command/Task/ProjectTask.php:404;414
-msgid "You need to enable %s in %s to use prefix routing."
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:888
+msgid "You are successfully signed out"
+msgstr "Você foi desconectado com sucesso"
 
-#: Console/Command/Task/ProjectTask.php:407
-msgid "What would you like the prefix route to be?"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:928
+msgid "Please select correct register as"
+msgstr "Por favor selecione corretamente o registro como"
 
-#: Console/Command/Task/ProjectTask.php:408
-msgid "Example: %s"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:957
+msgid "Please check your mail and confirm your registration"
+msgstr "Por favor, verifique seu email e confirme seu registro."
 
-#: Console/Command/Task/ProjectTask.php:410
-msgid "Enter a routing prefix:"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1014
+msgid "Your accounts were successfully merged"
+msgstr "Suas contas foram mescladas com sucesso"
 
-#: Console/Command/Task/ProjectTask.php:413
-msgid "<error>Unable to write to</error> %s."
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1018
+msgid "Email verification code is incorrect, please try again"
+msgstr "Código de verificação de Email incorreto, por favor tente novamente"
 
-#: Console/Command/Task/ProjectTask.php:432
-msgid "Generate a new CakePHP project skeleton."
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1043
+msgid "Password changed successfully"
+msgstr "Senha salva com sucesso"
 
-#: Console/Command/Task/ProjectTask.php:434
-msgid "Application directory to make, if it starts with \"/\" the path is absolute."
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1052
+msgid "Sorry we have sent already 2 emails for verification code"
+msgstr "Desculpe-nos já enviamos 2 emails com o código de verificação."
 
-#: Console/Command/Task/ProjectTask.php:437
-msgid "Create empty files in each of the directories. Good if you are using git"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1061
+msgid "We have sent you an email verification code"
+msgstr "Nós enviamos a você um email com código de verificação."
 
-#: Console/Command/Task/ProjectTask.php:443
-msgid "The directory layout to use for the new application skeleton. Defaults to cake/Console/Templates/skel of CakePHP used to create the project."
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1104
+msgid "Password for %s changed successfully"
+msgstr "Senha para %s modificada com sucesso"
 
-#: Console/Command/Task/TemplateTask.php:178
-msgid "You have more than one set of templates installed."
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1153
+msgid "The user is successfully added"
+msgstr "Usuário salvo com sucesso"
 
-#: Console/Command/Task/TemplateTask.php:179
-msgid "Please choose the template set you wish to use:"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1243
+msgid "all users information have been saved"
+msgstr "todas as informações do usuário foram salvas."
 
-#: Console/Command/Task/TemplateTask.php:189
-msgid "Which bake theme would you like to use?"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1258
+msgid "Please select atleast one user to save"
+msgstr "Por favor, selecione um usuário para salvar."
 
-#: Console/Command/Task/TemplateTask.php:215
-msgid "Could not find template for %s"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1302
+msgid "Invalid or empty data in CSV file, please try again"
+msgstr "Arquivo CSV inválido ou com dados vazios, por favor tente novamente."
 
-#: Console/Command/Task/TestTask.php:113
-msgid "Bake Tests"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1307
+msgid "CSV file was not uploaded or does not exist, please try again"
+msgstr "arquivo CSV não foi importado ou não existe, por favor tente novamente"
 
-#: Console/Command/Task/TestTask.php:120
-msgid "Incorrect type provided. Please choose one of %s"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1333
+msgid "Please upload CSV file only"
+msgstr "Por favor, faça upload apenas de arquivo CSV"
 
-#: Console/Command/Task/TestTask.php:146
-msgid "Bake is detecting possible fixtures..."
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1336
+msgid "Please upload CSV file"
+msgstr "Por favor faça upload de arquivo CSV"
 
-#: Console/Command/Task/TestTask.php:164
-msgid "Baking test case for %s %s ..."
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1409
+msgid "The user is successfully updated"
+msgstr "Usuário atualizado com sucesso"
 
-#: Console/Command/Task/TestTask.php:190
-msgid "Select an object type:"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1444
+msgid "Selected user is deleted successfully"
+msgstr "O usuário selecionado foi removido com sucesso."
 
-#: Console/Command/Task/TestTask.php:200
-msgid "Enter the type of object to bake a test for or (q)uit"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1468
+msgid "Your account is successfully deleted"
+msgstr "Sua conta foi deletada com sucesso"
 
-#: Console/Command/Task/TestTask.php:224
-msgid "Choose a %s class"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1472
+msgid "You are not allowed to delete account"
+msgstr "Você não está habilitado a deletar a conta."
 
-#: Console/Command/Task/TestTask.php:231
-msgid "Choose an existing class, or enter the name of a class that does not exist"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1489
+msgid "User is successfully signed out"
+msgstr "Usuário deslogado com sucesso"
 
-#: Console/Command/Task/TestTask.php:455
-msgid "Bake could not detect fixtures, would you like to add some?"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1507
+msgid "User is successfully signed out and deactivated"
+msgstr "Usuário foi desconectado e desativado"
 
-#: Console/Command/Task/TestTask.php:458
-msgid "Please provide a comma separated list of the fixtures names you'd like to use.\nExample: 'app.comment, app.post, plugin.forums.post'"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1530
+msgid "Sorry there was a problem, please try again"
+msgstr "Desculpe, nos aconteceu um problema, tente novamente"
 
-#: Console/Command/Task/TestTask.php:554
-msgid "Bake test case skeletons for classes."
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1552
+msgid "Selected user is de-activated successfully"
+msgstr "Usuário selecionado foi desativado com sucesso"
 
-#: Console/Command/Task/TestTask.php:556
-msgid "Type of class to bake, can be any of the following: controller, model, helper, component or behavior."
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1554
+msgid "Selected user is activated successfully"
+msgstr "Usuário selecionado ativado com sucesso"
 
-#: Console/Command/Task/TestTask.php:565
-msgid "An existing class to bake tests for."
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1584
+msgid "Email of selected user is verified successfully"
+msgstr "Email do usuário selecionado foi verificado com sucesso"
 
-#: Console/Command/Task/TestTask.php:571
-msgid "CamelCased name of the plugin to bake tests for."
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1622
+msgid "Thank you, your account is activated now"
+msgstr "Obrigado, sua conta agora está ativada"
 
-#: Console/Command/Task/ViewTask.php:211
-msgid "Would you like bake to build your views interactively?\nWarning: Choosing no will overwrite %s views if it exist."
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1625
+msgid "Thank you, your account is already activated"
+msgstr "Obrigado, sua conta já estava ativa."
 
-#: Console/Command/Task/ViewTask.php:218
-msgid "Would you like to create some CRUD views\n(index, add, view, edit) for this controller?\nNOTE: Before doing so, you'll need to create your controller\nand model classes (including associated models)."
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1628;1631
+msgid "Sorry something went wrong, please click on the link again"
+msgstr "Ops, algo deu errado, clique no link novamente."
 
-#: Console/Command/Task/ViewTask.php:221
-msgid "Would you like to create the views for admin routing?"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1653;1686
+msgid "Incorrect Email/Username"
+msgstr "Email ou Nome de Usuário incorretos"
 
-#: Console/Command/Task/ViewTask.php:240
-msgid "View Scaffolding Complete.\n"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1659
+msgid "Your registration has not been confirmed yet please verify your email before reset password"
+msgstr "Seu cadastro ainda não está confirmado, por favor olhe seu email antes de resetar sua senha"
 
-#: Console/Command/Task/ViewTask.php:257
-msgid "Controller not found"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1663
+msgid "Please check your email for reset your password"
+msgstr "Porfavor, cheque seu email para resetar sua senha"
 
-#: Console/Command/Task/ViewTask.php:269
-msgid "The file '%s' could not be found.\nIn order to bake a view, you'll need to first create the controller."
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1692
+msgid "Please check your mail to verify your email address"
+msgstr "Por favor cheque sua caixa de mensagens"
 
-#: Console/Command/Task/ViewTask.php:321
-msgid "Action Name? (use lowercase_underscored function name)"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1694
+msgid "Your email is already verified"
+msgstr "Seu email já foi verificado"
 
-#: Console/Command/Task/ViewTask.php:323
-msgid "The action name you supplied was empty. Please try again."
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1725
+msgid "Your password has been reset successfully"
+msgstr "Senha resetada com sucesso"
 
-#: Console/Command/Task/ViewTask.php:328
-msgid "The following view will be created:"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1728
+msgid "Something went wrong, please send password reset link again"
+msgstr "Algo deu errado, clique no link de resetar senha novamente"
 
-#: Console/Command/Task/ViewTask.php:330
-msgid "Controller Name: %s"
-msgstr ""
+#: Plugin/Usermgmt/Controller/UsersController.php:1731;1735
+msgid "Something went wrong, please click again on the link in email"
+msgstr "Algo deu errado, clique novamente no link do email"
 
-#: Console/Command/Task/ViewTask.php:331
-msgid "Action Name:     %s"
-msgstr ""
+#: Plugin/Usermgmt/Controller/Component/SearchComponent.php:55;93;119
+msgid "Search model not found: %s"
+msgstr "Busca de modelo não encontrado: %s"
 
-#: Console/Command/Task/ViewTask.php:332
-msgid "Path:            %s"
-msgstr ""
+#: Plugin/Usermgmt/Controller/Component/SearchComponent.php:200
+msgid "Selector method \"%s\" not found in model \"%s\" for field \"%s\"!"
+msgstr "Método de seleção \"%s\" não encontrado no modelo \"%s\" para o campo \"%s\"!"
 
-#: Console/Command/Task/ViewTask.php:339
-msgid "Bake Aborted."
-msgstr ""
+#: Plugin/Usermgmt/Controller/Component/UserAuthComponent.php:64
+msgid "Your account is currently logged in on another computer."
+msgstr "Sua conta atualmente está logada em outro computador."
 
-#: Console/Command/Task/ViewTask.php:356
-msgid "Baking `%s` view file..."
-msgstr ""
+#: Plugin/Usermgmt/Controller/Component/UserAuthComponent.php:89
+msgid "You need to be signed in to view this page."
+msgstr "Você precisa estar logado para ver esta página."
 
-#: Console/Command/Task/ViewTask.php:424
-msgid "Bake views for a controller, using built-in or custom templates."
-msgstr ""
+#: Plugin/Usermgmt/Model/Content.php:41
+msgid "Please enter page name"
+msgstr "Por favor digite o nome da página"
 
-#: Console/Command/Task/ViewTask.php:426
-msgid "Name of the controller views to bake. Can be Plugin.name as a shortcut for plugin baking."
-msgstr ""
+#: Plugin/Usermgmt/Model/Content.php:46
+msgid "Please enter page url"
+msgstr "Por favor digite a url da página"
 
-#: Console/Command/Task/ViewTask.php:428
-msgid "Will bake a single action's file. core templates are (index, add, edit, view)"
-msgstr ""
+#: Plugin/Usermgmt/Model/Content.php:50
+msgid "This url name already exist"
+msgstr "Esta url já existe"
 
-#: Console/Command/Task/ViewTask.php:430
-msgid "Will bake the template in <action> but create the filename after <alias>."
-msgstr ""
+#: Plugin/Usermgmt/Model/Content.php:54
+msgid "Please enter page content"
+msgstr "Por favor cadastre o conteúdo da página"
 
-#: Console/Command/Task/ViewTask.php:433
-msgid "Plugin to bake the view into."
-msgstr ""
+#: Plugin/Usermgmt/Model/User.php:68
+msgid "Please enter email or username"
+msgstr "Por favor digite o email ou nome de usuário"
 
-#: Console/Command/Task/ViewTask.php:435
-msgid "Set to only bake views for a prefix in Routing.prefixes"
-msgstr ""
+#: Plugin/Usermgmt/Model/User.php:73;176;287
+msgid "Please enter password"
+msgstr "Preencha a senha"
 
-#: Console/Command/Task/ViewTask.php:442
-msgid "The connection the connected model is on."
-msgstr ""
+#: Plugin/Usermgmt/Model/User.php:93;206
+msgid "Please select group"
+msgstr "Selecione um grupo"
 
-#: Console/Command/Task/ViewTask.php:447
-msgid "Bake all CRUD action views for all controllers. Requires models and controllers to exist."
-msgstr ""
+#: Plugin/Usermgmt/Model/User.php:97;210
+msgid "Please enter username"
+msgstr "Selecione um nome de usuário"
 
-#: Utility/CakeTime.php:154
-msgid "abday"
-msgstr ""
+#: Plugin/Usermgmt/Model/User.php:101;214
+msgid "Username must be alphaNumeric"
+msgstr "O nome de usuário deve ser alfanumérico"
 
-#: Utility/CakeTime.php:160
-msgid "day"
-msgstr "dia"
+#: Plugin/Usermgmt/Model/User.php:106;219
+msgid "Username must contain any letter"
+msgstr "O nome de usuário deve conter alguma letra"
 
-#: Utility/CakeTime.php:166
-msgid "d_t_fmt"
-msgstr ""
+#: Plugin/Usermgmt/Model/User.php:110;223
+msgid "This username already taken"
+msgstr "Este nome de usuário já existe"
 
-#: Utility/CakeTime.php:188
-msgid "abmon"
-msgstr ""
+#: Plugin/Usermgmt/Model/User.php:118;231
+msgid "Username must be greater than 3 characters"
+msgstr "Nome de usuário deve ser maior que 3 caracteres"
 
-#: Utility/CakeTime.php:194
-msgid "mon"
-msgstr ""
+#: Plugin/Usermgmt/Model/User.php:124;241
+msgid "Please enter first name"
+msgstr "Digite o primeiro nome"
 
-#: Utility/CakeTime.php:205
-msgid "am_pm"
-msgstr ""
+#: Plugin/Usermgmt/Model/User.php:128;132;245;249
+msgid "Please enter valid first name"
+msgstr "Digite um primeiro nome válido"
 
-#: Utility/CakeTime.php:212
-msgid "t_fmt_ampm"
-msgstr ""
+#: Plugin/Usermgmt/Model/User.php:138;255
+msgid "Please enter last name"
+msgstr "Digite o último nome"
 
-#: Utility/CakeTime.php:226
-msgid "d_fmt"
-msgstr ""
+#: Plugin/Usermgmt/Model/User.php:142;146;259;263
+msgid "Please enter valid last name"
+msgstr "Digite um último nome válido"
 
-#: Utility/CakeTime.php:232
-msgid "t_fmt"
-msgstr ""
+#: Plugin/Usermgmt/Model/User.php:152;269
+msgid "Please enter email"
+msgstr "Preencha o email"
 
+#: Plugin/Usermgmt/Model/User.php:156;273
+#: Plugin/Usermgmt/Model/UserContact.php:50
+#: Plugin/Usermgmt/Model/UserEmail.php:30;46
+msgid "Please enter valid email"
+msgstr "Preencha um email válido"
+
+#: Plugin/Usermgmt/Model/User.php:161;277
+#: Plugin/Usermgmt/View/Users/change_password.ctp:49
+msgid "This email is already registered"
+msgstr "Este email já está registrado"
+
+#: Plugin/Usermgmt/Model/User.php:167
+msgid "Please enter old password"
+msgstr "Por favor, digite a senha atual"
+
+#: Plugin/Usermgmt/Model/User.php:171
+msgid "Please enter correct old password"
+msgstr "Digite corretamente a senha atual"
+
+#: Plugin/Usermgmt/Model/User.php:181;292
+msgid "Password must be greater than 5 characters"
+msgstr "A senha deve ter mais de 5 caracteres"
+
+#: Plugin/Usermgmt/Model/User.php:186
+msgid "Both passwords must match"
+msgstr "Os campos de senha devem ter o mesmo valor"
+
+#: Plugin/Usermgmt/Model/User.php:235
+msgid "Duplicate username in this page"
+msgstr "Nome de usuário duplicado nesta página"
+
+#: Plugin/Usermgmt/Model/User.php:281
+msgid "Duplicate email in this page"
+msgstr "Email duplicado nesta página"
+
+#: Plugin/Usermgmt/Model/User.php:373;387;394;402
+msgid "You cannot set this username"
+msgstr "Você não pode usar este nome de usuário"
+
+#: Plugin/Usermgmt/Model/User.php:478
+msgid "Registration is Complete"
+msgstr "Cadastro Completo. Parabéns!"
+
+#: Plugin/Usermgmt/Model/User.php:507
+msgid "Contact Email Confirmation"
+msgstr "Email de Confirmação de Contato"
+
+#: Plugin/Usermgmt/Model/User.php:537
+msgid "Email Verification Code"
+msgstr "Código de Verficação no Email"
+
+#: Plugin/Usermgmt/Model/User.php:576
+msgid "Request to Reset Your Password"
+msgstr "Requisição para resetar senha"
+
+#: Plugin/Usermgmt/Model/User.php:606
+msgid "Change Password Confirmation"
+msgstr "Confirmação de Mudança de Senha"
+
+#: Plugin/Usermgmt/Model/User.php:749
+msgid "Select Gender"
+msgstr "Selecione o Sexo"
+
+#: Plugin/Usermgmt/Model/User.php:751
+msgid "Male"
+msgstr "Masculino"
+
+#: Plugin/Usermgmt/Model/User.php:752
+msgid "Female"
+msgstr "Feminino"
+
+#: Plugin/Usermgmt/Model/User.php:765
+msgid "Select Status"
+msgstr "Selecione o Estado Civil"
+
+#: Plugin/Usermgmt/Model/User.php:767
+msgid "Single"
+msgstr "Solteiro"
+
+#: Plugin/Usermgmt/Model/User.php:768
+msgid "Married"
+msgstr "Casado"
+
+#: Plugin/Usermgmt/Model/User.php:769
+msgid "Divorced"
+msgstr "Divorciado"
+
+#: Plugin/Usermgmt/Model/User.php:770
+msgid "Widowed"
+msgstr "Viúvo"
+
+#: Plugin/Usermgmt/Model/UserContact.php:41
+msgid "Please enter your name"
+msgstr "Digite o nome"
+
+#: Plugin/Usermgmt/Model/UserContact.php:46
+msgid "Please enter your email"
+msgstr "Digite o email"
+
+#: Plugin/Usermgmt/Model/UserContact.php:54
+msgid "Please enter requirement"
+msgstr "Campo requerido"
+
+#: Plugin/Usermgmt/Model/UserDetail.php:41
+msgid "Please select gender"
+msgstr "Selecione o sexo"
+
+#: Plugin/Usermgmt/Model/UserDetail.php:47
+msgid "Please select marital status"
+msgstr "Selecione o estado civil"
+
+#: Plugin/Usermgmt/Model/UserDetail.php:53
+msgid "Please enter valid cellphone no"
+msgstr "Digite um número de celular válido"
+
+#: Plugin/Usermgmt/Model/UserDetail.php:60;79
+msgid "Please select valid birthday date"
+msgstr "Digite uma data de nascimento válida"
+
+#: Plugin/Usermgmt/Model/UserDetail.php:66
+msgid "Please supply a valid image"
+msgstr "Por favor, envie uma imagem com formato válido"
+
+#: Plugin/Usermgmt/Model/UserEmail.php:26
+msgid "Please enter to email"
+msgstr "Digite o email"
+
+#: Plugin/Usermgmt/Model/UserEmail.php:36
+msgid "Please enter from name"
+msgstr "Preencha o nome"
+
+#: Plugin/Usermgmt/Model/UserEmail.php:42
+msgid "Please enter from email"
+msgstr "Preencha o email"
+
+#: Plugin/Usermgmt/Model/UserEmail.php:52
+msgid "Please enter email subject"
+msgstr "Digite o Assunto"
+
+#: Plugin/Usermgmt/Model/UserEmail.php:58
+msgid "Please enter email message"
+msgstr "Digite a mensagem"
+
+#: Plugin/Usermgmt/Model/UserEmail.php:64
+msgid "Please select user(s)"
+msgstr "Selecione o(s) usuário(s)"
+
+#: Plugin/Usermgmt/Model/UserEmail.php:70
+msgid "Please select group(s)"
+msgstr "Selecione o(s) grupo(s)"
+
+#: Plugin/Usermgmt/Model/UserEmail.php:76
+msgid "Please enter email(s)"
+msgstr Selecione o(s) email(s)""
+
+#: Plugin/Usermgmt/Model/UserEmail.php:80;87
+msgid "Please enter valid email(s)"
+msgstr "Digite email(s) válido(s)"
+
+#: Plugin/Usermgmt/Model/UserEmail.php:127
+msgid "Please fix the error near"
+msgstr "Por favor corrija o erro"
+
+#: Plugin/Usermgmt/Model/UserEmailSignature.php:41
+msgid "Please enter signature name"
+msgstr "Por favor preencha o campo de Assinatura de Email"
+
+#: Plugin/Usermgmt/Model/UserEmailTemplate.php:41
+msgid "Please enter template name"
+msgstr "Preencha o nome do modelo"
+
+#: Plugin/Usermgmt/Model/UserGroup.php:53
+msgid "Please enter group name"
+msgstr "Preencha o nome do grupo"
+
+#: Plugin/Usermgmt/Model/UserGroup.php:57
+msgid "Group name must be alphaNumeric"
+msgstr "O nome do grupo deve ser alfanumérico"
+
+#: Plugin/Usermgmt/Model/UserGroup.php:61
+msgid "Group name must contain any letter"
+msgstr "O nome do grupo deve conter uma letra"
+
+#: Plugin/Usermgmt/Model/UserGroup.php:65
+msgid "This group name already added"
+msgstr "O nome deste grupo já foi adicionado"
+
+#: Plugin/Usermgmt/Model/UserGroup.php:71
+msgid "Please enter alias group name"
+msgstr "Por favor preencae um alias para o nome do grupo"
+
+#: Plugin/Usermgmt/Model/UserGroup.php:75
+msgid "Alias group name must be alphaNumeric"
+msgstr "Alias deve ser alfanumérico"
+
+#: Plugin/Usermgmt/Model/UserGroup.php:79
+msgid "Alias group name must contain any letter"
+msgstr "Alias deve conter uma letra"
+
+#: Plugin/Usermgmt/Model/UserGroup.php:83
+msgid "This alias group name already added"
+msgstr "Alias já foi adicionado"
+
+#: Plugin/Usermgmt/Model/UserGroup.php:255;277
+msgid "Select"
+msgstr "Selecione"
+
+#: Plugin/Usermgmt/Model/UserGroup.php:352
+msgid "No Group"
+msgstr "Nenhum Grupo"
+
+#: Plugin/Usermgmt/Model/UserSetting.php:41
+msgid "Please select category"
+msgstr "Por favor, selecione a Categoria"
+
+#: Plugin/Usermgmt/Model/UserSetting.php:92
+msgid "Select Category"
+msgstr "Select a Categoria"
+
+#: Plugin/Usermgmt/View/Contents/add_page.ctp:30
+#: Plugin/Usermgmt/View/Contents/index.ctp:33
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:114
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:108
+msgid "Add Page"
+msgstr "Adicionar Página"
+
+#: Plugin/Usermgmt/View/Contents/add_page.ctp:33
+#: Plugin/Usermgmt/View/Contents/edit_page.ctp:34
+#: Plugin/Usermgmt/View/Contents/view_page.ctp:34
+#: Plugin/Usermgmt/View/UserEmailSignatures/add.ctp:33
+#: Plugin/Usermgmt/View/UserEmailSignatures/edit.ctp:33
+#: Plugin/Usermgmt/View/UserEmailTemplates/add.ctp:33
+#: Plugin/Usermgmt/View/UserEmailTemplates/edit.ctp:33
+#: Plugin/Usermgmt/View/UserEmails/send.ctp:79
+#: Plugin/Usermgmt/View/UserEmails/send_reply.ctp:34
+#: Plugin/Usermgmt/View/UserEmails/send_to_user.ctp:34
+#: Plugin/Usermgmt/View/UserEmails/view.ctp:8
+#: Plugin/Usermgmt/View/UserGroups/add_group.ctp:33
+#: Plugin/Usermgmt/View/UserGroups/edit_group.ctp:34
+#: Plugin/Usermgmt/View/UserSettings/edit_setting.ctp:34
+#: Plugin/Usermgmt/View/Users/add_multiple_users.ctp:55
+#: Plugin/Usermgmt/View/Users/add_user.ctp:40
+#: Plugin/Usermgmt/View/Users/change_user_password.ctp:34
+#: Plugin/Usermgmt/View/Users/edit_profile.ctp:33
+#: Plugin/Usermgmt/View/Users/edit_user.ctp:41
+#: Plugin/Usermgmt/View/Users/upload_csv.ctp:38
+#: Plugin/Usermgmt/View/Users/view_user.ctp:34
+#: Plugin/Usermgmt/View/Users/view_user_permissions.ctp:34
+msgid "Back"
+msgstr "Voltar"
+
+#: Plugin/Usermgmt/View/Contents/add_page.ctp:40
+#: Plugin/Usermgmt/View/Contents/edit_page.ctp:42
+#: Plugin/Usermgmt/View/Contents/view_page.ctp:45
+#: Plugin/Usermgmt/View/Elements/all_contents.ctp:35
+msgid "Page Name"
+msgstr "Nome da Página"
+
+#: Plugin/Usermgmt/View/Contents/add_page.ctp:43
+#: Plugin/Usermgmt/View/Contents/edit_page.ctp:45
+msgid "For ex. Contact Us, About Us"
+msgstr "Por ex. Contate-nos, Quem Somos"
+
+#: Plugin/Usermgmt/View/Contents/add_page.ctp:47
+#: Plugin/Usermgmt/View/Contents/edit_page.ctp:49
+#: Plugin/Usermgmt/View/Contents/view_page.ctp:49
+#: Plugin/Usermgmt/View/Elements/all_contents.ctp:36
+msgid "Url Name"
+msgstr "Nome da Url"
+
+#: Plugin/Usermgmt/View/Contents/add_page.ctp:50
+#: Plugin/Usermgmt/View/Contents/edit_page.ctp:52
+msgid "For ex. contactus, contactus.html, aboutus, aboutus.html"
+msgstr "For ex. contato, contato.html, quem-somos, quem-somos.html"
+
+#: Plugin/Usermgmt/View/Contents/add_page.ctp:54
+#: Plugin/Usermgmt/View/Contents/edit_page.ctp:56
+#: Plugin/Usermgmt/View/Contents/view_page.ctp:57
+#: Plugin/Usermgmt/View/Elements/all_contents.ctp:37
+msgid "Page Title"
+msgstr "Título da Página"
+
+#: Plugin/Usermgmt/View/Contents/add_page.ctp:57
+#: Plugin/Usermgmt/View/Contents/edit_page.ctp:59
+msgid "For ex. Your Contact Details"
+msgstr "Por ex. Seus detalhes de Contato"
+
+#: Plugin/Usermgmt/View/Contents/add_page.ctp:61
+#: Plugin/Usermgmt/View/Contents/edit_page.ctp:63
+#: Plugin/Usermgmt/View/Contents/view_page.ctp:61
+msgid "Page Content"
+msgstr "Página de Conteúdo"
+
+#: Plugin/Usermgmt/View/Contents/edit_page.ctp:30
+#: Plugin/Usermgmt/View/Elements/all_contents.ctp:63
+msgid "Edit Page"
+msgstr "Editar Página"
+
+#: Plugin/Usermgmt/View/Contents/index.ctp:30
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:117
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:111
+#: Plugin/Usermgmt/View/Elements/panel.ctp:130
+msgid "All Pages"
+msgstr "Todas as Páginas"
+
+#: Plugin/Usermgmt/View/Contents/view_page.ctp:30
+msgid "Page Detail"
+msgstr "Detalhes da Página"
+
+#: Plugin/Usermgmt/View/Contents/view_page.ctp:37
+#: Plugin/Usermgmt/View/UserEmails/send_confirm.ctp:55
+#: Plugin/Usermgmt/View/UserEmails/send_reply_confirm.ctp:41
+#: Plugin/Usermgmt/View/UserEmails/send_to_user_confirm.ctp:41
+#: Plugin/Usermgmt/View/Users/myprofile.ctp:33
+#: Plugin/Usermgmt/View/Users/view_user.ctp:37
+#: View/Categories/admin_edit.ctp:7
+#: View/Categories/admin_index.ctp:22
+#: View/Posts/admin_edit.ctp:13
+#: View/Posts/admin_index.ctp:52
+#: View/Questions/admin_index.ctp:24
+#: View/Schedules/admin_edit.ctp:4
+#: View/Schedules/admin_index.ctp:32
+#: View/Themes/admin_edit.ctp:11
+#: View/Themes/admin_index.ctp:28
+msgid "Edit"
+msgstr "Editar"
+
+#: Plugin/Usermgmt/View/Contents/view_page.ctp:53
+#: Plugin/Usermgmt/View/Elements/all_contents.ctp:38
+msgid "Page Link"
+msgstr "Link da Página"
+
+#: Plugin/Usermgmt/View/Contents/view_page.ctp:65
+#: Plugin/Usermgmt/View/Elements/all_contents.ctp:39
+#: Plugin/Usermgmt/View/Elements/all_email_signatures.ctp:37
+#: Plugin/Usermgmt/View/Elements/all_email_templates.ctp:38
+#: Plugin/Usermgmt/View/Elements/all_groups.ctp:40
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:42
+msgid "Created"
+msgstr "Data de Criação"
+
+#: Plugin/Usermgmt/View/Contents/view_page.ctp:69
+msgid "Modified"
+msgstr "Data de Modificação"
+
+#: Plugin/Usermgmt/View/Elements/all_contacts.ctp:34
+#: Plugin/Usermgmt/View/Elements/all_contents.ctp:34
+#: Plugin/Usermgmt/View/Elements/all_email_signatures.ctp:34
+#: Plugin/Usermgmt/View/Elements/all_email_templates.ctp:34
+#: Plugin/Usermgmt/View/Elements/all_emails.ctp:34
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:34
+#: Plugin/Usermgmt/View/Elements/online_users.ctp:34
+#: Plugin/Usermgmt/View/UserSettings/cakelog.ctp:37
+#: Plugin/Usermgmt/View/Users/view_user_permissions.ctp:42
+msgid "SL"
+msgstr "SL"
+
+#: Plugin/Usermgmt/View/Elements/all_contacts.ctp:35
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:35
+msgid "User Id"
+msgstr "Id de Usuário"
+
+#: Plugin/Usermgmt/View/Elements/all_contacts.ctp:36
+#: Plugin/Usermgmt/View/Elements/all_groups.ctp:35
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:36
+#: Plugin/Usermgmt/View/Elements/contact_us.ctp:30
+#: Plugin/Usermgmt/View/Elements/online_users.ctp:35
+#: Plugin/Usermgmt/View/UserEmails/send_confirm.ctp:129
+#: Plugin/Usermgmt/View/UserEmails/view.ctp:60
+#: View/Categories/admin_view.ctp:14
+#: View/Schedules/admin_view.ctp:14
+msgid "Name"
+msgstr "Nome"
+
+#: Plugin/Usermgmt/View/Elements/all_contacts.ctp:37
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:38
+#: Plugin/Usermgmt/View/Elements/contact_us.ctp:31
+#: Plugin/Usermgmt/View/Elements/online_users.ctp:36
+#: Plugin/Usermgmt/View/Elements/panel.ctp:106
+#: Plugin/Usermgmt/View/UserEmails/send_confirm.ctp:130
+#: Plugin/Usermgmt/View/UserEmails/view.ctp:61
+#: Plugin/Usermgmt/View/Users/add_multiple_users.ctp:69
+#: Plugin/Usermgmt/View/Users/add_user.ctp:71
+#: Plugin/Usermgmt/View/Users/change_password.ctp:45
+#: Plugin/Usermgmt/View/Users/edit_profile.ctp:61
+#: Plugin/Usermgmt/View/Users/edit_user.ctp:74
+#: Plugin/Usermgmt/View/Users/myprofile.ctp:68
+#: Plugin/Usermgmt/View/Users/register.ctp:68
+#: Plugin/Usermgmt/View/Users/view_profile.ctp:61
+#: Plugin/Usermgmt/View/Users/view_user.ctp:72
+msgid "Email"
+msgstr "Email"
+
+#: Plugin/Usermgmt/View/Elements/all_contacts.ctp:38
+#: Plugin/Usermgmt/View/Elements/contact_us.ctp:32
+msgid "Contact No"
+msgstr "Número de Contato"
+
+#: Plugin/Usermgmt/View/Elements/all_contacts.ctp:39
+#: Plugin/Usermgmt/View/Elements/contact_us.ctp:33
+msgid "Requirement"
+msgstr "Requisito"
+
+#: Plugin/Usermgmt/View/Elements/all_contacts.ctp:40
+msgid "Reply Message"
+msgstr "Responder Mensagem"
+
+#: Plugin/Usermgmt/View/Elements/all_contacts.ctp:41
+msgid "Date"
+msgstr "Data"
+
+#: Plugin/Usermgmt/View/Elements/all_contacts.ctp:42
+#: Plugin/Usermgmt/View/Elements/all_contents.ctp:40
+#: Plugin/Usermgmt/View/Elements/all_email_signatures.ctp:38
+#: Plugin/Usermgmt/View/Elements/all_email_templates.ctp:39
+#: Plugin/Usermgmt/View/Elements/all_emails.ctp:43
+#: Plugin/Usermgmt/View/Elements/all_groups.ctp:41
+#: Plugin/Usermgmt/View/Elements/all_settings.ctp:38
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:43
+#: Plugin/Usermgmt/View/Elements/online_users.ctp:41
+#: Plugin/Usermgmt/View/UserGroupPermissions/index.ctp:58
+#: Plugin/Usermgmt/View/UserGroupPermissions/permission_group_matrix.ctp:116
+#: Plugin/Usermgmt/View/UserGroupPermissions/permission_sub_group_matrix.ctp:117
+#: Plugin/Usermgmt/View/UserGroupPermissions/sub_permissions.ctp:59
+#: Plugin/Usermgmt/View/UserSettings/cakelog.ctp:41
+#: Plugin/Usermgmt/View/Users/view_user_permissions.ctp:44
+msgid "Action"
+msgstr "Ações"
+
+#: Plugin/Usermgmt/View/Elements/all_contacts.ctp:69
+msgid "Send Reply"
+msgstr "Enviar Resposta"
+
+#: Plugin/Usermgmt/View/Elements/all_contacts.ctp:76
+#: Plugin/Usermgmt/View/Elements/all_contents.ctp:72
+#: Plugin/Usermgmt/View/Elements/all_email_signatures.ctp:66
+#: Plugin/Usermgmt/View/Elements/all_email_templates.ctp:68
+#: Plugin/Usermgmt/View/Elements/all_emails.ctp:98
+#: Plugin/Usermgmt/View/Elements/all_groups.ctp:83
+#: Plugin/Usermgmt/View/Elements/all_settings.ctp:74
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:113
+#: Plugin/Usermgmt/View/Elements/online_users.ctp:76
+#: Plugin/Usermgmt/View/UserEmails/send_confirm.ctp:158
+#: Plugin/Usermgmt/View/UserEmails/view.ctp:82
+#: Plugin/Usermgmt/View/Users/view_user_permissions.ctp:65
+msgid "No Data"
+msgstr "Sem Dados"
+
+#: Plugin/Usermgmt/View/Elements/all_contacts.ctp:80
+msgid "Number of Enquiries"
+msgstr "Número de Informações"
+
+#: Plugin/Usermgmt/View/Elements/all_contents.ctp:61
+msgid "View Page"
+msgstr "Ver Página"
+
+#: Plugin/Usermgmt/View/Elements/all_contents.ctp:65
+msgid "Delete Page"
+msgstr "Apagar Página"
+
+#: Plugin/Usermgmt/View/Elements/all_contents.ctp:65
+msgid "Are you sure you want to delete this page?"
+msgstr "Você deseja mesmo, apagar esta página?"
+
+#: Plugin/Usermgmt/View/Elements/all_contents.ctp:76
+msgid "Number of Pages"
+msgstr "Número de Páginas"
+
+#: Plugin/Usermgmt/View/Elements/all_email_signatures.ctp:35
+#: Plugin/Usermgmt/View/UserEmailSignatures/add.ctp:40
+#: Plugin/Usermgmt/View/UserEmailSignatures/edit.ctp:41
+msgid "Signature Name"
+msgstr "Assinatura de Email"
+
+#: Plugin/Usermgmt/View/Elements/all_email_signatures.ctp:36
+msgid "Signature"
+msgstr "Assinatura"
+
+#: Plugin/Usermgmt/View/Elements/all_email_signatures.ctp:57
+#: Plugin/Usermgmt/View/UserEmailSignatures/edit.ctp:30
+msgid "Edit Signature"
+msgstr "Editar Assinatura"
+
+#: Plugin/Usermgmt/View/Elements/all_email_signatures.ctp:59
+msgid "Delete Signature"
+msgstr "Deletar Assinatura"
+
+#: Plugin/Usermgmt/View/Elements/all_email_signatures.ctp:59
+msgid "Are you sure you want to delete this signature?"
+msgstr "Você deseja apagar esta assinatura?"
+
+#: Plugin/Usermgmt/View/Elements/all_email_signatures.ctp:70
+msgid "Number of Signatures"
+msgstr "Número de Assinaturas"
+
+#: Plugin/Usermgmt/View/Elements/all_email_templates.ctp:35
+#: Plugin/Usermgmt/View/UserEmailTemplates/add.ctp:40
+#: Plugin/Usermgmt/View/UserEmailTemplates/edit.ctp:41
+msgid "Template Name"
+msgstr "Nome do Modelo"
+
+#: Plugin/Usermgmt/View/Elements/all_email_templates.ctp:36
+msgid "Header"
+msgstr "Cabeçalho"
+
+#: Plugin/Usermgmt/View/Elements/all_email_templates.ctp:37
+msgid "Footer"
+msgstr "Rodapé"
+
+#: Plugin/Usermgmt/View/Elements/all_email_templates.ctp:59
+#: Plugin/Usermgmt/View/UserEmailTemplates/edit.ctp:30
+msgid "Edit Template"
+msgstr "Editar Modelo"
+
+#: Plugin/Usermgmt/View/Elements/all_email_templates.ctp:61
+msgid "Delete Template"
+msgstr "Apagar Modelo"
+
+#: Plugin/Usermgmt/View/Elements/all_email_templates.ctp:61
+msgid "Are you sure you want to delete this template?"
+msgstr "Você deseja deletar este modelo?"
+
+#: Plugin/Usermgmt/View/Elements/all_email_templates.ctp:72
+msgid "Number of Templates"
+msgstr "Número de Modelos"
+
+#: Plugin/Usermgmt/View/Elements/all_emails.ctp:35
+#: Plugin/Usermgmt/View/UserEmails/send.ctp:100
+msgid "Type"
+msgstr "Tipo"
+
+#: Plugin/Usermgmt/View/Elements/all_emails.ctp:36
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:39
+msgid "Groups(s)"
+msgstr "Grupo(s)"
+
+#: Plugin/Usermgmt/View/Elements/all_emails.ctp:37
+#: Plugin/Usermgmt/View/UserEmails/send.ctp:132
+#: Plugin/Usermgmt/View/UserEmails/send_reply.ctp:59
+#: Plugin/Usermgmt/View/UserEmails/send_to_user.ctp:59
+msgid "From Name"
+msgstr "Nome do Remetente"
+
+#: Plugin/Usermgmt/View/Elements/all_emails.ctp:38
+#: Plugin/Usermgmt/View/UserEmails/send.ctp:138
+#: Plugin/Usermgmt/View/UserEmails/send_reply.ctp:65
+#: Plugin/Usermgmt/View/UserEmails/send_to_user.ctp:65
+msgid "From Email"
+msgstr "Email do Remetente"
+
+#: Plugin/Usermgmt/View/Elements/all_emails.ctp:39
+#: Plugin/Usermgmt/View/UserEmails/send.ctp:144
+#: Plugin/Usermgmt/View/UserEmails/send_reply.ctp:83
+#: Plugin/Usermgmt/View/UserEmails/send_to_user.ctp:71
+msgid "Subject"
+msgstr "Assunto"
+
+#: Plugin/Usermgmt/View/Elements/all_emails.ctp:40
+msgid "Sent By"
+msgstr "Enviado por"
+
+#: Plugin/Usermgmt/View/Elements/all_emails.ctp:41
+#: Plugin/Usermgmt/View/UserEmails/view.ctp:62
+msgid "Sent?"
+msgstr "Enviado?"
+
+#: Plugin/Usermgmt/View/Elements/all_emails.ctp:42
+msgid "Date Sent"
+msgstr "Data de Envio"
+
+#: Plugin/Usermgmt/View/Elements/all_emails.ctp:81
+#: Plugin/Usermgmt/View/Elements/all_groups.ctp:62
+#: Plugin/Usermgmt/View/Elements/all_settings.ctp:57
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:62;98
+#: Plugin/Usermgmt/View/UserGroupPermissions/permission_group_matrix.ctp:46;137
+#: Plugin/Usermgmt/View/UserGroupPermissions/permission_sub_group_matrix.ctp:46;140;146
+#: Plugin/Usermgmt/View/Users/view_user.ctp:114;125
+msgid "Yes"
+msgstr "Sim"
+
+#: Plugin/Usermgmt/View/Elements/all_emails.ctp:83
+#: Plugin/Usermgmt/View/Elements/all_groups.ctp:64
+#: Plugin/Usermgmt/View/Elements/all_settings.ctp:59
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:64
+#: Plugin/Usermgmt/View/UserGroupPermissions/permission_group_matrix.ctp:139
+#: Plugin/Usermgmt/View/UserGroupPermissions/permission_sub_group_matrix.ctp:142;148
+#: Plugin/Usermgmt/View/Users/view_user.ctp:116;127
+msgid "No"
+msgstr "Não"
+
+#: Plugin/Usermgmt/View/Elements/all_emails.ctp:91
+msgid "View Full Email & Recipients"
+msgstr "Visualizar Email Completo & Destinatários"
+
+#: Plugin/Usermgmt/View/Elements/all_emails.ctp:102
+msgid "Number of Records"
+msgstr "Número de Registros"
+
+#: Plugin/Usermgmt/View/Elements/all_groups.ctp:34
+msgid "Group Id"
+msgstr "Id do Grupo"
+
+#: Plugin/Usermgmt/View/Elements/all_groups.ctp:36
+msgid "Alias Name"
+msgstr "Nome Alias"
+
+#: Plugin/Usermgmt/View/Elements/all_groups.ctp:37
+#: Plugin/Usermgmt/View/UserGroups/add_group.ctp:54
+#: Plugin/Usermgmt/View/UserGroups/edit_group.ctp:56
+msgid "Parent Group"
+msgstr "Grupo Pai"
+
+#: Plugin/Usermgmt/View/Elements/all_groups.ctp:38
+#: Plugin/Usermgmt/View/UserGroups/add_group.ctp:60
+#: Plugin/Usermgmt/View/UserGroups/edit_group.ctp:62
+#: View/Categories/admin_view.ctp:19
+#: View/Schedules/admin_view.ctp:19
+msgid "Description"
+msgstr "Descrição"
+
+#: Plugin/Usermgmt/View/Elements/all_groups.ctp:39
+#: Plugin/Usermgmt/View/UserGroups/add_group.ctp:69
+#: Plugin/Usermgmt/View/UserGroups/edit_group.ctp:68
+msgid "Allow Registration"
+msgstr "Habilitar Registro"
+
+#: Plugin/Usermgmt/View/Elements/all_groups.ctp:72
+#: Plugin/Usermgmt/View/UserGroups/edit_group.ctp:30
+msgid "Edit Group"
+msgstr "Editar Grupo"
+
+#: Plugin/Usermgmt/View/Elements/all_groups.ctp:75
+msgid "Delete Group"
+msgstr "Deletar Grupo"
+
+#: Plugin/Usermgmt/View/Elements/all_groups.ctp:75
+msgid "Are you sure you want to delete this group? Delete it your own risk"
+msgstr "Você deseja mesmo apagar o grupo? Delete por seu próprio risco"
+
+#: Plugin/Usermgmt/View/Elements/all_groups.ctp:87
+msgid "Number of Groups"
+msgstr "Número de Grupos"
+
+#: Plugin/Usermgmt/View/Elements/all_settings.ctp:34
+msgid "Sr. No."
+msgstr ""
+
+#: Plugin/Usermgmt/View/Elements/all_settings.ctp:35
+#: View/Categories/admin_view.ctp:7
+#: View/Schedules/admin_view.ctp:7
+msgid "Category"
+msgstr "Categoria"
+
+#: Plugin/Usermgmt/View/Elements/all_settings.ctp:36
+msgid "Setting Name"
+msgstr "Nome da Configuração"
+
+#: Plugin/Usermgmt/View/Elements/all_settings.ctp:37
+msgid "Setting Value"
+msgstr "Valor de Configuração"
+
+#: Plugin/Usermgmt/View/Elements/all_settings.ctp:67
+#: Plugin/Usermgmt/View/UserSettings/edit_setting.ctp:30
+msgid "Edit Setting"
+msgstr "Editar Configuração"
+
+#: Plugin/Usermgmt/View/Elements/all_settings.ctp:78
+msgid "Number of Settings"
+msgstr Número de Configurações""
+
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:37
+#: Plugin/Usermgmt/View/Users/add_multiple_users.ctp:68
+#: Plugin/Usermgmt/View/Users/add_user.ctp:53
+#: Plugin/Usermgmt/View/Users/edit_profile.ctp:43
+#: Plugin/Usermgmt/View/Users/edit_user.ctp:56
+#: Plugin/Usermgmt/View/Users/myprofile.ctp:56
+#: Plugin/Usermgmt/View/Users/register.ctp:50
+#: Plugin/Usermgmt/View/Users/view_profile.ctp:49
+#: Plugin/Usermgmt/View/Users/view_user.ctp:60
+msgid "Username"
+msgstr "Nome de Usuário"
+
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:40
+#: Plugin/Usermgmt/View/Users/view_user.ctp:122
+msgid "Email Verified"
+msgstr "Email verificado"
+
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:41
+#: Plugin/Usermgmt/View/Users/myprofile.ctp:96
+#: Plugin/Usermgmt/View/Users/view_profile.ctp:89
+#: Plugin/Usermgmt/View/Users/view_user.ctp:100
+msgid "Status"
+msgstr "Status"
+
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:69;94
+#: Plugin/Usermgmt/View/Users/myprofile.ctp:99
+#: Plugin/Usermgmt/View/Users/view_profile.ctp:92
+#: Plugin/Usermgmt/View/Users/view_user.ctp:103
+msgid "Active"
+msgstr "Ativo"
+
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:71;94
+#: Plugin/Usermgmt/View/Users/myprofile.ctp:101
+#: Plugin/Usermgmt/View/Users/view_profile.ctp:94
+#: Plugin/Usermgmt/View/Users/view_user.ctp:105
+msgid "Inactive"
+msgstr "Inativo"
+
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:80
+msgid "View User"
+msgstr "Visualizar Usuário"
+
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:82
+#: Plugin/Usermgmt/View/Users/edit_user.ctp:37
+msgid "Edit User"
+msgstr "Editar Usuário"
+
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:84
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:132
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:51
+#: Plugin/Usermgmt/View/Elements/panel.ctp:63
+#: Plugin/Usermgmt/View/Users/change_password.ctp:30
+msgid "Change Password"
+msgstr "Alterar Senha"
+
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:87
+msgid "Make Active"
+msgstr "Ativar"
+
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:88
+#: Plugin/Usermgmt/View/Elements/online_users.ctp:68
+msgid "Make Inactive"
+msgstr "Tornar Inativo"
+
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:98
+msgid "Verify Email"
+msgstr "Verificar Email"
+
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:98
+msgid "Are you sure you want to verify email of this user?"
+msgstr "Deseja verificar o email deste usuário?"
+
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:102
+msgid "Delete User"
+msgstr "Remover Usuário"
+
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:102
+msgid "Are you sure you want to delete this user?"
+msgstr "Tem certeza que deseja deletar este usuário?"
+
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:104
+msgid "View Permissions"
+msgstr "Visualizar Permissões"
+
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:106
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:94
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:90
+#: Plugin/Usermgmt/View/UserEmails/send.ctp:76
+msgid "Send Mail"
+msgstr "Enviar Email"
+
+#: Plugin/Usermgmt/View/Elements/all_users.ctp:117
+msgid "Number of Users"
+msgstr "Número de Usuários"
+
+#: Plugin/Usermgmt/View/Elements/contact_us.ctp:40
+msgid "Submit"
+msgstr "Enviar"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:39
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:31
+#: Plugin/Usermgmt/View/Users/access_denied.ctp:34
+#: Plugin/Usermgmt/View/Users/dashboard.ctp:26
+msgid "Dashboard"
+msgstr "Painel"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:43
+msgid "Users"
+msgstr "Usuários"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:46
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:60
+#: Plugin/Usermgmt/View/Users/add_user.ctp:37
+#: Plugin/Usermgmt/View/Users/index.ctp:33
+msgid "Add User"
+msgstr "Adicionar Usuário"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:49
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:63
+#: Plugin/Usermgmt/View/Users/add_multiple_users.ctp:52
+#: Plugin/Usermgmt/View/Users/upload_csv.ctp:35
+msgid "Add Multiple Users"
+msgstr "Adicionar Multiplos Usuários"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:52
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:66
+#: Plugin/Usermgmt/View/Elements/panel.ctp:71
+#: Plugin/Usermgmt/View/Users/index.ctp:30
+msgid "All Users"
+msgstr "Todos os Usuários"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:55
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:69
+#: Plugin/Usermgmt/View/Elements/panel.ctp:79
+#: Plugin/Usermgmt/View/Users/online.ctp:30
+msgid "Online Users"
+msgstr "Usuários Online"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:60
+#: Plugin/Usermgmt/View/Elements/panel.ctp:90
+msgid "Groups"
+msgstr "Grupos"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:63
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:72
+#: Plugin/Usermgmt/View/UserGroups/add_group.ctp:30
+#: Plugin/Usermgmt/View/UserGroups/index.ctp:33
+msgid "Add Group"
+msgstr "Adicionar Grupo"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:66
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:75
+#: Plugin/Usermgmt/View/UserGroups/index.ctp:30
+msgid "All Groups"
+msgstr "Todos os Grupos"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:71
+#: View/AppUsers/admin_dashboard.ctp:2
+#: View/Categories/admin_add.ctp:5
+#: View/Categories/admin_edit.ctp:5
+#: View/Categories/admin_index.ctp:2
+#: View/Categories/admin_view.ctp:2
+#: View/Lessons/admin_add.ctp:2
+#: View/Lessons/admin_index.ctp:2
+#: View/Lessons/admin_view.ctp:2
+#: View/Posts/admin_add.ctp:2
+#: View/Posts/admin_edit.ctp:11
+#: View/Posts/admin_index.ctp:2
+#: View/Posts/admin_view.ctp:2
+#: View/Questions/admin_add.ctp:2
+#: View/Questions/admin_index.ctp:2
+#: View/Questions/admin_view.ctp:2
+#: View/Schedules/admin_add.ctp:2
+#: View/Schedules/admin_edit.ctp:2
+#: View/Schedules/admin_index.ctp:2
+#: View/Schedules/admin_view.ctp:2
+#: View/Themes/admin_add.ctp:9
+#: View/Themes/admin_edit.ctp:9
+#: View/Themes/admin_index.ctp:2
+#: View/Themes/admin_view.ctp:2
+msgid "Admin"
+msgstr "Admin"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:74
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:81
+#: Plugin/Usermgmt/View/Elements/panel.ctp:98
+msgid "Group Permissions"
+msgstr "Permissões de Grupo"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:77
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:84
+msgid "Subgroup Permissions"
+msgstr "Permissões de SubGrupos"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:80
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:117
+#: Plugin/Usermgmt/View/Elements/panel.ctp:146
+#: Plugin/Usermgmt/View/UserSettings/index.ctp:30
+msgid "All Settings"
+msgstr "Todas as Configurações"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:83
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:120
+#: Plugin/Usermgmt/View/Elements/panel.ctp:138
+#: Plugin/Usermgmt/View/UserSettings/cakelog.ctp:30
+msgid "Cake Logs"
+msgstr "Registros de Log"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:86
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:123
+#: Plugin/Usermgmt/View/Elements/panel.ctp:154
+msgid "Delete Cache"
+msgstr "Apagar Cache"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:91
+msgid "Mail"
+msgstr "Email"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:97
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:93
+msgid "View Sent Mails"
+msgstr "Visualizar Emails Enviados"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:100
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:96
+msgid "Contact Enquiries"
+msgstr "Informações de Contatos"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:103
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:99
+msgid "Email Templates"
+msgstr "Modelos de Email"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:106
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:102
+msgid "Email Signatures"
+msgstr "Assinaturas de Email"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:111
+msgid "Pages"
+msgstr "Páginas"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:123
+msgid "My Account"
+msgstr "Minha Conta"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:126
+msgid "View Profile"
+msgstr "Visualizar Perfil"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:129
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:48
+#: Plugin/Usermgmt/View/Users/edit_profile.ctp:30
+msgid "Edit Profile"
+msgstr "Editar Perfil"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:135
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:54
+msgid "Delete Account"
+msgstr "Apagar Conta"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:135
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:54
+msgid "Are you sure you want to delete your account?"
+msgstr "Você tm certeza de que deseja remover esta conta?"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:140
+#: Plugin/Usermgmt/View/UserContacts/contact_us.ctp:30
+msgid "Contact Us"
+msgstr "Contate-nos"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:142
+#: Plugin/Usermgmt/View/Elements/online_users.ctp:66
+msgid "Sign Out"
+msgstr "Sair"
+
+#: Plugin/Usermgmt/View/Elements/dashboard.ctp:144
+#: Plugin/Usermgmt/View/Elements/login.ctp:45
+#: Plugin/Usermgmt/View/Users/login.ctp:32
+#: Plugin/Usermgmt/View/Users/register.ctp:33
+msgid "Sign In"
+msgstr "Login"
+
+#: Plugin/Usermgmt/View/Elements/login.ctp:30
+#: Plugin/Usermgmt/View/Users/login.ctp:47;49
+msgid "Email / Username"
+msgstr "Email / Nome de Usuário"
+
+#: Plugin/Usermgmt/View/Elements/login.ctp:31
+#: Plugin/Usermgmt/View/Users/add_multiple_users.ctp:70
+#: Plugin/Usermgmt/View/Users/add_user.ctp:77
+#: Plugin/Usermgmt/View/Users/login.ctp:53;55
+#: Plugin/Usermgmt/View/Users/register.ctp:74
+msgid "Password"
+msgstr "Senha"
+
+#: Plugin/Usermgmt/View/Elements/login.ctp:34
+msgid "Remember Me"
+msgstr "Memorizar"
+
+#: Plugin/Usermgmt/View/Elements/login.ctp:35
+msgid " Remember Me"
+msgstr " Memorizar"
+
+#: Plugin/Usermgmt/View/Elements/login.ctp:48
+msgid "Register"
+msgstr "Registrar"
+
+#: Plugin/Usermgmt/View/Elements/login.ctp:51
+#: Plugin/Usermgmt/View/Users/login.ctp:81
+msgid "Forgot Password?"
+msgstr "Esqueci minha senha"
+
+#: Plugin/Usermgmt/View/Elements/login.ctp:52
+#: Plugin/Usermgmt/View/Users/email_verification.ctp:31
+#: Plugin/Usermgmt/View/Users/login.ctp:82
+msgid "Email Verification"
+msgstr "Verificar Email"
+
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:36
+msgid "Hello"
+msgstr "Oi"
+
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:40
+msgid "Your last login time is "
+msgstr "O seu último login foi "
+
+#: Plugin/Usermgmt/View/Elements/old_panel.ctp:45
+#: Plugin/Usermgmt/View/Elements/panel.ctp:55
+#: Plugin/Usermgmt/View/Users/myprofile.ctp:30
+msgid "My Profile"
+msgstr "Meu Perfil"
+
+#: Plugin/Usermgmt/View/Elements/online_users.ctp:37
+msgid "Last URL"
+msgstr "Ultima Url"
+
+#: Plugin/Usermgmt/View/Elements/online_users.ctp:38
+msgid "Browser"
+msgstr "Navegador"
+
+#: Plugin/Usermgmt/View/Elements/online_users.ctp:39
+#: Plugin/Usermgmt/View/Users/view_user.ctp:133
+msgid "Ip Address"
+msgstr "Endereço IP"
+
+#: Plugin/Usermgmt/View/Elements/online_users.ctp:40
+msgid "Last Action"
+msgstr "Última Ação"
+
+#: Plugin/Usermgmt/View/Elements/online_users.ctp:66
+msgid "Are you sure you want to sign out this user?"
+msgstr "Você quer mesmo deslogar este usuário?"
+
+#: Plugin/Usermgmt/View/Elements/online_users.ctp:68
+msgid "This user will signout and will not be able to login again"
+msgstr "Este usuário será desconectado e não conseguirá fazer login novamente"
+
+#: Plugin/Usermgmt/View/Elements/online_users.ctp:80
+msgid "Number of Online Users"
+msgstr "Número de Usuários Online"
+
+#: Plugin/Usermgmt/View/Elements/pagination.ctp:28
+msgid "Total Records"
+msgstr "Total de Registros"
+
+#: Plugin/Usermgmt/View/Elements/pagination.ctp:35
+#: View/Categories/admin_index.ctp:36
+#: View/Posts/admin_index.ctp:68
+#: View/Questions/admin_index.ctp:38
+#: View/Schedules/admin_index.ctp:46
+#: View/Themes/admin_index.ctp:42
+msgid "First"
+msgstr "Primeiro"
+
+#: Plugin/Usermgmt/View/Elements/pagination.ctp:42
+msgid "Previous"
+msgstr "Anterior"
+
+#: Plugin/Usermgmt/View/Elements/pagination.ctp:48
+msgid "Next"
+msgstr "Próximo"
+
+#: Plugin/Usermgmt/View/Elements/pagination.ctp:52
+#: View/Categories/admin_index.ctp:50
+#: View/Posts/admin_index.ctp:82
+#: View/Questions/admin_index.ctp:52
+#: View/Schedules/admin_index.ctp:60
+#: View/Themes/admin_index.ctp:56
+msgid "Last"
+msgstr "Último"
+
+#: Plugin/Usermgmt/View/Elements/pagination.ctp:58
+msgid "Page %s of %s"
+msgstr "Página  %s de %s"
+
+#: Plugin/Usermgmt/View/Elements/panel.ctp:7
+#: View/Categories/admin_add.ctp:6
+#: View/Categories/admin_edit.ctp:6
+#: View/Categories/admin_index.ctp:3
+#: View/Categories/admin_view.ctp:3
+msgid "Categories"
+msgstr "Categorias"
+
+#: Plugin/Usermgmt/View/Elements/panel.ctp:15
+#: View/Themes/admin_add.ctp:10
+#: View/Themes/admin_edit.ctp:10
+#: View/Themes/admin_index.ctp:3
+#: View/Themes/admin_view.ctp:3
+msgid "Themes"
+msgstr "Temas"
+
+#: Plugin/Usermgmt/View/Elements/panel.ctp:23
+#: View/Posts/admin_add.ctp:3
+#: View/Posts/admin_edit.ctp:12
+#: View/Posts/admin_index.ctp:3
+#: View/Posts/admin_view.ctp:3
+msgid "Posts"
+msgstr "Posts"
+
+#: Plugin/Usermgmt/View/Elements/panel.ctp:31
+msgid "Scraps"
+msgstr "Mural de Recados"
+
+#: Plugin/Usermgmt/View/Elements/panel.ctp:39
+#: View/Questions/admin_add.ctp:3
+#: View/Questions/admin_index.ctp:3
+#: View/Questions/admin_view.ctp:3
+msgid "Questions"
+msgstr "Questões"
+
+#: Plugin/Usermgmt/View/Elements/panel.ctp:47
+#: View/Schedules/admin_add.ctp:3
+#: View/Schedules/admin_edit.ctp:3
+#: View/Schedules/admin_index.ctp:3
+#: View/Schedules/admin_view.ctp:3
+msgid "Schedules"
+msgstr "Agendamento"
+
+#: Plugin/Usermgmt/View/Elements/panel.ctp:114
+msgid "Modelos de Email"
+msgstr "Modelos de Email"
+
+#: Plugin/Usermgmt/View/Elements/panel.ctp:122
+msgid "Assinaturas de Email"
+msgstr "Assinaturas de Email"
+
+#: Plugin/Usermgmt/View/Elements/provider.ctp:29
+msgid "Sign in using your account with"
+msgstr "Fazer login com as seguintes contas:"
+
+#: Plugin/Usermgmt/View/Elements/provider.ctp:32
+msgid "Facebook Connect"
+msgstr "Conectar com Facebook"
+
+#: Plugin/Usermgmt/View/Elements/provider.ctp:34
+msgid "Twitter Connect"
+msgstr "Conectar com Twitter"
+
+#: Plugin/Usermgmt/View/Elements/provider.ctp:36
+msgid "Gmail Connect"
+msgstr "Conectar Com Gmail"
+
+#: Plugin/Usermgmt/View/Elements/provider.ctp:38
+msgid "Yahoo Connect"
+msgstr "Conectar com Yahoo"
+
+#: Plugin/Usermgmt/View/Elements/provider.ctp:40
+msgid "Linkedin Connect"
+msgstr "Conectar com Linkedin"
+
+#: Plugin/Usermgmt/View/Elements/provider.ctp:42
+msgid "Foursquare Connect"
+msgstr "Conectar com Foursquare"
+
+#: Plugin/Usermgmt/View/Elements/search_form.ctp:153
+msgid "Search"
+msgstr "Pesquisa"
+
+#: Plugin/Usermgmt/View/Emails/html/contact_enquiry.ctp:1
+msgid "Hi Admin, <br/><br/>A contact enquiry has been saved. Here are the details- <br/><br/>Name- %s <br/>Email- %s <br/>Contact No- %s <br/>Requirement- %s <br/><br/>Thanks"
+msgstr "Olá Admin, <br/><br/>As informações de contato estão salvas. Aqui estão os detalhes - <br/><br/>Nome- %s <br/>Email- %s <br/>N. de Contato - %s <br/> Obrigatório - %s <br/><br/>Obrigado"
+
+#: Plugin/Usermgmt/View/Emails/html/email_verification.ctp:1
+msgid "Hey %s, <br/><br/>You recently entered a contact email address.  To confirm your contact email, follow the link below: <br/><br/>%s<br/><br/>If clicking on the link doesn't work, try copying and pasting it into your browser.<br/><br/>Thanks,<br/>%s"
+msgstr "Hey %s, <br/><br/>Você recentemente cadastrou sua conta por este email.  Para confirmá-lo, veja o link abaixo: <br/><br/>%s<br/><br/>Se o clique não funcionar, Copie e cole o link em seu navegador.<br/><br/>Obrigado,<br/>%s"
+
+#: Plugin/Usermgmt/View/Emails/html/forgot_password.ctp:1
+msgid "Welcome %s,<br/><br/>You have requested to have your password reset on %s. Please click the link below to reset your password now: <br/><br/>%s<br/><br/>If clicking on the link doesn't work, try copying and pasting it into your browser.<br/><br/>Thanks,<br/>%s"
+msgstr "Bem-vindo %s,<br/><br/>Você solicitou que sua senha fosse resetada:  %s. Clique no link abaixo e resete agora: <br/><br/>%s<br/><br/>Se o clique não funcionar copie e cole o link no seu navegador.<br/><br/>Obrigado,<br/>%s"
+
+#: Plugin/Usermgmt/View/Emails/html/password_change.ctp:1
+msgid "Hey %s,<br/><br/>You recently changed your password on %s.<br/><br/>As a security precaution, this notification has been sent to your email addresse associated with your account.<br/><br/>Thanks,<br/>%s"
+msgstr "Hey %s,<br/><br/>Você recentemente mudou sua senha: %s.<br/><br/>Como medida de segurança esta notificaçõ foi enviado para o email associado a sua conta.<br/><br/>Obrigado,<br/>%s"
+
+#: Plugin/Usermgmt/View/Emails/html/registration.ctp:1
+msgid "Welcome %s,<br/><br/>Thank you for your registration on %s.<br/><br/>Thanks,<br/>%s"
+msgstr "Bem-vindo %s,<br/><br/>Obrigado por se registrar em %s.<br/><br/>Obrigado,<br/>%s"
+
+#: Plugin/Usermgmt/View/Emails/html/verification_code.ctp:1
+msgid "Hey %s,<br/><br/>You recently entered a new contact email address. Your email confirmation code is %s<br/><br/>Thanks,<br/>%s"
+msgstr "Hey %s,<br/><br/>Você recentemente cadastrou-se com este email de contato. Seu código de confirmação é %s<br/><br/>Obrigado,<br/>%s"
+
+#: Plugin/Usermgmt/View/Helper/UserAuthHelper.php:140
+msgid "Please enter correct words"
+msgstr "Por favor, digite as palavras corretas"
+
+#: Plugin/Usermgmt/View/UserContacts/index.ctp:30
+msgid "All Contact Enquiries"
+msgstr "Todas as informações de Contato"
+
+#: Plugin/Usermgmt/View/UserEmailSignatures/add.ctp:30
+#: Plugin/Usermgmt/View/UserEmailSignatures/index.ctp:33
+msgid "Add Signature"
+msgstr "Todas as Assinaturas"
+
+#: Plugin/Usermgmt/View/UserEmailSignatures/add.ctp:46
+#: Plugin/Usermgmt/View/UserEmailSignatures/edit.ctp:47
+msgid "Email Signature"
+msgstr "Assinatura de Email"
+
+#: Plugin/Usermgmt/View/UserEmailSignatures/index.ctp:30
+msgid "All Email Signatures"
+msgstr "Todas as Assinaturas de Email"
+
+#: Plugin/Usermgmt/View/UserEmailTemplates/add.ctp:30
+#: Plugin/Usermgmt/View/UserEmailTemplates/index.ctp:33
+msgid "Add Template"
+msgstr "Adicionar Modelo"
+
+#: Plugin/Usermgmt/View/UserEmailTemplates/add.ctp:46
+#: Plugin/Usermgmt/View/UserEmailTemplates/edit.ctp:47
+msgid "Email Header"
+msgstr "Cabeçalho de Email"
+
+#: Plugin/Usermgmt/View/UserEmailTemplates/add.ctp:52
+#: Plugin/Usermgmt/View/UserEmailTemplates/edit.ctp:53
+msgid "Email Footer"
+msgstr "Rodapé do Email"
+
+#: Plugin/Usermgmt/View/UserEmailTemplates/index.ctp:30
+msgid "All Email Templates"
+msgstr "Todos os modelos de email"
+
+#: Plugin/Usermgmt/View/UserEmails/index.ctp:30
+msgid "All Sent Emails"
+msgstr "Todos os emails enviados"
+
+#: Plugin/Usermgmt/View/UserEmails/index.ctp:33
+msgid "Send Email"
+msgstr "Enviar Email"
+
+#: Plugin/Usermgmt/View/UserEmails/send.ctp:106
+msgid "Select Groups(s)"
+msgstr "Selecionar grupos"
+
+#: Plugin/Usermgmt/View/UserEmails/send.ctp:112
+msgid "Select User(s)"
+msgstr "Selecionar Usuários"
+
+#: Plugin/Usermgmt/View/UserEmails/send.ctp:118
+msgid "To Email(s)"
+msgstr "Emails Desntinatários"
+
+#: Plugin/Usermgmt/View/UserEmails/send.ctp:121;128
+#: Plugin/Usermgmt/View/UserEmails/send_reply.ctp:55
+#: Plugin/Usermgmt/View/UserEmails/send_to_user.ctp:55
+msgid "multiple emails comma separated"
+msgstr "para mais de um email separar com vírgula"
+
+#: Plugin/Usermgmt/View/UserEmails/send.ctp:125
+#: Plugin/Usermgmt/View/UserEmails/send_reply.ctp:52
+#: Plugin/Usermgmt/View/UserEmails/send_to_user.ctp:52
+msgid "CC To"
+msgstr "CC para"
+
+#: Plugin/Usermgmt/View/UserEmails/send.ctp:150
+#: Plugin/Usermgmt/View/UserEmails/send_reply.ctp:71
+#: Plugin/Usermgmt/View/UserEmails/send_to_user.ctp:77
+msgid "Select Template"
+msgstr "Selecionar Modelo"
+
+#: Plugin/Usermgmt/View/UserEmails/send.ctp:156
+#: Plugin/Usermgmt/View/UserEmails/send_reply.ctp:77
+#: Plugin/Usermgmt/View/UserEmails/send_to_user.ctp:83
+msgid "Select Signature"
+msgstr "Selecionar Assinatura"
+
+#: Plugin/Usermgmt/View/UserEmails/send.ctp:162
+#: Plugin/Usermgmt/View/UserEmails/send_reply.ctp:89
+#: Plugin/Usermgmt/View/UserEmails/send_to_user.ctp:89
+msgid "Message"
+msgstr "Mensagem"
+
+#: Plugin/Usermgmt/View/UserEmails/send_confirm.ctp:52
+msgid "Confirm Sending Email"
+msgstr "Confirmar envio de Email"
+
+#: Plugin/Usermgmt/View/UserEmails/send_confirm.ctp:127
+msgid "Sr No."
+msgstr ""
+
+#: Plugin/Usermgmt/View/UserEmails/send_reply.ctp:30
+msgid "Send Reply to"
+msgstr "Enviar resposta para"
+
+#: Plugin/Usermgmt/View/UserEmails/send_reply.ctp:46
+#: Plugin/Usermgmt/View/UserEmails/send_to_user.ctp:46
+msgid "To"
+msgstr "Destinatário"
+
+#: Plugin/Usermgmt/View/UserEmails/send_reply_confirm.ctp:38
+msgid "Confirm Sending Reply to"
+msgstr "Confirmar Envio de Resposta para"
+
+#: Plugin/Usermgmt/View/UserEmails/send_to_user.ctp:30
+msgid "Send Mail to"
+msgstr "Enviar email para"
+
+#: Plugin/Usermgmt/View/UserEmails/send_to_user_confirm.ctp:38
+msgid "Confirm Sending Email to"
+msgstr "Confirmar Envio de Email para"
+
+#: Plugin/Usermgmt/View/UserEmails/view.ctp:4
+msgid "Email Details"
+msgstr "Detalhes de Email"
+
+#: Plugin/Usermgmt/View/UserEmails/view.ctp:52
+msgid "Email Recipients"
+msgstr "Destinatários de Email"
+
+#: Plugin/Usermgmt/View/UserEmails/view.ctp:59
+#: View/Categories/admin_view.ctp:9
+#: View/Schedules/admin_view.ctp:9
+#: View/Themes/admin_view.ctp:10
+msgid "Id"
+msgstr ""
+
+#: Plugin/Usermgmt/View/UserGroupPermissions/index.ctp:37
+msgid "Parent Group Permissions"
+msgstr "Permissões de Grupos Pais"
+
+#: Plugin/Usermgmt/View/UserGroupPermissions/index.ctp:40
+#: Plugin/Usermgmt/View/UserGroupPermissions/sub_permissions.ctp:40
+msgid "View Matrix"
+msgstr "Visualizar Matriz"
+
+#: Plugin/Usermgmt/View/UserGroupPermissions/index.ctp:43
+#: Plugin/Usermgmt/View/UserGroupPermissions/sub_permissions.ctp:37
+msgid "Sub Group Permissions"
+msgstr "Permissões de SubGrupo"
+
+#: Plugin/Usermgmt/View/UserGroupPermissions/index.ctp:46
+msgid "Select Controller"
+msgstr "Selecionar Controller"
+
+#: Plugin/Usermgmt/View/UserGroupPermissions/index.ctp:57
+#: Plugin/Usermgmt/View/UserGroupPermissions/permission_group_matrix.ctp:58;115
+#: Plugin/Usermgmt/View/UserGroupPermissions/permission_sub_group_matrix.ctp:59;116
+#: Plugin/Usermgmt/View/UserGroupPermissions/sub_permissions.ctp:43;58
+#: Plugin/Usermgmt/View/Users/view_user_permissions.ctp:43
+msgid "Controller"
+msgstr "Controller"
+
+#: Plugin/Usermgmt/View/UserGroupPermissions/index.ctp:59
+#: Plugin/Usermgmt/View/UserGroupPermissions/sub_permissions.ctp:60
+msgid "Permission"
+msgstr "Permissão"
+
+#: Plugin/Usermgmt/View/UserGroupPermissions/index.ctp:60
+#: Plugin/Usermgmt/View/UserGroupPermissions/sub_permissions.ctp:61
+#: Plugin/Usermgmt/View/Users/view_user_permissions.ctp:46
+msgid "Operation"
+msgstr "Operação"
+
+#: Plugin/Usermgmt/View/UserGroupPermissions/permission_group_matrix.ctp:33
+msgid "Parent Group Permissions Matrix"
+msgstr "Matriz de Permissões do Grupo Pai"
+
+#: Plugin/Usermgmt/View/UserGroupPermissions/permission_group_matrix.ctp:36
+#: Plugin/Usermgmt/View/UserGroupPermissions/permission_sub_group_matrix.ctp:36
+msgid "View Standard"
+msgstr "Visualização Padrão"
+
+#: Plugin/Usermgmt/View/UserGroupPermissions/permission_group_matrix.ctp:84
+#: Plugin/Usermgmt/View/Users/add_user.ctp:47
+#: Plugin/Usermgmt/View/Users/edit_user.ctp:50
+#: Plugin/Usermgmt/View/Users/register.ctp:43
+msgid "Group"
+msgstr "Grupo"
+
+#: Plugin/Usermgmt/View/UserGroupPermissions/permission_sub_group_matrix.ctp:33
+msgid "Sub Group Permissions Matrix"
+msgstr "Matriz de Permissões de SubGrupo"
+
+#: Plugin/Usermgmt/View/UserGroupPermissions/permission_sub_group_matrix.ctp:85
+msgid "Sub Group"
+msgstr "Sub Grupo"
+
+#: Plugin/Usermgmt/View/UserGroupPermissions/sub_permissions.ctp:47
+msgid "Get Sub Groups of"
+msgstr "Obter SubGrupos de"
+
+#: Plugin/Usermgmt/View/UserGroups/add_group.ctp:40
+#: Plugin/Usermgmt/View/UserGroups/edit_group.ctp:42
+msgid "Group Name"
+msgstr "Nome do Grupo"
+
+#: Plugin/Usermgmt/View/UserGroups/add_group.ctp:43
+#: Plugin/Usermgmt/View/UserGroups/edit_group.ctp:45
+msgid "for ex. Business User"
+msgstr "por ex. Funcionário"
+
+#: Plugin/Usermgmt/View/UserGroups/add_group.ctp:47
+#: Plugin/Usermgmt/View/UserGroups/edit_group.ctp:49
+msgid "Alias Group Name"
+msgstr "Alias do Nome do Grupo"
+
+#: Plugin/Usermgmt/View/UserGroups/add_group.ctp:50
+#: Plugin/Usermgmt/View/UserGroups/edit_group.ctp:52
+msgid "for ex. Business_User (Must not contain space)"
+msgstr "por ex. Usuarios_Corporativo (Não deve conter espaço)"
+
+#: Plugin/Usermgmt/View/UserGroups/add_group.ctp:78
+msgid "Note: If you add a new group then you should give permissions to this newly created Group."
+msgstr "Nota: Se você adicionar um novo grupo, então você deve dar as permissões para o novo grupo criado."
+
+#: Plugin/Usermgmt/View/UserSettings/cakelog.ctp:38
+msgid "Log File"
+msgstr "Arquivo de Log"
+
+#: Plugin/Usermgmt/View/UserSettings/cakelog.ctp:39
+msgid "Size"
+msgstr "Tamanho"
+
+#: Plugin/Usermgmt/View/UserSettings/cakelog.ctp:40
+msgid "Last Modified"
+msgstr "Último Modificado"
+
+#: Plugin/Usermgmt/View/UserSettings/cakelog.ctp:62
+msgid "View/Edit"
+msgstr "Ver/Editar"
+
+#: Plugin/Usermgmt/View/UserSettings/cakelog.ctp:64
+msgid "Create Backup Copy"
+msgstr "Criar Cópia de Backup"
+
+#: Plugin/Usermgmt/View/UserSettings/cakelog.ctp:64
+msgid "Are you sure, you want to create a copy of "
+msgstr "Você tem certeza de criar uma cópia do "
+
+#: Plugin/Usermgmt/View/UserSettings/cakelog.ctp:66
+#: View/Categories/admin_edit.ctp:19
+#: View/Categories/admin_index.ctp:23
+#: View/Posts/admin_edit.ctp:25
+#: View/Posts/admin_index.ctp:53
+#: View/Questions/admin_index.ctp:25
+#: View/Schedules/admin_edit.ctp:20
+#: View/Schedules/admin_index.ctp:33
+#: View/Themes/admin_edit.ctp:26
+#: View/Themes/admin_index.ctp:29
+msgid "Delete"
+msgstr "Apagar"
+
+#: Plugin/Usermgmt/View/UserSettings/cakelog.ctp:66
+msgid "Are you sure, you want to delete log file "
+msgstr "Você tem certeza que quer apagar o arquivo de log "
+
+#: Plugin/Usermgmt/View/UserSettings/cakelog.ctp:68
+msgid "Empty File"
+msgstr "Arquivo vazio"
+
+#: Plugin/Usermgmt/View/UserSettings/cakelog.ctp:68
+msgid "Are you sure, you want to empty log file "
+msgstr "Você tem certeza que quer limpar o log "
+
+#: Plugin/Usermgmt/View/UserSettings/cakelog.ctp:68
+msgid "You should create a backup before doing empty this file."
+msgstr "Você deve criar um backup antes de limpar este arquivo."
+
+#: Plugin/Usermgmt/View/UserSettings/cakelog.ctp:75
+msgid "I recommend to take a backup log files then make empty them weekly or monthly. It can improve site performance."
+msgstr "Eu recomendo fazer um backup do log de arquivos e somente então limpá-lo semanalmente ou mensalmente. Isso aumentará o desempenho do site."
+
+#: Plugin/Usermgmt/View/UserSettings/cakelog.ctp:79
+msgid "Close"
+msgstr "Fechar"
+
+#: Plugin/Usermgmt/View/UserSettings/cakelog.ctp:80
+msgid " details"
+msgstr " detalhes"
+
+#: Plugin/Usermgmt/View/UserSettings/edit_setting.ctp:41
+msgid "Setting Category"
+msgstr "Categoria desta Configuração"
+
+#: Plugin/Usermgmt/View/Users/access_denied.ctp:30
+msgid "Access Denied"
+msgstr "Acesso Negado"
+
+#: Plugin/Usermgmt/View/Users/access_denied.ctp:34
+msgid "Sorry, You don't have permission to view that page. go to"
+msgstr "Desculpe-me, você não tem permissão para acessar esta página. Va para "
+
+#: Plugin/Usermgmt/View/Users/activate_password.ctp:31
+msgid "Reset Password"
+msgstr "Resetar Senha"
+
+#: Plugin/Usermgmt/View/Users/activate_password.ctp:37
+#: Plugin/Usermgmt/View/Users/change_password.ctp:62
+#: Plugin/Usermgmt/View/Users/change_user_password.ctp:41
+msgid "New Password"
+msgstr "Nova Senha"
+
+#: Plugin/Usermgmt/View/Users/activate_password.ctp:43
+#: Plugin/Usermgmt/View/Users/add_user.ctp:83
+#: Plugin/Usermgmt/View/Users/change_password.ctp:68
+#: Plugin/Usermgmt/View/Users/change_user_password.ctp:47
+#: Plugin/Usermgmt/View/Users/register.ctp:80
+msgid "Confirm Password"
+msgstr "Confirmar Senha"
+
+#: Plugin/Usermgmt/View/Users/add_multiple_users.ctp:61
+msgid "Please Note: unchecked row will not save in database."
+msgstr "Atenção: linha desmarcada não será salva em banco de dados."
+
+#: Plugin/Usermgmt/View/Users/add_multiple_users.ctp:65
+msgid "User Group"
+msgstr "Grupo de Usuário"
+
+#: Plugin/Usermgmt/View/Users/add_multiple_users.ctp:66
+#: Plugin/Usermgmt/View/Users/add_user.ctp:59
+#: Plugin/Usermgmt/View/Users/edit_profile.ctp:49
+#: Plugin/Usermgmt/View/Users/edit_user.ctp:62
+#: Plugin/Usermgmt/View/Users/myprofile.ctp:60
+#: Plugin/Usermgmt/View/Users/register.ctp:56
+#: Plugin/Usermgmt/View/Users/view_profile.ctp:53
+#: Plugin/Usermgmt/View/Users/view_user.ctp:64
+msgid "First Name"
+msgstr "Primeiro Nome"
+
+#: Plugin/Usermgmt/View/Users/add_multiple_users.ctp:67
+#: Plugin/Usermgmt/View/Users/add_user.ctp:65
+#: Plugin/Usermgmt/View/Users/edit_profile.ctp:55
+#: Plugin/Usermgmt/View/Users/edit_user.ctp:68
+#: Plugin/Usermgmt/View/Users/myprofile.ctp:64
+#: Plugin/Usermgmt/View/Users/register.ctp:62
+#: Plugin/Usermgmt/View/Users/view_profile.ctp:57
+#: Plugin/Usermgmt/View/Users/view_user.ctp:68
+msgid "Last Name"
+msgstr "Ultimo Nome"
+
+#: Plugin/Usermgmt/View/Users/add_multiple_users.ctp:71
+#: Plugin/Usermgmt/View/Users/edit_profile.ctp:67
+#: Plugin/Usermgmt/View/Users/edit_user.ctp:80
+#: Plugin/Usermgmt/View/Users/myprofile.ctp:72
+#: Plugin/Usermgmt/View/Users/view_profile.ctp:65
+#: Plugin/Usermgmt/View/Users/view_user.ctp:76
+msgid "Gender"
+msgstr "Sexo"
+
+#: Plugin/Usermgmt/View/Users/add_multiple_users.ctp:72
+#: Plugin/Usermgmt/View/Users/edit_profile.ctp:79
+#: Plugin/Usermgmt/View/Users/edit_user.ctp:92
+#: Plugin/Usermgmt/View/Users/myprofile.ctp:80
+#: Plugin/Usermgmt/View/Users/view_profile.ctp:73
+#: Plugin/Usermgmt/View/Users/view_user.ctp:84
+msgid "Birthday"
+msgstr "Data de Nascimento"
+
+#: Plugin/Usermgmt/View/Users/add_multiple_users.ctp:73
+#: Plugin/Usermgmt/View/Users/edit_profile.ctp:91
+#: Plugin/Usermgmt/View/Users/edit_user.ctp:104
+#: Plugin/Usermgmt/View/Users/myprofile.ctp:88
+#: Plugin/Usermgmt/View/Users/view_profile.ctp:81
+#: Plugin/Usermgmt/View/Users/view_user.ctp:92
+msgid "Location"
+msgstr "Local"
+
+#: Plugin/Usermgmt/View/Users/add_multiple_users.ctp:74
+#: Plugin/Usermgmt/View/Users/edit_profile.ctp:73
+#: Plugin/Usermgmt/View/Users/edit_user.ctp:86
+#: Plugin/Usermgmt/View/Users/myprofile.ctp:76
+#: Plugin/Usermgmt/View/Users/view_profile.ctp:69
+#: Plugin/Usermgmt/View/Users/view_user.ctp:80
+msgid "Marital Status"
+msgstr "Estado Civil"
+
+#: Plugin/Usermgmt/View/Users/add_multiple_users.ctp:75
+#: Plugin/Usermgmt/View/Users/edit_profile.ctp:85
+#: Plugin/Usermgmt/View/Users/edit_user.ctp:98
+#: Plugin/Usermgmt/View/Users/myprofile.ctp:84
+#: Plugin/Usermgmt/View/Users/view_profile.ctp:77
+#: Plugin/Usermgmt/View/Users/view_user.ctp:88
+msgid "Cellphone"
+msgstr "Celular"
+
+#: Plugin/Usermgmt/View/Users/add_multiple_users.ctp:76
+#: Plugin/Usermgmt/View/Users/edit_profile.ctp:103
+#: Plugin/Usermgmt/View/Users/edit_user.ctp:116
+#: Plugin/Usermgmt/View/Users/myprofile.ctp:92
+#: Plugin/Usermgmt/View/Users/view_profile.ctp:85
+#: Plugin/Usermgmt/View/Users/view_user.ctp:96
+msgid "Web Page"
+msgstr "Web Page"
+
+#: Plugin/Usermgmt/View/Users/change_password.ctp:37
+msgid "Old Password"
+msgstr "Senha Atual"
+
+#: Plugin/Usermgmt/View/Users/change_password.ctp:50
+msgid "If this email is yours please verify"
+msgstr "Se este email é seu, por favor verifique"
+
+#: Plugin/Usermgmt/View/Users/change_password.ctp:51
+msgid "Verify"
+msgstr "Verificar"
+
+#: Plugin/Usermgmt/View/Users/change_password.ctp:53
+msgid "Verification Code"
+msgstr "Código de Verificação"
+
+#: Plugin/Usermgmt/View/Users/change_user_password.ctp:30
+msgid "Change Password for %s"
+msgstr "Mudar senha para %s"
+
+#: Plugin/Usermgmt/View/Users/edit_profile.ctp:97
+#: Plugin/Usermgmt/View/Users/edit_user.ctp:110
+msgid "Photo"
+msgstr "Foto"
+
+#: Plugin/Usermgmt/View/Users/email_verification.ctp:37
+#: Plugin/Usermgmt/View/Users/forgot_password.ctp:37
+msgid "Enter Email / Username"
+msgstr "Entre com Email / Nome de Usuário"
+
+#: Plugin/Usermgmt/View/Users/email_verification.ctp:46
+#: Plugin/Usermgmt/View/Users/forgot_password.ctp:46
+#: Plugin/Usermgmt/View/Users/login.ctp:73
+#: Plugin/Usermgmt/View/Users/register.ctp:89
+msgid "Prove you're not a robot"
+msgstr "Prove-nos que não é um robô"
+
+#: Plugin/Usermgmt/View/Users/forgot_password.ctp:31
+msgid "Forgot Password"
+msgstr "Esqueci minha senha"
+
+#: Plugin/Usermgmt/View/Users/login.ctp:34
+msgid "or"
+msgstr "ou"
+
+#: Plugin/Usermgmt/View/Users/login.ctp:39
+msgid "Sign Up"
+msgstr "Cadastro"
+
+#: Plugin/Usermgmt/View/Users/login.ctp:63
+msgid "Remember me"
+msgstr "Memorizar"
+
+#: Plugin/Usermgmt/View/Users/myprofile.ctp:52
+#: Plugin/Usermgmt/View/Users/view_user.ctp:56
+#: Plugin/Usermgmt/View/Users/view_user_permissions.ctp:45
+msgid "Group(s)"
+msgstr "Grupo(s)"
+
+#: Plugin/Usermgmt/View/Users/myprofile.ctp:107
+#: Plugin/Usermgmt/View/Users/view_profile.ctp:100
+#: Plugin/Usermgmt/View/Users/view_user.ctp:137
+msgid "Joined"
+msgstr "Ingressou em "
+
+#: Plugin/Usermgmt/View/Users/register.ctp:30
+msgid "Sign Up or"
+msgstr "Cadastro ou"
+
+#: Plugin/Usermgmt/View/Users/upload_csv.ctp:44
+msgid "Select csv file"
+msgstr "Selecione o arquivo csv"
+
+#: Plugin/Usermgmt/View/Users/upload_csv.ctp:52
+msgid "Instructions for CSV file"
+msgstr "Instruções para arquivo CSV"
+
+#: Plugin/Usermgmt/View/Users/upload_csv.ctp:55
+msgid "First line should be table fields name"
+msgstr "Primeira linha deve ser o nome campos da tabela"
+
+#: Plugin/Usermgmt/View/Users/upload_csv.ctp:56
+msgid "You can add one or more than one users"
+msgstr "Pode adicionar um ou mais usuários"
+
+#: Plugin/Usermgmt/View/Users/upload_csv.ctp:57
+msgid "leave blank for empty values"
+msgstr "deixe em branco para valores vazios"
+
+#: Plugin/Usermgmt/View/Users/upload_csv.ctp:59
+msgid "For user group id field value should be in following"
+msgstr "Para o campo id do grupo, o valor deve estar no seguinte "
+
+#: Plugin/Usermgmt/View/Users/upload_csv.ctp:64
+msgid "For multiple groups set group ids comma separated without space for e.g. 1,2"
+msgstr "Para mais de um grupo, setar ids do grupo separados por virgula sem espaço por exemplo: 1,2"
+
+#: Plugin/Usermgmt/View/Users/upload_csv.ctp:66
+msgid "For gender field value should be in following"
+msgstr "Para o campo Sexo o valor deve estar no seguinte"
+
+#: Plugin/Usermgmt/View/Users/upload_csv.ctp:72
+msgid "For marital status field value should be in following"
+msgstr "Para estado civil o valor deve estar no seguinte"
+
+#: Plugin/Usermgmt/View/Users/upload_csv.ctp:77
+msgid "For Birthday date format should be either 1999-01-25 or 25-01-1999"
+msgstr "Para data de nascimento o formato deve ser 1999-01-25 ou 25-01-1999"
+
+#: Plugin/Usermgmt/View/Users/view_profile.ctp:30
+msgid "User Public Profile"
+msgstr "Perfil Público de Usuário"
+
+#: Plugin/Usermgmt/View/Users/view_user.ctp:30
+msgid "User Detail"
+msgstr "Detalhes do Usuário"
+
+#: Plugin/Usermgmt/View/Users/view_user.ctp:111
+msgid "By Admin"
+msgstr "Por Admin"
+
+#: Plugin/Usermgmt/View/Users/view_user.ctp:141
+msgid "Last Login"
+msgstr "Último Login"
+
+#: Plugin/Usermgmt/View/Users/view_user_permissions.ctp:30
+msgid "Site Permissions for %s"
+msgstr "Permissões do Site para %s"
+
+#: Plugin/Usermgmt/View/Users/view_user_permissions.ctp:60
+msgid "Change"
+msgstr "Alterar"

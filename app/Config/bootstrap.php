@@ -107,3 +107,9 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+setlocale(LC_ALL, 'pt_BR');
+//use eng ou por
+Configure::write('Config.language', 'por');
+
+// load	Usermgmt plugin	and apply plugin routes.
+	CakePlugin::load('Usermgmt', array('routes' => true, 'bootstrap' => true));

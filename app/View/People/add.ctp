@@ -21,7 +21,7 @@ endif;
 	<?php endif; ?>
 	<?php
 		echo $this->Form->input('name',array('autocomplete'=>"off"));
-		echo $this->Form->input('birth',array('minYear' => 1900, 'maxYear'=>date('Y'),'orderYear'=>'asc','dateFormat' => 'DMY','separator' => '<span>/</span>'));
+		echo $this->Form->input('birth',array('minYear' => 1900, 'maxYear'=>date('Y'),'orderYear'=>'asc','dateFormat' => 'DMY','empty' => '(escolha um)','separator' => '<span>/</span>'));
 		echo $this->Form->input('parish_id', array("empty"=>__('Sem paróquia')));
 	?>
 	<div id="person-container" style="display: none;">

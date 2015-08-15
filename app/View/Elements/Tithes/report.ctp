@@ -7,7 +7,7 @@
 	    <h4 class="modal-title" id="myModalLabel">Relatórios de Dízimo</h4>
 	  </div>
 	  <div class="modal-body">
-        <iframe src="Tithes/report_main_panel"  width="100%" height="330px"> </iframe>  
+        <iframe src="<?php echo $this->webroot; ?>Tithes/report_main_panel"  width="100%" height="330px"> </iframe>  
 	  </div>
 	</div>
   </div>

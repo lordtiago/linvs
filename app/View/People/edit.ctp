@@ -17,7 +17,7 @@
 	<?php
 		echo $this->Form->input('id');		
 		echo $this->Form->input('name',array('autocomplete'=>"off"));
-		echo $this->Form->input('birth',array('minYear' => 1900, 'maxYear'=>date('Y'),'orderYear'=>'asc','dateFormat' => 'DMY','separator' => '<span>/</span>'));
+		echo $this->Form->input('birth',array('minYear' => 1900, 'maxYear'=>date('Y'),'orderYear'=>'asc','dateFormat' => 'DMY','empty' => '(escolha um)','separator' => '<span>/</span>'));
 		echo $this->Form->input('parish_id', array("empty"=>__('Sem paróquia')));	
 	?>
 	<div id="person-container" style="<?php if($this->request->data['Person']['parish_id']<1) echo 'display: none;';?>">
@@ -34,7 +34,7 @@
 	?>
 	<fieldset class="kin">
 	<?php
-		echo $this->Form->input('father_id', array('div' =>  array('class' => 'addnew input text')), array("empty"=>__('(choose one)')));
+		echo $this->Form->input('father_id', array('options' => $fathers, "empty"=>__('(choose one)')));
 		echo $this->Form->input('father2_id', array('options' => $fathers, "empty"=>__('(choose one)')));
 		echo $this->Form->input('spouse_id', array("empty"=>__('(choose one)')));
 		echo $this->Form->input('marriage',array('minYear' => 1900, 'maxYear'=>date('Y'),'orderYear'=>'asc','dateFormat' => 'DMY','separator' => '<span>/</span>'));

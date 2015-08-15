@@ -2,7 +2,7 @@
 $parish = "Paróquia Senhor Bom Jesus";
 ?>
 <div class="report_header row">
-    <div class="col-md-8">Uso exclusivo de: <?php echo $parish;?></div> <div class="col-md-3 date"><?php echo date("d/m/Y h:m");?></div>
+    <div class="col-md-8">Uso exclusivo de: <?php echo $parish;?></div> <div class="col-md-3 date"><?php echo date("d/m/Y H:i");?></div>
     <div class="col-md-8">Linvs - Sistema de Gerenciamento Canônico 0.1.0</div>
     <div class="col-md-8"><b>Entrada de Dízimo referente ao mês de <?php echo $month; ?></b></div>
 </div>

@@ -198,26 +198,42 @@ class PeopleController extends AppController {
 	}
 	
     public function report_birthday($month = null){
+        
+        $limitDate = $this->get_limit_date();
 		
 		$meses = array(__('January'),__('February'),__('March'),__('April'),__('May'),__('June'),__('July'),__('August'),__('September'),
-					__('October'),__('November'),__('December'));				
+					__('October'),__('November'),__('December'));
+        $options = array(
+                'fields'=>array(
+                        'Person.name as name',
+                        'Person.birth as birth',
+                ),
+                'conditions'=>array(
+                    'MONTH(birth)'=>$month,
+                    'CONCAT(Tithe.year,Tithe.month) >='=>$limitDate
+                ),
+                'group'=>array(
+                        'Person.id'
+                ),            
+                'order'=>array(
+                    'DAY(Person.birth) ASC',
+                ),
+                'recursive'=>0
+        );
+        $options['joins'] = array(
+            array('table' => 'tithes',
+                'alias' => 'Tithe',
+                'type' => 'INNER',
+                'conditions' => array(
+                    'Person.id = Tithe.person_id',
+                )
+            )
+        );
 
-            $people = $this->Person->find('all',array(
-                    'fields'=>array(
-                            'Person.name as name',
-							'Person.birth as birth',						
-                    ),
-					'conditions'=>array(
-						'MONTH(birth)'=>$month
-					),
-					'order'=>array(
-						'DAY(Person.birth) ASC'
-					),
-                    'recursive'=>0
-            ));
+            $people = $this->Person->find('all', $options);
             $this->layout = 'report';	
 			$this->set('month',$meses[$month-1]);		
             $this->set('people',$people);
             $this->render();
-        }
+    }
 }

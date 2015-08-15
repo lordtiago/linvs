@@ -38,6 +38,39 @@ class AppController extends Controller {
 	'Form' => array('AppController' => 'BootstrapForm'),
 	'Paginator' => array('AppController' => 'BootstrapPaginator'),
 	'Js',
-	'Session'
+	'Session',
+    'Usermgmt.UserAuth',
+    'Usermgmt.Image'        
 	);
+    
+    public $components = array('Session', 'RequestHandler', 'Usermgmt.UserAuth', 'Security' );
+    
+    function beforeFilter() {
+        $this->userAuth();
+    }
+    
+    private	function userAuth() {
+        $this->UserAuth->beforeFilter($this);
+    }
+    
+    /**
+        Função para obter a data limite que considera um dizimista ativo no sistema
+    */
+    public function get_limit_date($limit = NULL){
+        if(!isset($limit)){
+           $limit = 6; 
+        }
+        $months = array(-5=>7,-4=>8,-3=>9,-2=>10,-1=>11,0=>12,);
+        $thisMonth = date("m");
+        $thisYear = date("Y");
+        $limitMonth = $thisMonth-$limit;
+        if($limitMonth <= 0){
+            $limitMonth = $months[$limitMonth];
+            $thisYear= $thisYear-1;
+        }
+        if($limitMonth < 10){
+            $limitMonth = "0".$limitMonth;
+        }
+        return $limitDate = $thisYear.$limitMonth;        
+    }
 }
