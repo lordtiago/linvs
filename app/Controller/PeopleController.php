@@ -238,6 +238,7 @@ class PeopleController extends AppController {
     }
     
     public function beforeFilter() {
+        parent::beforeFilter();
         $this->Security->blackHoleCallback = 'blackhole';
     }
 
