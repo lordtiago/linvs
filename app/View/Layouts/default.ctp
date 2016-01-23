@@ -81,6 +81,14 @@ $cakeDescription = __d('cake_dev', 'LINVS - Sistema de Gerenciamento Canônico')
 		echo $this->Html->script('/usermgmt/js/chosen/chosen.ajaxaddition.jquery.js?q='.QRDN);
 	?>
 </head>
+<?php 
+$user = array("first_name"=>"", "last_name"=>"");
+$user_detail = array("photo"=>"");//var_dump($var);exit;
+if(isset($var['User']) && isset($var['UserDetail'])){
+    $user = $var['User'];
+    $user_detail = $var['UserDetail'];
+}
+?>     
 <body>
 	<div id="container">
 		<div id="header">
@@ -93,6 +101,21 @@ $cakeDescription = __d('cake_dev', 'LINVS - Sistema de Gerenciamento Canônico')
 			      <span class="icon-bar"></span>
 			      <span class="icon-bar"></span>
 			    </button>
+                <div class="user-area">                        
+                        <div class="user-menu-container">
+                            <img alt="<?php echo h($user['first_name'].' '.$user['last_name']); ?>" src="<?php echo $this->Image->resize('img/'.IMG_DIR, $user_detail['photo'], 50, 50, false,true) ?>" />
+                            <div class="user-profile">
+                                <a href="<?php echo $url_base; ?>usermgmt/Users/myprofile ">
+                                       <span><?php echo h($user['first_name'].' '.$user['last_name']); ?></span>
+                                </a>                            
+                            </div>
+                            <div id="user-menu">
+                               <a href="<?php echo $this->Html->url('/',true); ?>usermgmt/Users/myprofile "><span class="glyphicon glyphicon-user" aria-hidden="true"></span>                                        <span>Perfil</span>
+                                </a>
+                               <a class="logout" href="<?php echo $this->Html->url('/', true);  ?>logout"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span><span>Sair</span></a>
+                            </div>                            
+                        </div>
+                </div>  
 			    <a class="navbar-brand" title="Ir para o Início" href="<?php echo Router::url('/', true); ?>">LINVS</a>
 			  </div>
 

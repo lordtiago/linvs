@@ -100,6 +100,7 @@ DASHBOARD
 .filter-theme {margin: auto; margin-right: 0px;}
 
 @media screen and (max-width:559px){  
+    .container, #container {margin-left: 0px;    margin-right: 0px;}
     .app {width: 65px; height: 65px; margin: 0 auto;}
     .app-container{width:80px;height: 110px;display: -webkit-flex; display: flex;-webkit-flex-flow: column; flex-flow: column;-webkit-align-items: center;align-items: center;}
     .app-title {font-size: 11px;}
@@ -110,6 +111,8 @@ DASHBOARD
     .app-profile span{font-size: 32px;top: 12px;left: 16px;}
     .app-group-permission img, .app-mail-template img, .app-cake-log img{font-size: 32px;top: 8px;left: 7px;}
     .app-delete-cache span{font-size: 32px;top: 12px;left: 16px;}
+    .app-people span {font-size: 32px; top:16px;left:18px;}
+    .app-tithes span {font-size: 32px; top:18px;left:15px;}
 }
 @media screen and (min-width:568px) and (max-width:767px){  
     .app {width: 75px; height: 75px; margin: 0 auto;}
@@ -121,7 +124,9 @@ DASHBOARD
     .app-question span{font-size: 32px;top: 8px;left: 24px;}
     .app-profile span{font-size: 32px;top: 16px;left: 20px;}
     .app-group-permission img, .app-mail-template img, .app-cake-log img{font-size: 32px;top: 8px;left: 9px;}
-    .app-delete-cache span{font-size: 32px;top: 20px;left: 20px;}
+    .app-delete-cache span{font-size: 32px;top: 20px;left: 20px;}    
+    .app-people span {font-size: 32px; top:16px;left:18px;}
+    .app-tithes span {font-size: 32px; top:18px;left:15px;}
 }
 @media screen and (min-width:768px) and (max-width:1024px){  
     .app {width: 90px; height: 90px; margin: 0 auto;}
@@ -133,7 +138,9 @@ DASHBOARD
     .app-question span{font-size: 48px;top: 8px;left: 24px;}
     .app-profile span{font-size: 48px;top: 16px;left: 20px;}
     .app-group-permission img, .app-mail-template img, .app-cake-log img{font-size: 48px;top: 8px;left: 9px;}
-    .app-delete-cache span{font-size: 48px;top: 20px;left: 20px;}    
+    .app-delete-cache span{font-size: 48px;top: 20px;left: 20px;}     
+    .app-people span {font-size: 64px; top:16px;left:12px;}
+    .app-tithes span {font-size: 64px; top:18px;left:10px;}
 }
 @media screen and (min-width:1200px){  
 	.apps-board-view{ width: 85%;}

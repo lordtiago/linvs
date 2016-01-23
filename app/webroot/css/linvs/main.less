@@ -367,3 +367,17 @@ input {}
 	background-color: @gray-lighter;
 	margin-bottom: 1px;
 }
+.navbar-header {display: -webkit-flex; display: flex;-webkit-flex-flow: row; flex-flow: row;}
+.user-area {margin:auto;margin-right:0px;position: relative;}
+.user-area img{border-radius: 5px;}
+#user-menu {width:140px;background-color: #e5e5e5;border:1px solid #e5e5e5;padding: 15px; padding-right: 30px; display: none;position:absolute;right:-30px;top:60px;z-index:1;}
+.user-area .user-menu-container:hover #user-menu{display: -webkit-flex; display: flex;-webkit-flex-flow: column; flex-flow: column;}
+#user-menu a{font-size:13px; line-height: 40px; color: #777;}
+#user-menu a .glyphicon {top: 4px;}
+#user-menu a:hover {color:#666666;}
+.user-menu-container {padding-bottom:10px;display: -webkit-flex; display: flex;-webkit-align-items: center;align-items: center;}
+.user-profile{display: none;}
+.user-menu-container img {
+    border-radius: 50%;
+    overflow: hidden;
+}
