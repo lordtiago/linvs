@@ -236,4 +236,25 @@ class PeopleController extends AppController {
             $this->set('people',$people);
             $this->render();
     }
+    
+    public function beforeFilter() {
+        $this->Security->blackHoleCallback = 'blackhole';
+    }
+
+    public function blackhole($type) {
+        // handle errors.
+        if($type =="auth"){
+            $this->Session->setFlash(__('Erro de validação do formulário. Deslogue e faça login novamente.'),'flash_error');
+            throw new Exception( 'Erro de validação do formulário. Deslogue e faça login novamente.' );
+        }elseif($type =="csrf"){
+            $this->Session->setFlash(__('Erro de csrf contate o suporte.'),'flash_error');
+            throw new Exception( 'Erro de csrf contate o suporte.' );
+        }elseif($type =="get"){
+            $this->Session->setFlash(__('Falha de requisição GET, contate o suporte.'),'flash_error');
+            throw new Exception( 'Falha de requisição GET, contate o suporte.' );
+        }elseif($type =="post"){
+            $this->Session->setFlash(__('Falha de restrição POST, o suporte.'),'flash_error');
+            throw new Exception( 'Falha de restrição POST, o suporte.' );
+        }
+    }    
 }

@@ -37,7 +37,7 @@
 		echo $this->Form->input('father_id', array('options' => $fathers, "empty"=>__('(choose one)')));
 		echo $this->Form->input('father2_id', array('options' => $fathers, "empty"=>__('(choose one)')));
 		echo $this->Form->input('spouse_id', array("empty"=>__('(choose one)')));
-		echo $this->Form->input('marriage',array('minYear' => 1900, 'maxYear'=>date('Y'),'orderYear'=>'asc','dateFormat' => 'DMY','separator' => '<span>/</span>'));
+		echo $this->Form->input('marriage',array('minYear' => 1900, 'maxYear'=>date('Y'),'orderYear'=>'asc','dateFormat' => 'DMY','empty' => '(escolha um)','separator' => '<span>/</span>'));
 	?>
 	</fieldset>
 		<button class="btn btn-primary btn-lg add" style="float: left;" data-toggle="modal" data-target=".createPerson">+</button>
