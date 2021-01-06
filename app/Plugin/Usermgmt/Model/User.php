@@ -637,7 +637,7 @@ class User extends UserMgmtAppModel {
 				$loginTokenModel = new LoginToken;
 				$loginToken=false;
 				if(strpos($credentials['token'], ":") !==false) {
-					list($token, $userId) = split(':', $credentials['token']);
+					list($token, $userId) = explode(':', $credentials['token']);
 					$duration = $credentials['duration'];
 
 					$loginToken = $loginTokenModel->find('first', array(
@@ -889,4 +889,9 @@ class User extends UserMgmtAppModel {
 		$res = $this->find('first', array('conditions'=>array('User.ldn_id'=>$ldn_id), 'contain'=>array('UserDetail')));
 		return $res;
 	}
+    
+    public function getExpires($id){
+        $res = $this->find('first', array('conditions'=>array('User.id'=>$id)));
+        return $res["User"]["expires"];
+    }
 }

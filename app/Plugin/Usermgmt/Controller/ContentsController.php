@@ -217,6 +217,7 @@ class ContentsController extends UserMgmtAppController {
 	 * @return void
 	 */
 	 public function content($urlName=null) {
+         $this->layout = 'simple';
 		$invalidPage=true;
 		if(!empty($urlName)) {
 			$pageContents=$this->Content->findByUrlName($urlName);

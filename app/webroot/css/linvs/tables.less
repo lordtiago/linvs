@@ -2,16 +2,16 @@
 // classificação das colunas
 
 a.asc {
-	.glyphicon-circle-arrow-down;
+	.glyphicon-circle-arrow-down();
 	&:before { 
-		.glyphicon;
+		.glyphicon();
 	}
 }
 
 a.desc {
-		.glyphicon-circle-arrow-up;
+		.glyphicon-circle-arrow-up();
 	&:before { 
-		.glyphicon;
+		.glyphicon();
 	}
 }
 
@@ -23,16 +23,16 @@ a.desc:before {
 
 // botões de ação
 
-a.act-view { .glyphicon-search; }
+a.act-view { .glyphicon-search(); }
 
-a.act-edit { .glyphicon-pencil; }
+a.act-edit { .glyphicon-pencil(); }
 
 a.act-remove { 
-	.glyphicon-trash; 
+	.glyphicon-trash(); 
 	color: @brand-danger; 
 	margin-left: @padding-large-vertical;
 	&:hover { 
-		.glyphicon-remove; 
+		.glyphicon-remove(); 
 		color: darken(@brand-danger,10%);
 	}
 }
@@ -48,7 +48,7 @@ a.act-remove {
 	font-size: 18px;
 
 	&:before { 
-		.glyphicon;
+		.glyphicon();
 	}
 }
 

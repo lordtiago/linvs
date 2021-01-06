@@ -14,23 +14,18 @@ input[type="url"],
 input[type="search"],
 input[type="tel"],
 input[type="color"]
-{.form-control;}
+{.form-control();}
 
 
 .input {
 	margin-top: @padding-large-vertical;
-	.make-md-column-pull(1);
-	.make-md-column-push(1);
-	.make-md-column(10);
-	position: relative;
-	float: left;
+	margin-right: 1.5%;
+	margin-left: 1.5%;
 
 	select,
 	textarea,
 	input,
 	label {
-		position: relative;
-		float: left;
 		width: 100%;
 	}
 
@@ -39,7 +34,7 @@ input[type="color"]
 
 .date {
 	select {
-		.make-md-column(2);
+		.make-md-column(3);
 		margin-right:@padding-large-horizontal;
 	}
 	span {
@@ -50,31 +45,36 @@ input[type="color"]
 
 .control-group {
 	margin-top: @padding-large-vertical*2;
-	.make-md-column(10);
+	margin-right: 1.5%;
 	text-align: right;
 	float: none !important;
 }
 
 fieldset {
 	legend {
-		.tt;
+		.tt();
 	}
+	display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
 }
 
-.number,
 .uf { .make-md-column(1); }
 
 .district,
-.country { .make-md-column(3); }
+.country { .make-md-column(3.5); }
 
 .rg,
-.cpf,
+.cep,
+.cpf { .make-md-column(3.5); }
+
 .tel,
 .cel,
 .cel2,
-.email { .make-md-column(5); }
+.email { .make-md-column(2.6); }
 
 .street,
+.name,
 .city { .make-md-column(6); }
 
 .addnew {
@@ -99,15 +99,16 @@ fieldset {
 // Tithe
 form#TitheEditForm,
 form#TitheAddForm {
-	.text {
-		position: relative;
-		.make-md-column(4);
-	}
-	.number {
-		position: relative;
-		.make-md-column(3);
+	.text, .number, .select {
+		width: 30%;
 	}
 }
 
-.kin {float: left; width: 85%;}
+.kin {
+	float: left; 
+	width: 88%;
+	.select {
+		width: 30%;
+	}
+}
 .people form .add {margin-top: 20px;}

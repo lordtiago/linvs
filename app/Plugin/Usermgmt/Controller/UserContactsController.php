@@ -108,6 +108,7 @@ class UserContactsController extends UserMgmtAppController {
 	 * @return void
 	 */
 	public function contactUs() {
+        $this->layout = 'simple';
 		$userId = $this->UserAuth->getUserId();
 		if($userId) {
 			$user = $this->User->getUserById($userId);

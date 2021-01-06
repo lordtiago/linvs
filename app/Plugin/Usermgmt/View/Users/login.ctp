@@ -77,7 +77,7 @@ THE PRODUCT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIE
 			</div>
 			<?php } ?>
 			<div class="um-button-row">
-				<?php echo $this->Form->Submit('Sign In', array('div'=>false, 'class'=>'btn btn-primary', 'id'=>'loginSubmitBtn')); ?>
+				<?php echo $this->Form->Submit(__('Sign In'), array('div'=>false, 'class'=>'btn btn-primary', 'id'=>'loginSubmitBtn')); ?>
 				<?php echo $this->Html->link(__('Forgot Password?'), '/forgotPassword', array('class'=>'right btn btn-default')); ?>
 				<?php echo $this->Html->link(__('Email Verification'), '/emailVerification', array('class'=>'right btn btn-default')); ?>
 			</div>
