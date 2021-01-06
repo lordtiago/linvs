@@ -31,7 +31,7 @@ class UsersController extends UserMgmtAppController {
 	 *
 	 * @var array
 	 */
-	public $uses = array('Usermgmt.User', 'Usermgmt.UserGroup', 'Usermgmt.UserSetting', 'Usermgmt.TmpEmail', 'Usermgmt.UserDetail', 'Usermgmt.UserActivity', 'Usermgmt.LoginToken', 'Usermgmt.UserGroupPermission', 'Usermgmt.UserContact');
+	public $uses = array('Usermgmt.User', 'Usermgmt.UserGroup', 'Usermgmt.UserSetting', 'Usermgmt.TmpEmail', 'Usermgmt.UserDetail', 'Usermgmt.UserActivity', 'Usermgmt.LoginToken', 'Usermgmt.UserGroupPermission', 'Usermgmt.UserContact', 'Transaction');
 	/**
 	 * This controller uses following components
 	 *
@@ -44,7 +44,7 @@ class UsersController extends UserMgmtAppController {
 	 * @var array
 	 */
 	public $paginate = array(
-		'limit' => 25
+		'limit' => 1000
 	);
 	/**
 	 * This controller uses following helpers
@@ -63,8 +63,8 @@ class UsersController extends UserMgmtAppController {
 				'User' => array(
 					'User'=> array(
 						'type' => 'text',
-						'label' => 'Search',
-						'tagline' => 'Search by name, username, email',
+						'label' => 'Buscar',
+						'tagline' => 'Pesquise por nome, username e email',
 						'condition' => 'multiple',
 						'searchFields'=>array('User.first_name', 'User.last_name', 'User.username', 'User.email'),
 						'searchFunc'=>array('plugin'=>'usermgmt', 'controller'=>'Users', 'function'=>'indexSearch'),
@@ -86,23 +86,23 @@ class UsersController extends UserMgmtAppController {
 					'User.email_verified' => array(
 						'type' => 'select',
 						'label' => 'Email Verified',
-						'options' => array(''=>'Select', '0'=>'No', '1'=>'Yes')
+						'options' => array(''=>'Selecione', '0'=>'Não', '1'=>'Sim')
 					),
 					'User.active' => array(
 						'type' => 'select',
 						'label' => 'Status',
-						'options' => array(''=>'Select', '1'=>'Active', '0'=>'Inactive')
+						'options' => array(''=>'Selecione', '1'=>'Ativo', '0'=>'Inativo')
 					),
 					'User.created1'=> array(
 						'type' => 'text',
 						'condition' => '>=',
-						'label' => 'From',
+						'label' => 'Criado de',
 						'inputOptions'=>array('style'=>'width:100px;', 'class'=>'datepicker')
 					),
 					'User.created2'=> array(
 						'type' => 'text',
 						'condition' => '<=',
-						'label' => 'To',
+						'label' => 'Criado até',
 						'inputOptions'=>array('style'=>'width:100px;', 'class'=>'datepicker')
 					),
 				)
@@ -146,11 +146,30 @@ class UsersController extends UserMgmtAppController {
 	 * @return array
 	 */
 	public function index() {
-		$this->paginate = array('limit' => 10, 'order'=>'User.id desc');
+		$this->paginate = array('limit' => 1000, 'order'=>'User.id desc');
 		$users = $this->paginate('User');
 		$i=0;
 		foreach($users as $user) {
 			$users[$i]['UserGroup']['name']=$this->UserGroup->getGroupsByIds($user['User']['user_group_id']);
+            /*if(strtotime($user['User']['expires']) < strtotime(date('Y-m-d')) && ($user['User']['user_group_id'] == 2) && ( strtotime($user['User']['created']) < strtotime("-2 months") )  ){
+                $users[$i]['User']['active'] = 0;
+                
+                    $userData = array(
+                        'User' => array(
+                            'active' => 0,
+                            'id' => $user['User']['id']
+                        )
+                    );
+                    $this->User->save($userData);
+            }else if ($user['User']['user_group_id'] == 5){*/
+                    $userData = array(
+                        'User' => array(
+                            'active' => 1,
+                            'id' => $user['User']['id']
+                        )
+                    );
+                    $this->User->save($userData);                
+           // }
 			$i++;
 		}
 		$this->set('users', $users);
@@ -205,7 +224,7 @@ class UsersController extends UserMgmtAppController {
 	 * @return array
 	 */
 	public function online() {
-		$this->paginate = array('limit' => 10, 'order'=>'UserActivity.modified desc', 'conditions'=>array('UserActivity.modified >'=>(date('Y-m-d G:i:s', strtotime('-'.VIEW_ONLINE_USER_TIME.' minutes', time()))), 'UserActivity.logout'=>0), 'fields'=>array('UserActivity.*', 'User.first_name', 'User.last_name', 'User.email'), 'contain'=>array('User'));
+		$this->paginate = array('limit' => 1000, 'order'=>'UserActivity.modified desc', 'conditions'=>array('UserActivity.modified >'=>(date('Y-m-d G:i:s', strtotime('-'.VIEW_ONLINE_USER_TIME.' minutes', time()))), 'UserActivity.logout'=>0), 'fields'=>array('UserActivity.*', 'User.first_name', 'User.last_name', 'User.email'), 'contain'=>array('User'));
 		$users = $this->paginate('UserActivity');
 		$this->set('users', $users);
 		if($this->RequestHandler->isAjax()) {
@@ -223,12 +242,27 @@ class UsersController extends UserMgmtAppController {
 	public function viewUser($userId=null) {
 		$page= (isset($this->request->params['named']['page'])) ? $this->request->params['named']['page'] : 1;
 		if (!empty($userId)) {
-			$user = $this->User->getUserById($userId);
+			$user = $this->User->getUserById($userId);            
 			if(empty($user)) {
 				$this->redirect(array('action'=>'index', 'page'=>$page));
 			}
 			$user['UserGroup']['name']=$this->UserGroup->getGroupsByIds($user['User']['user_group_id']);
-			$this->set(compact('userId', 'user'));
+            
+            //Consulta transações do Usuário
+            $transactions = $this->Transaction->find('all',array(
+                'conditions' => array(	
+                    'Transaction.id_user =' => $userId,			
+                ),
+                'fields' => array(
+                    'Transaction.date',
+                    'Transaction.type',
+                    'Transaction.status',
+                    'Product.name',
+                    'Product.duration'
+                )
+            ));
+            
+			$this->set(compact('userId', 'user', 'transactions'));
 		} else {
 			$this->redirect(array('action'=>'index', 'page'=>$page));
 		}
@@ -331,11 +365,12 @@ class UsersController extends UserMgmtAppController {
     
 	public function login($connect=null) {
 		$userId = $this->UserAuth->getUserId();
+        $this->layout = 'simple';
 		if ($userId) {
 			if($connect) {
 				$this->render('popup');
 			} else {
-				$this->redirect(array('action' => 'dashboard'));
+				$this->redirect(LOGIN_REDIRECT_URL);
 			}
 		}
 		if($connect=='fb') {
@@ -883,7 +918,9 @@ class UsersController extends UserMgmtAppController {
 	 * @return void
 	 */
 	public function logout($msg=true) {
+		$userId = $this->UserAuth->getUserId();
 		$this->UserAuth->logout();
+		$this->UserActivity->updateAll(array('UserActivity.logout'=>1), array('UserActivity.user_id'=>$userId));
 		if($msg) {
 			$this->Session->setFlash(__('You are successfully signed out'));
 		}
@@ -896,9 +933,10 @@ class UsersController extends UserMgmtAppController {
 	 * @return void
 	 */
 	public function register() {
+        $this->layout = 'simple';
 		$userId = $this->UserAuth->getUserId();
 		if ($userId) {
-			$this->redirect(array('action' => 'dashboard'));
+			$this->redirect(array('action' => 'browse'));
 		}
 		if (SITE_REGISTRATION) {
 			$userGroups=$this->UserGroup->getGroupsForRegistration();
@@ -952,7 +990,7 @@ class UsersController extends UserMgmtAppController {
 						}
 						if (isset($this->request->data['User']['active']) && $this->request->data['User']['active'] && !EMAIL_VERIFICATION) {
 							$this->UserAuth->login($user);
-							$this->redirect(array('action' => 'dashboard'));
+							$this->redirect(LOGIN_REDIRECT_URL);
 						} else {
 							$this->Session->setFlash(__('Please check your mail and confirm your registration'));
 							$this->redirect(array('action' => 'login'));
@@ -1138,8 +1176,8 @@ class UsersController extends UserMgmtAppController {
 				}
 			} else {
 				if ($UserRegisterValidate) {
-					sort($this->request->data['User']['user_group_id']);
-					$this->request->data['User']['user_group_id'] = implode(',',$this->request->data['User']['user_group_id']);
+					//sort($this->request->data['User']['user_group_id']);
+					//$this->request->data['User']['user_group_id'] = implode(',',$this->request->data['User']['user_group_id']);
 					$this->request->data['User']['active']=1;
 					$this->request->data['User']['email_verified']=1;
 					$this->request->data['User']['by_admin']=1;
@@ -1399,8 +1437,8 @@ class UsersController extends UserMgmtAppController {
 						else {
 							unset($this->request->data['UserDetail']['photo']);
 						}
-						sort($this->request->data['User']['user_group_id']);
-						$this->request->data['User']['user_group_id'] = implode(',',$this->request->data['User']['user_group_id']);
+						//sort($this->request->data['User']['user_group_id']);
+						//$this->request->data['User']['user_group_id'] = implode(',',$this->request->data['User']['user_group_id']);
 						$oldGroupId = $this->User->getGroupId($userId);
 						if($oldGroupId != $this->request->data['User']['user_group_id']) {
 							$this->UserActivity->updateAll(array('UserActivity.logout'=>1), array('UserActivity.user_id'=>$userId));

@@ -156,7 +156,7 @@
 
 @input-color-placeholder:        @gray-light;
 
-@input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
+@input-height-base:              40px;/*(@line-height-computed + (@padding-base-vertical * 2) + 2);*/
 @input-height-large:             (floor(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
 @input-height-small:             (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
 
@@ -245,7 +245,7 @@
 // Number of columns in the grid system
 @grid-columns:              12;
 // Padding, to be divided by two and applied to the left and right of all columns
-@grid-gutter-width:         30px;
+@grid-gutter-width:         30;
 // Point at which the navbar stops collapsing
 @grid-float-breakpoint:     @screen-sm-min;
 
@@ -257,7 +257,7 @@
 @navbar-height:                    50px;
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-border-radius:             @border-radius-base;
-@navbar-padding-horizontal:        floor(@grid-gutter-width / 2);
+@navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 
 @navbar-default-color:             #777;

@@ -39,7 +39,7 @@ var ajaxValidation = (function(){
 					}
 					var buttonRefId = $(buttonRef).attr('id');
 					if(!$('#facebox #'+buttonRefId).length && !$('#ajax-modal #'+buttonRefId).length && displayErrorFlash) {
-						$('#ajaxValidationMsgText').html('Please complete or correctly fill the fields highlighted red');
+						$('#ajaxValidationMsgText').html('Por favor preencha os campos marcados em vermelho.');
 						$('#ajaxValidationMsg').show();
 					}
 					if(scrollPageTop) {

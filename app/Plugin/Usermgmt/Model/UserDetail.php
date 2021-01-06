@@ -25,6 +25,7 @@ THE PRODUCT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIE
 */
 
 App::uses('UserMgmtAppModel', 'Usermgmt.Model');
+App::uses('BrValidation', 'Localized.Validation');
 class UserDetail extends UserMgmtAppModel {
 
 	/**
@@ -39,20 +40,29 @@ class UserDetail extends UserMgmtAppModel {
 					'mustSelect'=>array(
 						'rule' => array('comparison', '!=', ''),
 						'message'=> __('Please select gender'),
+                        'allowEmpty' => true,
 						'last'=>true)
 					),
 				'marital_status'=> array(
 					'mustSelect'=>array(
 						'rule' => array('comparison', '!=', ''),
 						'message'=> __('Please select marital status'),
+                        'allowEmpty' => true,
 						'last'=>true)
 					),
-				'cellphone'=> array(
+				'cpf'=> array(
+					'valid'=>array(
+						'rule' => array('ssn',null,'br'),
+						'message'=> __('Digite um CPF válido'),
+                        'allowEmpty' => true,
+                    )
+					),            
+				/*'cellphone'=> array(
 					'mustValid'=>array(
 						'rule' => array('cellphone'),
 						'message'=> __('Please enter valid cellphone no'),
 						'last'=>true)
-					),
+					),*/
 				'bday'=> array(
 					'mustDate'=>array(
 						'rule' => array('date', 'ymd'),

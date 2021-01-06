@@ -222,7 +222,7 @@ class SearchComponent extends Component {
 						}
 						break;
 					default:
-						continue;
+						break;
 				}
 				// if no value has been set, show the default one
 				if (!isset($options['value']) && isset($settings['default']) && $options['type'] != 'checkbox') {

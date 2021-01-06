@@ -95,7 +95,7 @@ class SearchingBehavior extends ModelBehavior {
 			switch ($options['type']) {
 				case 'text':
 					if (strlen(trim(strval($values[$fieldModelName][$fieldName]))) == 0) {
-						continue;
+						break;
 					}
 					switch ($options['condition']) {
 						case 'like':
@@ -165,7 +165,7 @@ class SearchingBehavior extends ModelBehavior {
 						if(isset($query['conditions'][$realSearchField])) {
 							unset($query['conditions'][$realSearchField]);
 						}
-						continue;
+						break;
 					}
 					switch ($options['condition']) {
 						case 'comma':

@@ -18,18 +18,18 @@ iframe {
 	line-height: 61px;
 	padding-right: 30px;
 	color: lighten(@navbar-inverse-bg, 20%);
-	.transition-default;
+	.transition-default();
 }
 
 .navbar-nav {
 	li {
 		text-align: center;
-		.transition-default;
+		.transition-default();
 		i {
 			color: lighten(@navbar-inverse-bg, 20%);
 			font-size: 36px;
 			padding-top: 15px;
-			.transition-default;
+			.transition-default();
 		}
 		span {
 			display: block;
@@ -85,7 +85,8 @@ iframe {
 }
 
 legend.tt {
-    padding-bottom: 20px;
+	padding-bottom: 20px;
+	padding-left: 1.5%;
 }
 
 .tt-g {
@@ -116,10 +117,18 @@ legend.tt {
 	margin-top: 100px;
 	padding-bottom: 40px;
 	border-radius: 4px;
+	@media (min-width: @screen-lg) {
+		margin: 100px auto;
+		width: 75%;
+	}
 }
 
 .content-container {
-    float: left;
+	max-width: 760px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+	margin: 0 auto;
+	margin-top: 50px;
 }
 
 // Actions
@@ -192,7 +201,7 @@ div.actions{
 // People
 #PersonName {text-transform: uppercase;}
 #PersonBirthDay {
-	.make-md-column(1);
+	.make-md-column(3);
 }
 
 .report {
@@ -283,8 +292,8 @@ div.actions{
 	.list-group {
 		list-style: none;
 		border-top: 1px solid @gray-lighter;
-		padding-top: @padding-large-vertical;
-		min-height: 55px !important;
+		padding: @padding-large-vertical;
+		min-height: 65px !important;
 	}
 	li+li {border-left: 1px solid @gray-lighter; }
 	
