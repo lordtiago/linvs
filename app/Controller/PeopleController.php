@@ -207,6 +207,9 @@ class PeopleController extends AppController {
                 'fields'=>array(
                         'Person.name as name',
                         'Person.birth as birth',
+						'Person.tel as tel',
+						'Person.cel as cel',
+						'Person.cel2 as cel2',
                 ),
                 'conditions'=>array(
                     'MONTH(birth)'=>$month,

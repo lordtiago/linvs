@@ -7,15 +7,18 @@ $parish = "Paróquia Senhor Bom Jesus";
     <div class="col-md-8"><b>Aniversariantes do mês de <?php echo $month; ?></b></div>
 </div>
 <div class="container_header row">
-    <div class="column_header col-md-9"><?php echo __("Name"); ?></div>
+    <div class="column_header col-md-5"><?php echo __("Name"); ?></div>
+    <div class="column_header col-md-4"><?php echo __("Telefones para Contato"); ?></div>
     <div class="column_header col-md-3"><?php echo __("Birth"); ?></div>
 </div>
 <div class="details row">
     <?php foreach ($people as $person): ?>
 
-        <div class="column_details col-md-9"><?php echo $person['Person']['name']; ?>&nbsp;</div>
+        <div class="column_details col-md-5"><?php echo $person['Person']['name']; ?>&nbsp;</div>
+
+        <div class="column_details col-md-4"><?php echo $person['Person']['tel']; ?> / <?php echo $person['Person']['cel']; ?> / <?php echo $person['Person']['cel2']; ?></div>
 		
-        <div class="column_details col-md-3"><?php echo h(date('d/m/Y',strtotime($person['Person']['birth']))); ?>&nbsp;</div>
+        <div class="column_details col-md-2"><?php echo h(date('d/m/Y',strtotime($person['Person']['birth']))); ?>&nbsp;</div>
 
     <?php  endforeach;?>
 </div>

@@ -114,6 +114,7 @@
 						<th><?php echo __('Id'); ?></th>
 						<th><?php echo __('Value'); ?></th>
 						<th><?php echo __('Month'); ?></th>
+						<th><?php echo __('Month Reference'); ?></th>
 						<th><?php echo __('Year'); ?></th>
 						<th><?php echo __('Created'); ?></th>
 						<th><?php echo __('Modified'); ?></th>
@@ -126,6 +127,7 @@
 					<td><?php echo $tithe['id']; ?></td>
 					<td><?php echo $tithe['value']; ?></td>
 					<td><?php echo $tithe['month']; ?></td>
+					<td><?php echo $tithe['month_ref']; ?></td>
 					<td><?php echo $tithe['year']; ?></td>
 					<td><?php echo $tithe['created']; ?></td>
 					<td><?php echo $tithe['modified']; ?></td>
